@@ -11,9 +11,9 @@
  */
 
 import { writeFileSync } from 'node:fs';
+import https from 'node:https';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import https from 'node:https';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outFile = join(__dirname, '..', 'icons.json');

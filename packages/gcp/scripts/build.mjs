@@ -10,12 +10,12 @@
  * - License: Apache-2.0
  */
 
-import { writeFileSync, mkdtempSync, rmSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { dirname, join, basename } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { tmpdir } from 'node:os';
-import https from 'node:https';
 import { execSync } from 'node:child_process';
+import { mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import https from 'node:https';
+import { tmpdir } from 'node:os';
+import { basename, dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outFile = join(__dirname, '..', 'icons.json');

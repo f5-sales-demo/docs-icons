@@ -1,0 +1,25 @@
+{
+  "customSets": [
+    {
+      "label": "Icon Packs",
+      "description": "Individual icon pack documentation for AWS, Azure, GCP, F5 XC, and open-source sets",
+      "paths": [
+        "aws*",
+        "azure*",
+        "gcp*",
+        "f5xc*",
+        "brand*",
+        "carbon*",
+        "hashicorp*",
+        "lucide*",
+        "mdi*",
+        "phosphor*",
+        "simple-icons*",
+        "starlight*",
+        "tabler*"
+      ]
+    }
+  ],
+  "promote": ["index*", "icons*", "cloud-icons*", "iconify-packs*"],
+  "demote": []
+}
