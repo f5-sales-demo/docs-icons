@@ -10,10 +10,10 @@
  * - Extracts SVG body (content between <svg> tags)
  */
 
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
-import { join, basename, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
+import { basename, dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
