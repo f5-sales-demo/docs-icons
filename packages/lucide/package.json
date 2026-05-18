@@ -14,7 +14,7 @@
     "icons.json"
   ],
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.106"
+    "@iconify-json/lucide": "^1.2.108"
   },
   "publishConfig": {
     "access": "public"
