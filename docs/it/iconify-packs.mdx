@@ -1,0 +1,53 @@
+---
+title: Panoramica dei Pacchetti Iconify
+description: >-
+  Panoramica dei pacchetti di icone Material Design, Carbon, Phosphor e Tabler —
+  confronto, pattern di utilizzo condivisi e link alle pagine dei singoli
+  pacchetti.
+sidebar:
+  label: Panoramica Iconify
+  order: 10
+i18n:
+  sourceHash: 853482de4a8c
+  translator: machine
+---
+
+Diversi pacchetti di icone Iconify sono disponibili come pacchetti npm con componenti Astro `Icon`. Ogni pacchetto ha la propria importazione e utilizza la stessa API basata su `name`.
+
+## Confronto tra Pacchetti
+
+| Pacchetto | Prefisso | Icone | Stile | Ideale Per | Pagina |
+|-----------|----------|-------|-------|------------|--------|
+| Material Design | `mdi` | 7.638 | Filled + outlined | Uso generico, copertura più ampia | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2.582 | Outlined | Design enterprise/IBM, linee pulite | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9.161 | Pesi multipli | Opzioni di peso flessibili (da thin a fill) | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6.034 | Basato su stroke | Icone a linee nitide, stroke coerente | [Tabler](/tabler/) |
+
+## Utilizzo
+
+Ogni pacchetto ha il proprio componente `Icon.astro`:
+
+```astro
+---
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import PhIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+---
+
+<MdiIcon name="database" />
+<CarbonIcon name="cloud" />
+<PhIcon name="globe" />
+<TablerIcon name="shield" />
+```
+
+Le icone vengono renderizzate come SVG inline utilizzando `currentColor` — si adattano automaticamente alla modalità chiara e scura.
+
+## Scegliere un Pacchetto
+
+- **Copertura più ampia**: Material Design Icons ha il maggior numero di icone (7.638) con varianti filled e outlined per praticamente ogni caso d'uso.
+- **Design enterprise**: Carbon segue il linguaggio di design IBM con contorni puliti e coerenti, adatti per applicazioni aziendali.
+- **Flessibilità di peso**: Phosphor fornisce sei varianti di peso (thin, light, regular, bold, fill, duotone) per un controllo preciso del peso visivo.
+- **Stroke coerenti**: Tabler utilizza uno spessore di stroke uniforme di 2px su tutte le 6.034 icone per un aspetto coeso.
+
+Consultate la pagina dedicata di ciascun pacchetto per griglie di icone curate e link per la navigazione.

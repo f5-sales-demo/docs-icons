@@ -1,0 +1,52 @@
+---
+title: Iconify-Pakete – Übersicht
+description: >-
+  Übersicht über die Icon-Pakete Material Design, Carbon, Phosphor und Tabler —
+  Vergleich, gemeinsame Nutzungsmuster und Links zu den einzelnen Paketseiten.
+sidebar:
+  label: Iconify-Übersicht
+  order: 10
+i18n:
+  sourceHash: 853482de4a8c
+  translator: machine
+---
+
+Mehrere Iconify-Icon-Pakete sind als npm-Pakete mit Astro-`Icon`-Komponenten verfügbar. Jedes Paket hat seinen eigenen Import und verwendet dieselbe `name`-basierte API.
+
+## Paketvergleich
+
+| Paket | Präfix | Icons | Stil | Ideal für | Seite |
+|-------|--------|-------|------|-----------|-------|
+| Material Design | `mdi` | 7.638 | Gefüllt + Umrisse | Allgemein einsetzbar, breiteste Abdeckung | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2.582 | Umrisse | Enterprise-/IBM-Design, klare Linien | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9.161 | Mehrere Strichstärken | Flexible Strichstärkenoptionen (dünn bis gefüllt) | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6.034 | Strichbasiert | Klare Liniensymbole, einheitliche Strichstärke | [Tabler](/tabler/) |
+
+## Verwendung
+
+Jedes Paket hat seine eigene `Icon.astro`-Komponente:
+
+```astro
+---
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import PhIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+---
+
+<MdiIcon name="database" />
+<CarbonIcon name="cloud" />
+<PhIcon name="globe" />
+<TablerIcon name="shield" />
+```
+
+Icons werden als Inline-SVGs mit `currentColor` gerendert — sie passen sich automatisch an den Hell- und Dunkelmodus an.
+
+## Auswahl eines Pakets
+
+- **Breiteste Abdeckung**: Material Design Icons bietet die meisten Icons (7.638) mit gefüllten und Umriss-Varianten für praktisch jeden Anwendungsfall.
+- **Enterprise-Design**: Carbon folgt IBMs Designsprache mit klaren, konsistenten Umrissen, die für Geschäftsanwendungen geeignet sind.
+- **Flexibilität bei Strichstärken**: Phosphor bietet sechs Strichstärkenvarianten (thin, light, regular, bold, fill, duotone) zur Feinabstimmung des visuellen Gewichts.
+- **Einheitliche Striche**: Tabler verwendet eine gleichmäßige Strichbreite von 2px über alle 6.034 Icons hinweg für ein zusammenhängendes Erscheinungsbild.
+
+Auf der jeweiligen Paketseite finden Sie kuratierte Icon-Raster und Links zum Durchsuchen.

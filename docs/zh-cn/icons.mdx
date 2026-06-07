@@ -1,0 +1,101 @@
+---
+title: 图标参考
+description: 文档主题中所有可用图标包的概览——用法、暗色模式行为和选择指南。
+sidebar:
+  label: 概览
+  order: 2
+i18n:
+  sourceHash: 2da27471772e
+  translator: machine
+---
+
+import { Icon } from '@astrojs/starlight/components';
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+
+文档主题提供了来自多个图标包的数千个图标。每个图标包使用相同的模式：导入该包的 `Icon.astro` 组件并通过名称引用图标。
+
+## 可用图标包
+
+| 图标包 | 数量 | 用法 | 页面 |
+|------|-------|-------|------|
+| Starlight 内置 | ~200 | `<Icon name="star" />` | [Starlight 内置](/starlight/) |
+| F5 品牌 | 665 | `<Icon name="ai-admin" />` | [F5 品牌](/brand/) |
+| Lucide | ~1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
+| Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
+| Carbon | 2,582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
+| Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
+| Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
+| F5 XC 服务 | 30 | `<Icon name="bot-defense" />` | [F5 XC 服务](/f5xc/) |
+| Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
+| AWS 架构 | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| Azure 架构 | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| GCP 架构 | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+
+## 渲染方式
+
+所有图标包使用各自包的 `Icon.astro` 组件来渲染内联 SVG。每个包都有自己的导入方式：
+
+```astro
+---
+// Starlight built-in
+import { Icon } from '@astrojs/starlight/components';
+
+// Other packs — each has its own import
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+---
+
+<Icon name="star" />
+<LucideIcon name="rocket" />
+<MdiIcon name="database" />
+<F5xIcon name="bot-defense" />
+```
+
+图标使用 `currentColor`，会自动适应亮色和暗色模式，无需特殊处理。
+
+### Starlight 内置
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="setting" size="1.5rem" /></div><div class="icon-card-label">setting</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
+</div>
+
+### Lucide
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><LucideIcon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><MdiIcon name="database" size="1.5rem" /></div><div class="icon-card-label">mdi/database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><CarbonIcon name="cloud" size="1.5rem" /></div><div class="icon-card-label">carbon/cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
+</div>
+
+## 暗色/亮色模式行为
+
+所有 `Icon` 组件使用 `currentColor` 渲染内联 SVG。它们会自动适应当前主题——无需特殊的 CSS 或类名处理。
+
+F5 XC 服务图标使用 CSS 自定义属性，会自动适应亮色和暗色模式——无需特殊的类名处理。对于其他多色图标（如 HashiCorp Flight 的彩色变体），在 `.icon-card-image` 上使用 `no-invert` 类可以在暗色模式下保留原始颜色。
+
+## 我应该使用哪个图标包？
+
+| 使用场景 | 推荐图标包 | 原因 |
+|----------|------------------|-----|
+| 通用 UI（箭头、关闭、搜索） | Starlight 内置 | 零配置，始终可用 |
+| F5 产品图表 | F5 品牌 | 特定领域的网络/安全图形 |
+| 现代描边图标 | Lucide | 简洁一致的 1,600+ 图标 |
+| 大规模填充/轮廓图标 | Material Design (mdi) | 最大的图标集，包含 7,638 个图标 |
+| IBM 设计语言 | Carbon | 2,582 个企业级图标 |
+| 灵活的粗细选项 | Phosphor | 9,161 个图标，六种粗细变体 |
+| 清晰的线条图标 | Tabler | 6,034 个图标，统一的 2px 描边 |
+| F5 XC 服务图表 | F5 XC 服务 | 30 个分布式云服务图标 |
+| 品牌/公司标志 | Simple Icons | 3,200+ 供应商和服务品牌图标 |
+| 云/基础设施供应商标志 | HashiCorp Flight | AWS、GCP、Azure、K8s 供应商图标 |
+| AWS 架构图 | AWS 架构 | 885 个彩色服务图标，用于 AWS 基础设施 |
+| Azure 架构图 | Azure 架构 | 606 个彩色服务图标，用于 Azure 基础设施 |
+| GCP 架构图 | GCP 架构 | 216 个彩色服务图标，用于 Google Cloud 基础设施 |

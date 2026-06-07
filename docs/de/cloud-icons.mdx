@@ -1,0 +1,44 @@
+---
+title: Übersicht der Cloud-Architektur-Icons
+description: >-
+  Übersicht über AWS-, Azure- und GCP-Farbservice-Icon-Pakete — gemeinsame
+  Nutzungsmuster und Links zu den einzelnen Paketseiten.
+sidebar:
+  label: Cloud-Übersicht
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+Drei Icon-Pakete bieten farbige Service-Icons für die Dokumentation von Cloud-Infrastruktur. Im Gegensatz zu monochromen Icon-Paketen bewahren diese die originalen Herstellerfarben für Architekturdiagramme.
+
+## Verfügbare Pakete
+
+| Paket | Icons | Standardgröße | Seite |
+|-------|-------|---------------|-------|
+| AWS Architecture | 885 | 48x48 | [AWS](/aws/) |
+| Azure Architecture | 606 | 18x18 | [Azure](/azure/) |
+| GCP Architecture | 216 | 24x24 | [GCP](/gcp/) |
+
+## Verwendung
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## Farbdarstellung
+
+Diese Icon-Pakete verwenden die originalen Herstellerfarben (nicht `currentColor`). Die Klasse `no-invert` auf Icon-Karten bewahrt die Farben im Dunkelmodus. Wenn Sie diese Icons außerhalb des Rasterlayouts verwenden, ist keine besondere Behandlung erforderlich — die Farben sind im SVG-Markup eingebettet.
+
+Auf der jeweiligen Paketseite finden Sie kuratierte Icon-Raster, geordnet nach Servicekategorie.
+
+Vollständige Icon-Sets durchsuchen: [AWS Icons](https://aws.amazon.com/architecture/icons/) | [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [GCP Icons](https://cloud.google.com/icons)

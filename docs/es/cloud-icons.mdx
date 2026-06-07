@@ -1,0 +1,45 @@
+---
+title: Descripción General de Iconos de Arquitectura en la Nube
+description: >-
+  Descripción general de los packs de iconos de servicios a color de AWS, Azure
+  y GCP — patrones de uso compartidos y enlaces a las páginas individuales de
+  cada pack.
+sidebar:
+  label: Descripción General de la Nube
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+Tres packs de iconos proporcionan iconos de servicios a color para documentar infraestructura en la nube. A diferencia de los packs de iconos monocromáticos, estos preservan los colores originales del proveedor para diagramas de arquitectura.
+
+## Packs Disponibles
+
+| Pack | Iconos | Tamaño Predeterminado | Página |
+|------|--------|----------------------|--------|
+| AWS Architecture | 885 | 48x48 | [AWS](/aws/) |
+| Azure Architecture | 606 | 18x18 | [Azure](/azure/) |
+| GCP Architecture | 216 | 24x24 | [GCP](/gcp/) |
+
+## Uso
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## Renderizado de Color
+
+Estos packs de iconos utilizan los colores originales del proveedor (no `currentColor`). La clase `no-invert` en las tarjetas de iconos preserva los colores en modo oscuro. Cuando se utilizan estos iconos fuera del diseño de cuadrícula, no se necesita ningún manejo especial — los colores están incorporados en el marcado SVG.
+
+Consulte la página dedicada de cada pack para cuadrículas de iconos organizadas por categoría de servicio.
+
+Explore los conjuntos completos de iconos: [Iconos de AWS](https://aws.amazon.com/architecture/icons/) | [Iconos de Azure](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [Iconos de GCP](https://cloud.google.com/icons)

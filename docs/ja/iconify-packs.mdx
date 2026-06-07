@@ -1,0 +1,52 @@
+---
+title: Iconify パックの概要
+description: >-
+  Material Design、Carbon、Phosphor、Tabler アイコンパックの概要 —
+  比較、共通の使用パターン、および各パックページへのリンク。
+sidebar:
+  label: Iconify 概要
+  order: 10
+i18n:
+  sourceHash: 853482de4a8c
+  translator: machine
+---
+
+複数の Iconify アイコンパックが、Astro `Icon` コンポーネントを備えた npm パッケージとして利用可能です。各パックは独自のインポートを持ち、同じ `name` ベースの API を使用します。
+
+## パックの比較
+
+| パック | プレフィックス | アイコン数 | スタイル | 最適な用途 | ページ |
+|------|--------|-------|-------|----------|------|
+| Material Design | `mdi` | 7,638 | 塗りつぶし + アウトライン | 汎用、最も幅広いカバレッジ | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2,582 | アウトライン | エンタープライズ/IBM デザイン、クリーンなライン | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9,161 | 複数のウェイト | 柔軟なウェイトオプション（thin から fill まで） | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6,034 | ストロークベース | シャープなラインアイコン、一貫したストローク | [Tabler](/tabler/) |
+
+## 使い方
+
+各パックには独自の `Icon.astro` コンポーネントがあります：
+
+```astro
+---
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import PhIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+---
+
+<MdiIcon name="database" />
+<CarbonIcon name="cloud" />
+<PhIcon name="globe" />
+<TablerIcon name="shield" />
+```
+
+アイコンは `currentColor` を使用したインライン SVG としてレンダリングされるため、ライトモードとダークモードに自動的に適応します。
+
+## パックの選び方
+
+- **最も幅広いカバレッジ**: Material Design Icons は最多のアイコン数（7,638）を持ち、ほぼすべてのユースケースに対応する塗りつぶしとアウトラインのバリアントを提供します。
+- **エンタープライズデザイン**: Carbon は IBM のデザイン言語に従い、ビジネスアプリケーションに適したクリーンで一貫性のあるアウトラインを提供します。
+- **ウェイトの柔軟性**: Phosphor は6つのウェイトバリアント（thin、light、regular、bold、fill、duotone）を提供し、視覚的なウェイトを細かく調整できます。
+- **一貫したストローク**: Tabler は全 6,034 アイコンにわたって均一な 2px のストローク幅を使用し、統一感のある外観を実現します。
+
+厳選されたアイコングリッドとブラウジングリンクについては、各パックの専用ページをご覧ください。

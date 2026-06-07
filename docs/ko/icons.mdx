@@ -1,0 +1,101 @@
+---
+title: 아이콘 참조
+description: '문서 테마에서 사용 가능한 모든 아이콘 팩 개요 — 사용법, 다크 모드 동작 및 선택 가이드.'
+sidebar:
+  label: 개요
+  order: 2
+i18n:
+  sourceHash: 2da27471772e
+  translator: machine
+---
+
+import { Icon } from '@astrojs/starlight/components';
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+
+문서 테마는 여러 팩에서 수천 개의 아이콘에 대한 접근을 제공합니다. 모든 팩은 동일한 패턴을 사용합니다: 팩의 `Icon.astro` 컴포넌트를 가져오고 이름으로 아이콘을 참조합니다.
+
+## 사용 가능한 아이콘 팩
+
+| 팩 | 개수 | 사용법 | 페이지 |
+|------|-------|-------|------|
+| Starlight 내장 | ~200 | `<Icon name="star" />` | [Starlight 내장](/starlight/) |
+| F5 Brand | 665 | `<Icon name="ai-admin" />` | [F5 Brand](/brand/) |
+| Lucide | ~1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
+| Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
+| Carbon | 2,582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
+| Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
+| Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
+| F5 XC Services | 30 | `<Icon name="bot-defense" />` | [F5 XC Services](/f5xc/) |
+| Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
+| AWS Architecture | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| Azure Architecture | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| GCP Architecture | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+
+## 렌더링 방식
+
+모든 아이콘 팩은 인라인 SVG를 렌더링하는 패키지별 `Icon.astro` 컴포넌트를 사용합니다. 각 팩은 자체 import를 가집니다:
+
+```astro
+---
+// Starlight built-in
+import { Icon } from '@astrojs/starlight/components';
+
+// Other packs — each has its own import
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+---
+
+<Icon name="star" />
+<LucideIcon name="rocket" />
+<MdiIcon name="database" />
+<F5xIcon name="bot-defense" />
+```
+
+아이콘은 `currentColor`를 사용하며 별도의 특별한 처리 없이 라이트 모드와 다크 모드에 자동으로 적응합니다.
+
+### Starlight 내장
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="setting" size="1.5rem" /></div><div class="icon-card-label">setting</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
+</div>
+
+### Lucide
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><LucideIcon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><MdiIcon name="database" size="1.5rem" /></div><div class="icon-card-label">mdi/database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><CarbonIcon name="cloud" size="1.5rem" /></div><div class="icon-card-label">carbon/cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
+</div>
+
+## 다크/라이트 모드 동작
+
+모든 `Icon` 컴포넌트는 `currentColor`를 사용하여 인라인 SVG를 렌더링합니다. 현재 테마에 자동으로 적응하므로 별도의 CSS나 클래스 처리가 필요하지 않습니다.
+
+F5 XC 서비스 아이콘은 라이트 모드와 다크 모드에 자동으로 적응하는 CSS 사용자 정의 속성을 사용합니다 — 별도의 클래스 처리가 필요하지 않습니다. 다른 다중 색상 아이콘(예: HashiCorp Flight 색상 변형)의 경우, `.icon-card-image`의 `no-invert` 클래스가 다크 모드에서 원래 색상을 유지합니다.
+
+## 어떤 팩을 사용해야 하나요?
+
+| 사용 사례 | 권장 팩 | 이유 |
+|----------|------------------|-----|
+| 일반 UI (화살표, 닫기, 검색) | Starlight 내장 | 설정 불필요, 항상 사용 가능 |
+| F5 제품 다이어그램 | F5 Brand | 네트워킹/보안 분야에 특화된 아트 |
+| 모던 스트로크 아이콘 | Lucide | 깔끔하고 일관된 1,600개 이상의 아이콘 |
+| 대규모 채움/외곽선 아이콘 | Material Design (mdi) | 7,638개 아이콘으로 가장 큰 세트 |
+| IBM 디자인 언어 | Carbon | 2,582개의 엔터프라이즈급 아이콘 |
+| 유연한 두께 옵션 | Phosphor | 6가지 두께 변형을 갖춘 9,161개 아이콘 |
+| 선명한 라인 아이콘 | Tabler | 일관된 2px 스트로크의 6,034개 아이콘 |
+| F5 XC 서비스 다이어그램 | F5 XC Services | 30개의 Distributed Cloud 서비스 아이콘 |
+| 브랜드/회사 로고 | Simple Icons | 벤더 및 서비스를 위한 3,200개 이상의 브랜드 아이콘 |
+| 클라우드/인프라 벤더 로고 | HashiCorp Flight | AWS, GCP, Azure, K8s 벤더 아이콘 |
+| AWS 아키텍처 다이어그램 | AWS Architecture | AWS 인프라용 885개 컬러 서비스 아이콘 |
+| Azure 아키텍처 다이어그램 | Azure Architecture | Azure 인프라용 606개 컬러 서비스 아이콘 |
+| GCP 아키텍처 다이어그램 | GCP Architecture | Google Cloud 인프라용 216개 컬러 서비스 아이콘 |

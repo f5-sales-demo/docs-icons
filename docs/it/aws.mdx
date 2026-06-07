@@ -1,0 +1,131 @@
+---
+title: Icone di Architettura AWS
+description: >-
+  Riferimento curato per le Icone di Architettura AWS — 885 icone di servizio a
+  colori per diagrammi e documentazione dell'infrastruttura cloud.
+sidebar:
+  label: AWS
+  order: 14
+i18n:
+  sourceHash: 2a0dc369902e
+  translator: machine
+---
+
+import Icon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+
+[AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) fornisce 885 icone di servizio a colori per documentare l'infrastruttura AWS. Utilizzare il componente `Icon` da `@f5xc-salesdemos/icons-aws` per renderizzare qualsiasi icona per nome. La dimensione predefinita è 48x48 con possibilità di sovrascrittura della dimensione per singola icona.
+
+## Utilizzo
+
+```astro
+---
+import Icon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+---
+
+<Icon name="lambda" />
+<Icon name="ec2" size="2rem" />
+<Icon name="vpc" size="1.5rem" label="VPC" />
+```
+
+Queste icone utilizzano i colori originali del fornitore (non `currentColor`). I colori sono incorporati nel markup SVG e vengono preservati sia in modalità chiara che scura.
+
+## Calcolo
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="ec2" size="1.5rem" /></div><div class="icon-card-label">ec2</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="lambda" size="1.5rem" /></div><div class="icon-card-label">lambda</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="elastic-container-service" size="1.5rem" /></div><div class="icon-card-label">elastic-container-service</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="elastic-kubernetes-service" size="1.5rem" /></div><div class="icon-card-label">elastic-kubernetes-service</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="fargate" size="1.5rem" /></div><div class="icon-card-label">fargate</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="ec2-auto-scaling" size="1.5rem" /></div><div class="icon-card-label">ec2-auto-scaling</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="elastic-beanstalk" size="1.5rem" /></div><div class="icon-card-label">elastic-beanstalk</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="app-runner" size="1.5rem" /></div><div class="icon-card-label">app-runner</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="batch" size="1.5rem" /></div><div class="icon-card-label">batch</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="outposts-rack" size="1.5rem" /></div><div class="icon-card-label">outposts-rack</div></div>
+</div>
+
+## Rete
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="vpc" size="1.5rem" /></div><div class="icon-card-label">vpc</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloudfront" size="1.5rem" /></div><div class="icon-card-label">cloudfront</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="route-53" size="1.5rem" /></div><div class="icon-card-label">route-53</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="elastic-load-balancing" size="1.5rem" /></div><div class="icon-card-label">elastic-load-balancing</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="api-gateway" size="1.5rem" /></div><div class="icon-card-label">api-gateway</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="app-mesh" size="1.5rem" /></div><div class="icon-card-label">app-mesh</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="global-accelerator" size="1.5rem" /></div><div class="icon-card-label">global-accelerator</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="direct-connect" size="1.5rem" /></div><div class="icon-card-label">direct-connect</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="transit-gateway" size="1.5rem" /></div><div class="icon-card-label">transit-gateway</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud-wan" size="1.5rem" /></div><div class="icon-card-label">cloud-wan</div></div>
+</div>
+
+## Archiviazione &amp; Database
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="simple-storage-service" size="1.5rem" /></div><div class="icon-card-label">simple-storage-service</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="dynamodb" size="1.5rem" /></div><div class="icon-card-label">dynamodb</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="aurora" size="1.5rem" /></div><div class="icon-card-label">aurora</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rds" size="1.5rem" /></div><div class="icon-card-label">rds</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="elasticache" size="1.5rem" /></div><div class="icon-card-label">elasticache</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="redshift" size="1.5rem" /></div><div class="icon-card-label">redshift</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="elastic-block-store" size="1.5rem" /></div><div class="icon-card-label">elastic-block-store</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="efs" size="1.5rem" /></div><div class="icon-card-label">efs</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="documentdb" size="1.5rem" /></div><div class="icon-card-label">documentdb</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="neptune" size="1.5rem" /></div><div class="icon-card-label">neptune</div></div>
+</div>
+
+## Sicurezza
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="waf" size="1.5rem" /></div><div class="icon-card-label">waf</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="shield" size="1.5rem" /></div><div class="icon-card-label">shield</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cognito" size="1.5rem" /></div><div class="icon-card-label">cognito</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="iam-identity-center" size="1.5rem" /></div><div class="icon-card-label">iam-identity-center</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="certificate-manager" size="1.5rem" /></div><div class="icon-card-label">certificate-manager</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="secrets-manager" size="1.5rem" /></div><div class="icon-card-label">secrets-manager</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="guardduty" size="1.5rem" /></div><div class="icon-card-label">guardduty</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="inspector" size="1.5rem" /></div><div class="icon-card-label">inspector</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="security-hub" size="1.5rem" /></div><div class="icon-card-label">security-hub</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="network-firewall" size="1.5rem" /></div><div class="icon-card-label">network-firewall</div></div>
+</div>
+
+## Integrazione delle Applicazioni
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="simple-queue-service" size="1.5rem" /></div><div class="icon-card-label">simple-queue-service</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="simple-notification-service" size="1.5rem" /></div><div class="icon-card-label">simple-notification-service</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="eventbridge" size="1.5rem" /></div><div class="icon-card-label">eventbridge</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="step-functions" size="1.5rem" /></div><div class="icon-card-label">step-functions</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="appflow" size="1.5rem" /></div><div class="icon-card-label">appflow</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="appsync" size="1.5rem" /></div><div class="icon-card-label">appsync</div></div>
+</div>
+
+## Gestione &amp; Governance
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloudformation" size="1.5rem" /></div><div class="icon-card-label">cloudformation</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloudwatch" size="1.5rem" /></div><div class="icon-card-label">cloudwatch</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloudtrail" size="1.5rem" /></div><div class="icon-card-label">cloudtrail</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="config" size="1.5rem" /></div><div class="icon-card-label">config</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="systems-manager" size="1.5rem" /></div><div class="icon-card-label">systems-manager</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="organizations" size="1.5rem" /></div><div class="icon-card-label">organizations</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="control-tower" size="1.5rem" /></div><div class="icon-card-label">control-tower</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="trusted-advisor" size="1.5rem" /></div><div class="icon-card-label">trusted-advisor</div></div>
+</div>
+
+## IA &amp; ML
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bedrock" size="1.5rem" /></div><div class="icon-card-label">bedrock</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="sagemaker" size="1.5rem" /></div><div class="icon-card-label">sagemaker</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rekognition" size="1.5rem" /></div><div class="icon-card-label">rekognition</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="comprehend" size="1.5rem" /></div><div class="icon-card-label">comprehend</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="lex" size="1.5rem" /></div><div class="icon-card-label">lex</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="polly" size="1.5rem" /></div><div class="icon-card-label">polly</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="textract" size="1.5rem" /></div><div class="icon-card-label">textract</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="translate" size="1.5rem" /></div><div class="icon-card-label">translate</div></div>
+</div>
+
+## Sfoglia Tutte le Icone
+
+Per l'elenco completo delle 885 Icone di Architettura AWS, visitare [AWS Icons for Architecture Diagrams](https://aws.amazon.com/architecture/icons/).

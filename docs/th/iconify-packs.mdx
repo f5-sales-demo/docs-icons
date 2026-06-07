@@ -1,0 +1,52 @@
+---
+title: ภาพรวม Iconify Packs
+description: >-
+  ภาพรวมของชุดไอคอน Material Design, Carbon, Phosphor และ Tabler —
+  การเปรียบเทียบ รูปแบบการใช้งานร่วมกัน และลิงก์ไปยังหน้าของแต่ละชุด
+sidebar:
+  label: ภาพรวม Iconify
+  order: 10
+i18n:
+  sourceHash: 853482de4a8c
+  translator: machine
+---
+
+ชุดไอคอน Iconify หลายชุดมีให้ใช้งานเป็นแพ็กเกจ npm พร้อมคอมโพเนนต์ `Icon` ของ Astro แต่ละชุดมีการ import เฉพาะของตัวเองและใช้ API แบบ `name` เดียวกัน
+
+## การเปรียบเทียบชุดไอคอน
+
+| ชุดไอคอน | Prefix | จำนวนไอคอน | สไตล์ | เหมาะสำหรับ | หน้า |
+|------|--------|-------|-------|----------|------|
+| Material Design | `mdi` | 7,638 | Filled + outlined | ใช้งานทั่วไป ครอบคลุมมากที่สุด | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2,582 | Outlined | ดีไซน์สำหรับองค์กร/IBM เส้นสะอาดตา | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9,161 | หลายน้ำหนัก | ตัวเลือกน้ำหนักที่ยืดหยุ่น (thin ถึง fill) | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6,034 | Stroke-based | ไอคอนเส้นคมชัด stroke สม่ำเสมอ | [Tabler](/tabler/) |
+
+## การใช้งาน
+
+แต่ละชุดมีคอมโพเนนต์ `Icon.astro` ของตัวเอง:
+
+```astro
+---
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import PhIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+---
+
+<MdiIcon name="database" />
+<CarbonIcon name="cloud" />
+<PhIcon name="globe" />
+<TablerIcon name="shield" />
+```
+
+ไอคอนจะแสดงผลเป็น SVG แบบ inline โดยใช้ `currentColor` — ทำให้ปรับตัวเข้ากับโหมดสว่างและโหมดมืดโดยอัตโนมัติ
+
+## การเลือกชุดไอคอน
+
+- **ครอบคลุมมากที่สุด**: Material Design Icons มีไอคอนมากที่สุด (7,638) พร้อมรูปแบบ filled และ outlined สำหรับแทบทุกกรณีใช้งาน
+- **ดีไซน์สำหรับองค์กร**: Carbon ตามภาษาการออกแบบของ IBM ด้วยเส้นขอบที่สะอาดและสม่ำเสมอ เหมาะสำหรับแอปพลิเคชันทางธุรกิจ
+- **ความยืดหยุ่นด้านน้ำหนัก**: Phosphor มีรูปแบบน้ำหนัก 6 ระดับ (thin, light, regular, bold, fill, duotone) สำหรับปรับแต่งน้ำหนักการแสดงผลอย่างละเอียด
+- **Stroke สม่ำเสมอ**: Tabler ใช้ความกว้าง stroke แบบเดียวกันที่ 2px ทั่วทั้ง 6,034 ไอคอน เพื่อรูปลักษณ์ที่เป็นเอกภาพ
+
+ดูหน้าเฉพาะของแต่ละชุดไอคอนสำหรับตารางไอคอนที่คัดสรรแล้วและลิงก์สำหรับเรียกดู

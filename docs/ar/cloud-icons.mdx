@@ -1,0 +1,44 @@
+---
+title: نظرة عامة على أيقونات البنية السحابية
+description: >-
+  نظرة عامة على حزم أيقونات خدمات AWS وAzure وGCP الملونة — أنماط الاستخدام
+  المشتركة وروابط صفحات كل حزمة.
+sidebar:
+  label: نظرة عامة على السحابة
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+توفر ثلاث حزم أيقونات أيقونات خدمات ملونة لتوثيق البنية التحتية السحابية. على عكس حزم الأيقونات أحادية اللون، تحافظ هذه الحزم على ألوان المزود الأصلية لمخططات البنية.
+
+## الحزم المتوفرة
+
+| الحزمة | الأيقونات | الحجم الافتراضي | الصفحة |
+|------|-------|-------------|------|
+| AWS Architecture | 885 | 48x48 | [AWS](/aws/) |
+| Azure Architecture | 606 | 18x18 | [Azure](/azure/) |
+| GCP Architecture | 216 | 24x24 | [GCP](/gcp/) |
+
+## الاستخدام
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## عرض الألوان
+
+تستخدم حزم الأيقونات هذه ألوان المزود الأصلية (وليس `currentColor`). يحافظ الصنف `no-invert` في بطاقات الأيقونات على الألوان في الوضع الداكن. عند استخدام هذه الأيقونات خارج تخطيط الشبكة، لا حاجة لمعالجة خاصة — فالألوان مضمنة في ترميز SVG.
+
+راجع الصفحة المخصصة لكل حزمة للاطلاع على شبكات الأيقونات المنظمة حسب فئة الخدمة.
+
+تصفح مجموعات الأيقونات الكاملة: [أيقونات AWS](https://aws.amazon.com/architecture/icons/) | [أيقونات Azure](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [أيقونات GCP](https://cloud.google.com/icons)

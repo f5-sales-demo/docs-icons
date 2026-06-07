@@ -1,0 +1,104 @@
+---
+title: Riferimento Icone
+description: >-
+  Panoramica di tutti i pacchetti di icone disponibili nel tema della
+  documentazione — utilizzo, comportamento in modalità scura e guida alla
+  selezione.
+sidebar:
+  label: Panoramica
+  order: 2
+i18n:
+  sourceHash: 2da27471772e
+  translator: machine
+---
+
+import { Icon } from '@astrojs/starlight/components';
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+
+Il tema della documentazione fornisce accesso a migliaia di icone da molteplici pacchetti. Ogni pacchetto utilizza lo stesso schema: importare il componente `Icon.astro` del pacchetto e fare riferimento alle icone per nome.
+
+## Pacchetti di Icone Disponibili
+
+| Pacchetto | Numero | Utilizzo | Pagina |
+|-----------|--------|----------|--------|
+| Starlight Integrato | ~200 | `<Icon name="star" />` | [Starlight Integrato](/starlight/) |
+| F5 Brand | 665 | `<Icon name="ai-admin" />` | [F5 Brand](/brand/) |
+| Lucide | ~1.600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
+| Material Design | 7.638 | `<Icon name="database" />` | [Material Design](/mdi/) |
+| Carbon | 2.582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
+| Phosphor | 9.161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
+| Tabler | 6.034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
+| F5 XC Services | 30 | `<Icon name="bot-defense" />` | [F5 XC Services](/f5xc/) |
+| Simple Icons | 3.200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
+| AWS Architecture | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| Azure Architecture | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| GCP Architecture | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+
+## Metodo di Rendering
+
+Tutti i pacchetti di icone utilizzano componenti `Icon.astro` per pacchetto che renderizzano SVG inline. Ogni pacchetto ha il proprio import:
+
+```astro
+---
+// Starlight built-in
+import { Icon } from '@astrojs/starlight/components';
+
+// Other packs — each has its own import
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+---
+
+<Icon name="star" />
+<LucideIcon name="rocket" />
+<MdiIcon name="database" />
+<F5xIcon name="bot-defense" />
+```
+
+Le icone utilizzano `currentColor` e si adattano automaticamente alla modalità chiara e scura senza necessità di gestione speciale.
+
+### Starlight Integrato
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="setting" size="1.5rem" /></div><div class="icon-card-label">setting</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
+</div>
+
+### Lucide
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><LucideIcon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><MdiIcon name="database" size="1.5rem" /></div><div class="icon-card-label">mdi/database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><CarbonIcon name="cloud" size="1.5rem" /></div><div class="icon-card-label">carbon/cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
+</div>
+
+## Comportamento Modalità Scura/Chiara
+
+Tutti i componenti `Icon` renderizzano SVG inline utilizzando `currentColor`. Si adattano automaticamente al tema corrente — non è necessaria alcuna gestione speciale di CSS o classi.
+
+Le icone dei servizi F5 XC utilizzano proprietà personalizzate CSS che si adattano automaticamente alla modalità chiara e scura — non è necessaria alcuna gestione speciale delle classi. Per altre icone multicolore (come le varianti a colori di HashiCorp Flight), la classe `no-invert` su `.icon-card-image` preserva i colori originali in modalità scura.
+
+## Quale Pacchetto Dovrei Usare?
+
+| Caso d'Uso | Pacchetto Consigliato | Perché |
+|------------|----------------------|--------|
+| UI generale (frecce, chiudi, cerca) | Starlight Integrato | Zero configurazione, sempre disponibile |
+| Diagrammi prodotti F5 | F5 Brand | Grafica specifica per networking/sicurezza |
+| Icone moderne con tratto | Lucide | Pulite, coerenti, oltre 1.600 icone |
+| Icone piene/contornate su larga scala | Material Design (mdi) | Il set più ampio con 7.638 icone |
+| Linguaggio di design IBM | Carbon | 2.582 icone di livello enterprise |
+| Opzioni flessibili di spessore | Phosphor | 9.161 icone con sei varianti di spessore |
+| Icone lineari nitide | Tabler | 6.034 icone con tratto coerente da 2px |
+| Diagrammi servizi F5 XC | F5 XC Services | 30 icone dei servizi Distributed Cloud |
+| Loghi di brand/aziende | Simple Icons | Oltre 3.200 icone brand per vendor e servizi |
+| Loghi vendor cloud/infrastruttura | HashiCorp Flight | Icone vendor per AWS, GCP, Azure, K8s |
+| Diagrammi architettura AWS | AWS Architecture | 885 icone a colori per infrastruttura AWS |
+| Diagrammi architettura Azure | Azure Architecture | 606 icone a colori per infrastruttura Azure |
+| Diagrammi architettura GCP | GCP Architecture | 216 icone a colori per infrastruttura Google Cloud |
