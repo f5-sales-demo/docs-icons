@@ -1,0 +1,96 @@
+---
+title: Phosphor Icons
+description: >-
+  Phosphor Icons के लिए क्यूरेटेड संदर्भ — Icon कंपोनेंट के माध्यम से उपलब्ध
+  लचीले वेट वेरिएंट के साथ 9,161 आइकन।
+sidebar:
+  label: Phosphor
+  order: 8
+i18n:
+  sourceHash: 65e65d0eee60
+  translator: machine
+---
+
+import Icon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+
+[Phosphor Icons](https://icon-sets.iconify.design/ph/) लचीले वेट विकल्पों — regular, bold, duotone, fill, light, और thin — के साथ 9,161 आइकन प्रदान करता है। किसी भी आइकन को नाम से रेंडर करने के लिए `@f5xc-salesdemos/icons-phosphor` से `Icon` कंपोनेंट का उपयोग करें।
+
+## उपयोग
+
+```astro
+---
+import Icon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+---
+
+<Icon name="globe" />
+<Icon name="shield" size="2rem" />
+<Icon name="cloud" size="1.5rem" label="Cloud" />
+```
+
+आइकन `currentColor` का उपयोग करके इनलाइन SVG के रूप में रेंडर होते हैं — वे स्वचालित रूप से लाइट और डार्क मोड के अनुसार अनुकूलित हो जाते हैं।
+
+:::note[वेट वेरिएंट]
+Phosphor आइकन छह वेट में उपलब्ध हैं। Regular वेट बेस नाम का उपयोग करता है (जैसे `globe`)। अन्य वेट एक प्रत्यय जोड़ते हैं: `globe-bold`, `globe-duotone`, `globe-fill`, `globe-light`, `globe-thin`। नीचे दिए गए उदाहरण regular वेट दिखाते हैं।
+:::
+
+## सामान्य
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="globe" size="1.5rem" /></div><div class="icon-card-label">globe</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="shield" size="1.5rem" /></div><div class="icon-card-label">shield</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud" size="1.5rem" /></div><div class="icon-card-label">cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="database" size="1.5rem" /></div><div class="icon-card-label">database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="lock" size="1.5rem" /></div><div class="icon-card-label">lock</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="user" size="1.5rem" /></div><div class="icon-card-label">user</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="gear" size="1.5rem" /></div><div class="icon-card-label">gear</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="code" size="1.5rem" /></div><div class="icon-card-label">code</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="terminal-window" size="1.5rem" /></div><div class="icon-card-label">terminal-window</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+</div>
+
+## तीर &amp; नेविगेशन
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="arrow-up" size="1.5rem" /></div><div class="icon-card-label">arrow-up</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="arrow-down" size="1.5rem" /></div><div class="icon-card-label">arrow-down</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="arrow-left" size="1.5rem" /></div><div class="icon-card-label">arrow-left</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="arrow-right" size="1.5rem" /></div><div class="icon-card-label">arrow-right</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="compass" size="1.5rem" /></div><div class="icon-card-label">compass</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="map-pin" size="1.5rem" /></div><div class="icon-card-label">map-pin</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="house" size="1.5rem" /></div><div class="icon-card-label">house</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="magnifying-glass" size="1.5rem" /></div><div class="icon-card-label">magnifying-glass</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="sign-in" size="1.5rem" /></div><div class="icon-card-label">sign-in</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="sign-out" size="1.5rem" /></div><div class="icon-card-label">sign-out</div></div>
+</div>
+
+## वस्तुएँ
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="file" size="1.5rem" /></div><div class="icon-card-label">file</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="folder" size="1.5rem" /></div><div class="icon-card-label">folder</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="key" size="1.5rem" /></div><div class="icon-card-label">key</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cpu" size="1.5rem" /></div><div class="icon-card-label">cpu</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="hard-drive" size="1.5rem" /></div><div class="icon-card-label">hard-drive</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="desktop" size="1.5rem" /></div><div class="icon-card-label">desktop</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="browser" size="1.5rem" /></div><div class="icon-card-label">browser</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="plug" size="1.5rem" /></div><div class="icon-card-label">plug</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="wrench" size="1.5rem" /></div><div class="icon-card-label">wrench</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="clipboard" size="1.5rem" /></div><div class="icon-card-label">clipboard</div></div>
+</div>
+
+## संचार
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="envelope" size="1.5rem" /></div><div class="icon-card-label">envelope</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="chat-text" size="1.5rem" /></div><div class="icon-card-label">chat-text</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="phone" size="1.5rem" /></div><div class="icon-card-label">phone</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bell" size="1.5rem" /></div><div class="icon-card-label">bell</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="broadcast" size="1.5rem" /></div><div class="icon-card-label">broadcast</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="wifi-high" size="1.5rem" /></div><div class="icon-card-label">wifi-high</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="share-network" size="1.5rem" /></div><div class="icon-card-label">share-network</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="link" size="1.5rem" /></div><div class="icon-card-label">link</div></div>
+</div>
+
+## सभी आइकन ब्राउज़ करें
+
+सभी वेट वेरिएंट सहित 9,161 Phosphor Icons की पूरी सूची के लिए, [Iconify Phosphor एक्सप्लोरर](https://icon-sets.iconify.design/ph/) पर जाएँ।

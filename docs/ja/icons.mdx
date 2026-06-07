@@ -1,0 +1,101 @@
+---
+title: アイコンリファレンス
+description: ドキュメントテーマで利用可能なすべてのアイコンパックの概要 — 使用方法、ダークモードの動作、選択ガイド。
+sidebar:
+  label: 概要
+  order: 2
+i18n:
+  sourceHash: 2da27471772e
+  translator: machine
+---
+
+import { Icon } from '@astrojs/starlight/components';
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+
+ドキュメントテーマでは、複数のパックから数千のアイコンにアクセスできます。すべてのパックは同じパターンを使用します：パックの `Icon.astro` コンポーネントをインポートし、名前でアイコンを参照します。
+
+## 利用可能なアイコンパック
+
+| パック | 数量 | 使用方法 | ページ |
+|------|-------|-------|------|
+| Starlight 組み込み | 約200 | `<Icon name="star" />` | [Starlight 組み込み](/starlight/) |
+| F5 ブランド | 665 | `<Icon name="ai-admin" />` | [F5 ブランド](/brand/) |
+| Lucide | 約1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
+| Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
+| Carbon | 2,582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
+| Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
+| Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
+| F5 XC サービス | 30 | `<Icon name="bot-defense" />` | [F5 XC サービス](/f5xc/) |
+| Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
+| AWS アーキテクチャ | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| Azure アーキテクチャ | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| GCP アーキテクチャ | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+
+## レンダリング方法
+
+すべてのアイコンパックは、パッケージごとの `Icon.astro` コンポーネントを使用してインライン SVG をレンダリングします。各パックには独自のインポートがあります：
+
+```astro
+---
+// Starlight 組み込み
+import { Icon } from '@astrojs/starlight/components';
+
+// その他のパック — それぞれ独自のインポートがあります
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+---
+
+<Icon name="star" />
+<LucideIcon name="rocket" />
+<MdiIcon name="database" />
+<F5xIcon name="bot-defense" />
+```
+
+アイコンは `currentColor` を使用し、特別な処理なしでライトモードとダークモードに自動的に適応します。
+
+### Starlight 組み込み
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="setting" size="1.5rem" /></div><div class="icon-card-label">setting</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
+</div>
+
+### Lucide
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><LucideIcon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><MdiIcon name="database" size="1.5rem" /></div><div class="icon-card-label">mdi/database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><CarbonIcon name="cloud" size="1.5rem" /></div><div class="icon-card-label">carbon/cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
+</div>
+
+## ダーク/ライトモードの動作
+
+すべての `Icon` コンポーネントは `currentColor` を使用してインライン SVG をレンダリングします。現在のテーマに自動的に適応するため、特別な CSS やクラス処理は不要です。
+
+F5 XC サービスアイコンは、ライトモードとダークモードに自動的に適応する CSS カスタムプロパティを使用しており、特別なクラス処理は不要です。その他のマルチカラーアイコン（HashiCorp Flight のカラーバリアントなど）については、`.icon-card-image` の `no-invert` クラスがダークモードで元の色を保持します。
+
+## どのパックを使うべきか？
+
+| ユースケース | 推奨パック | 理由 |
+|----------|------------------|-----|
+| 一般的な UI（矢印、閉じる、検索） | Starlight 組み込み | 設定不要、常に利用可能 |
+| F5 製品ダイアグラム | F5 ブランド | ネットワーキング/セキュリティ分野に特化したアート |
+| モダンなストロークアイコン | Lucide | クリーンで一貫性のある 1,600 以上のアイコン |
+| 大規模な塗りつぶし/アウトラインアイコン | Material Design (mdi) | 7,638 アイコンの最大セット |
+| IBM デザイン言語 | Carbon | 2,582 のエンタープライズグレードアイコン |
+| 柔軟なウェイトオプション | Phosphor | 6 つのウェイトバリアントを持つ 9,161 アイコン |
+| シャープなラインアイコン | Tabler | 一貫した 2px ストロークの 6,034 アイコン |
+| F5 XC サービスダイアグラム | F5 XC サービス | 30 の Distributed Cloud サービスアイコン |
+| ブランド/企業ロゴ | Simple Icons | ベンダーやサービスの 3,200 以上のブランドアイコン |
+| クラウド/インフラベンダーロゴ | HashiCorp Flight | AWS、GCP、Azure、K8s ベンダーアイコン |
+| AWS アーキテクチャダイアグラム | AWS アーキテクチャ | AWS インフラ用の 885 カラーサービスアイコン |
+| Azure アーキテクチャダイアグラム | Azure アーキテクチャ | Azure インフラ用の 606 カラーサービスアイコン |
+| GCP アーキテクチャダイアグラム | GCP アーキテクチャ | Google Cloud インフラ用の 216 カラーサービスアイコン |

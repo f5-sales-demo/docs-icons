@@ -1,0 +1,44 @@
+---
+title: Aperçu des icônes d'architecture cloud
+description: >-
+  Aperçu des packs d'icônes de services en couleur AWS, Azure et GCP — modèles
+  d'utilisation partagés et liens vers les pages individuelles de chaque pack.
+sidebar:
+  label: Aperçu Cloud
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+Trois packs d'icônes fournissent des icônes de services en couleur pour documenter les infrastructures cloud. Contrairement aux packs d'icônes monochromes, ceux-ci conservent les couleurs originales des fournisseurs pour les diagrammes d'architecture.
+
+## Packs disponibles
+
+| Pack | Icônes | Taille par défaut | Page |
+|------|--------|-------------------|------|
+| AWS Architecture | 885 | 48x48 | [AWS](/aws/) |
+| Azure Architecture | 606 | 18x18 | [Azure](/azure/) |
+| GCP Architecture | 216 | 24x24 | [GCP](/gcp/) |
+
+## Utilisation
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## Rendu des couleurs
+
+Ces packs d'icônes utilisent les couleurs originales des fournisseurs (et non `currentColor`). La classe `no-invert` sur les cartes d'icônes préserve les couleurs en mode sombre. Lorsque vous utilisez ces icônes en dehors de la disposition en grille, aucun traitement particulier n'est nécessaire — les couleurs sont intégrées dans le balisage SVG.
+
+Consultez la page dédiée de chaque pack pour des grilles d'icônes organisées par catégorie de service.
+
+Parcourir les ensembles complets d'icônes : [Icônes AWS](https://aws.amazon.com/architecture/icons/) | [Icônes Azure](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [Icônes GCP](https://cloud.google.com/icons)

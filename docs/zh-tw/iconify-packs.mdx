@@ -1,0 +1,50 @@
+---
+title: Iconify 圖示套件總覽
+description: Material Design、Carbon、Phosphor 及 Tabler 圖示套件的總覽 — 比較、共用使用模式，以及各套件頁面的連結。
+sidebar:
+  label: Iconify 總覽
+  order: 10
+i18n:
+  sourceHash: 853482de4a8c
+  translator: machine
+---
+
+多個 Iconify 圖示套件以 npm 套件形式提供，搭配 Astro `Icon` 元件使用。每個套件都有自己的匯入方式，並使用相同的基於 `name` 的 API。
+
+## 套件比較
+
+| 套件 | 前綴 | 圖示數量 | 風格 | 最適合用途 | 頁面 |
+|------|--------|-------|-------|----------|------|
+| Material Design | `mdi` | 7,638 | 填滿 + 輪廓 | 通用型，涵蓋範圍最廣 | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2,582 | 輪廓 | 企業/IBM 設計，線條簡潔 | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9,161 | 多種粗細 | 靈活的粗細選項（從細到填滿） | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6,034 | 筆畫型 | 清晰的線條圖示，一致的筆畫 | [Tabler](/tabler/) |
+
+## 使用方式
+
+每個套件都有自己的 `Icon.astro` 元件：
+
+```astro
+---
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import PhIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+---
+
+<MdiIcon name="database" />
+<CarbonIcon name="cloud" />
+<PhIcon name="globe" />
+<TablerIcon name="shield" />
+```
+
+圖示會以內嵌 SVG 方式呈現，使用 `currentColor` — 它們會自動適應淺色和深色模式。
+
+## 選擇套件
+
+- **涵蓋範圍最廣**：Material Design Icons 擁有最多圖示（7,638 個），提供填滿和輪廓變體，幾乎涵蓋所有使用情境。
+- **企業設計**：Carbon 遵循 IBM 的設計語言，具有簡潔、一致的輪廓風格，適合商業應用。
+- **粗細靈活性**：Phosphor 提供六種粗細變體（細、輕、一般、粗、填滿、雙色調），可精細調整視覺粗細。
+- **一致的筆畫**：Tabler 在所有 6,034 個圖示中使用統一的 2px 筆畫寬度，呈現一致的外觀。
+
+請參閱各套件的專屬頁面，瀏覽精選圖示網格和瀏覽連結。

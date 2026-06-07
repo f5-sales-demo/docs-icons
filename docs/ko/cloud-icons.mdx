@@ -1,0 +1,42 @@
+---
+title: 클라우드 아키텍처 아이콘 개요
+description: 'AWS, Azure, GCP 컬러 서비스 아이콘 팩 개요 — 공통 사용 패턴 및 개별 팩 페이지 링크.'
+sidebar:
+  label: 클라우드 개요
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+세 가지 아이콘 팩은 클라우드 인프라 문서화를 위한 컬러 서비스 아이콘을 제공합니다. 모노크롬 아이콘 팩과 달리, 이 팩들은 아키텍처 다이어그램에서 원래 벤더 색상을 유지합니다.
+
+## 사용 가능한 팩
+
+| 팩 | 아이콘 수 | 기본 크기 | 페이지 |
+|------|-------|-------------|------|
+| AWS 아키텍처 | 885 | 48x48 | [AWS](/aws/) |
+| Azure 아키텍처 | 606 | 18x18 | [Azure](/azure/) |
+| GCP 아키텍처 | 216 | 24x24 | [GCP](/gcp/) |
+
+## 사용법
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## 색상 렌더링
+
+이 아이콘 팩들은 `currentColor`가 아닌 원래 벤더 색상을 사용합니다. 아이콘 카드의 `no-invert` 클래스는 다크 모드에서 색상을 보존합니다. 그리드 레이아웃 외부에서 이 아이콘들을 사용할 때는 특별한 처리가 필요하지 않습니다 — 색상이 SVG 마크업에 내장되어 있습니다.
+
+서비스 카테고리별로 정리된 큐레이션된 아이콘 그리드는 각 팩의 전용 페이지를 참조하세요.
+
+전체 아이콘 세트 보기: [AWS 아이콘](https://aws.amazon.com/architecture/icons/) | [Azure 아이콘](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [GCP 아이콘](https://cloud.google.com/icons)

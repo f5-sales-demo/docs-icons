@@ -1,0 +1,103 @@
+---
+title: Icon Reference
+description: >-
+  ภาพรวมของชุดไอคอนทั้งหมดที่มีในธีมเอกสาร — การใช้งาน พฤติกรรมโหมดมืด
+  และแนวทางการเลือก
+sidebar:
+  label: ภาพรวม
+  order: 2
+i18n:
+  sourceHash: 2da27471772e
+  translator: machine
+---
+
+import { Icon } from '@astrojs/starlight/components';
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+
+ธีมเอกสารให้การเข้าถึงไอคอนหลายพันรายการจากหลายชุด ทุกชุดใช้รูปแบบเดียวกัน: นำเข้าคอมโพเนนต์ `Icon.astro` ของชุดนั้นๆ และอ้างอิงไอคอนด้วยชื่อ
+
+## ชุดไอคอนที่มีให้ใช้งาน
+
+| ชุด | จำนวน | การใช้งาน | หน้า |
+|------|-------|-------|------|
+| Starlight Built-in | ~200 | `<Icon name="star" />` | [Starlight Built-in](/starlight/) |
+| F5 Brand | 665 | `<Icon name="ai-admin" />` | [F5 Brand](/brand/) |
+| Lucide | ~1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
+| Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
+| Carbon | 2,582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
+| Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
+| Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
+| F5 XC Services | 30 | `<Icon name="bot-defense" />` | [F5 XC Services](/f5xc/) |
+| Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
+| AWS Architecture | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| Azure Architecture | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| GCP Architecture | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+
+## วิธีการเรนเดอร์
+
+ชุดไอคอนทั้งหมดใช้คอมโพเนนต์ `Icon.astro` แบบแยกตามแพ็กเกจที่เรนเดอร์ SVG แบบอินไลน์ แต่ละชุดมีการนำเข้าของตัวเอง:
+
+```astro
+---
+// Starlight built-in
+import { Icon } from '@astrojs/starlight/components';
+
+// Other packs — each has its own import
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+---
+
+<Icon name="star" />
+<LucideIcon name="rocket" />
+<MdiIcon name="database" />
+<F5xIcon name="bot-defense" />
+```
+
+ไอคอนใช้ `currentColor` และปรับตัวตามโหมดสว่างและโหมดมืดโดยอัตโนมัติโดยไม่ต้องจัดการพิเศษใดๆ
+
+### Starlight Built-in
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="setting" size="1.5rem" /></div><div class="icon-card-label">setting</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
+</div>
+
+### Lucide
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><LucideIcon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><MdiIcon name="database" size="1.5rem" /></div><div class="icon-card-label">mdi/database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><CarbonIcon name="cloud" size="1.5rem" /></div><div class="icon-card-label">carbon/cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
+</div>
+
+## พฤติกรรมโหมดมืด/สว่าง
+
+คอมโพเนนต์ `Icon` ทั้งหมดเรนเดอร์ SVG แบบอินไลน์โดยใช้ `currentColor` ซึ่งปรับตัวตามธีมปัจจุบันโดยอัตโนมัติ — ไม่จำเป็นต้องจัดการ CSS หรือคลาสพิเศษใดๆ
+
+ไอคอน F5 XC service ใช้ CSS custom properties ที่ปรับตัวตามโหมดสว่างและโหมดมืดโดยอัตโนมัติ — ไม่จำเป็นต้องจัดการคลาสพิเศษ สำหรับไอคอนหลายสีอื่นๆ (เช่น ตัวแปรสีของ HashiCorp Flight) คลาส `no-invert` บน `.icon-card-image` จะรักษาสีดั้งเดิมในโหมดมืด
+
+## ควรใช้ชุดไหนดี?
+
+| กรณีการใช้งาน | ชุดที่แนะนำ | เหตุผล |
+|----------|------------------|-----|
+| UI ทั่วไป (ลูกศร, ปิด, ค้นหา) | Starlight Built-in | ไม่ต้องตั้งค่า พร้อมใช้งานเสมอ |
+| แผนภาพผลิตภัณฑ์ F5 | F5 Brand | งานศิลป์เฉพาะด้านเครือข่าย/ความปลอดภัย |
+| ไอคอนเส้นขอบทันสมัย | Lucide | สะอาด สม่ำเสมอ มากกว่า 1,600 ไอคอน |
+| ไอคอนแบบเติมสี/เส้นขอบจำนวนมาก | Material Design (mdi) | ชุดใหญ่ที่สุดด้วยไอคอน 7,638 รายการ |
+| ภาษาการออกแบบ IBM | Carbon | ไอคอนระดับองค์กร 2,582 รายการ |
+| ตัวเลือกน้ำหนักเส้นที่ยืดหยุ่น | Phosphor | ไอคอน 9,161 รายการพร้อมตัวแปรน้ำหนัก 6 แบบ |
+| ไอคอนเส้นคมชัด | Tabler | ไอคอน 6,034 รายการพร้อมเส้นขอบ 2px สม่ำเสมอ |
+| แผนภาพบริการ F5 XC | F5 XC Services | ไอคอนบริการ Distributed Cloud 30 รายการ |
+| โลโก้แบรนด์/บริษัท | Simple Icons | ไอคอนแบรนด์มากกว่า 3,200 รายการสำหรับผู้ให้บริการและบริการต่างๆ |
+| โลโก้ผู้ให้บริการคลาวด์/โครงสร้างพื้นฐาน | HashiCorp Flight | ไอคอนผู้ให้บริการ AWS, GCP, Azure, K8s |
+| แผนภาพสถาปัตยกรรม AWS | AWS Architecture | ไอคอนบริการสีจำนวน 885 รายการสำหรับโครงสร้างพื้นฐาน AWS |
+| แผนภาพสถาปัตยกรรม Azure | Azure Architecture | ไอคอนบริการสีจำนวน 606 รายการสำหรับโครงสร้างพื้นฐาน Azure |
+| แผนภาพสถาปัตยกรรม GCP | GCP Architecture | ไอคอนบริการสีจำนวน 216 รายการสำหรับโครงสร้างพื้นฐาน Google Cloud |

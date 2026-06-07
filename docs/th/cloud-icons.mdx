@@ -1,0 +1,44 @@
+---
+title: ภาพรวมไอคอนสถาปัตยกรรมคลาวด์
+description: >-
+  ภาพรวมของชุดไอคอนบริการสีสำหรับ AWS, Azure และ GCP —
+  รูปแบบการใช้งานร่วมกันและลิงก์ไปยังหน้าชุดไอคอนแต่ละชุด
+sidebar:
+  label: ภาพรวมคลาวด์
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+ชุดไอคอนสามชุดให้ไอคอนบริการสีสำหรับการจัดทำเอกสารโครงสร้างพื้นฐานคลาวด์ ไม่เหมือนกับชุดไอคอนขาวดำ ชุดเหล่านี้จะคงสีต้นฉบับของผู้ให้บริการไว้สำหรับแผนภาพสถาปัตยกรรม
+
+## ชุดไอคอนที่มีให้บริการ
+
+| ชุด | จำนวนไอคอน | ขนาดเริ่มต้น | หน้า |
+|------|-------|-------------|------|
+| AWS Architecture | 885 | 48x48 | [AWS](/aws/) |
+| Azure Architecture | 606 | 18x18 | [Azure](/azure/) |
+| GCP Architecture | 216 | 24x24 | [GCP](/gcp/) |
+
+## การใช้งาน
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## การแสดงผลสี
+
+ชุดไอคอนเหล่านี้ใช้สีต้นฉบับของผู้ให้บริการ (ไม่ใช่ `currentColor`) คลาส `no-invert` บนการ์ดไอคอนจะคงสีไว้ในโหมดมืด เมื่อใช้ไอคอนเหล่านี้นอกเลย์เอาต์แบบกริด ไม่จำเป็นต้องมีการจัดการพิเศษ — สีถูกฝังไว้ในมาร์กอัป SVG
+
+ดูหน้าเฉพาะของแต่ละชุดไอคอนสำหรับกริดไอคอนที่จัดเรียงตามหมวดหมู่บริการ
+
+เรียกดูชุดไอคอนทั้งหมด: [AWS Icons](https://aws.amazon.com/architecture/icons/) | [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [GCP Icons](https://cloud.google.com/icons)

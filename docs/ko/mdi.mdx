@@ -1,0 +1,93 @@
+---
+title: Material Design Icons
+description: 'Material Design Icons에 대한 엄선된 참조 — Icon 컴포넌트를 통해 사용할 수 있는 7,638개의 채움 및 윤곽 아이콘.'
+sidebar:
+  label: Material Design
+  order: 6
+i18n:
+  sourceHash: '1211107e2988'
+  translator: machine
+---
+
+import Icon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+
+[Material Design Icons](https://icon-sets.iconify.design/mdi/)는 거의 모든 사용 사례를 포괄하는 7,638개의 채움 및 윤곽 변형 아이콘을 제공합니다. `@f5xc-salesdemos/icons-mdi`의 `Icon` 컴포넌트를 사용하여 이름으로 아이콘을 렌더링할 수 있습니다.
+
+## 사용법
+
+```astro
+---
+import Icon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+---
+
+<Icon name="database" />
+<Icon name="shield-lock" size="2rem" />
+<Icon name="cloud" size="1.5rem" label="Cloud" />
+```
+
+아이콘은 `currentColor`를 사용하는 인라인 SVG로 렌더링되므로 라이트 모드와 다크 모드에 자동으로 적응합니다.
+
+## 일반
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="account" size="1.5rem" /></div><div class="icon-card-label">account</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cog" size="1.5rem" /></div><div class="icon-card-label">cog</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="file-document" size="1.5rem" /></div><div class="icon-card-label">file-document</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="chart-bar" size="1.5rem" /></div><div class="icon-card-label">chart-bar</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="alert" size="1.5rem" /></div><div class="icon-card-label">alert</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="check-circle" size="1.5rem" /></div><div class="icon-card-label">check-circle</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="robot" size="1.5rem" /></div><div class="icon-card-label">robot</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="monitor-dashboard" size="1.5rem" /></div><div class="icon-card-label">monitor-dashboard</div></div>
+</div>
+
+## 네트워킹
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="network" size="1.5rem" /></div><div class="icon-card-label">network</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="lan" size="1.5rem" /></div><div class="icon-card-label">lan</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="dns" size="1.5rem" /></div><div class="icon-card-label">dns</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="web" size="1.5rem" /></div><div class="icon-card-label">web</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="api" size="1.5rem" /></div><div class="icon-card-label">api</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="earth" size="1.5rem" /></div><div class="icon-card-label">earth</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="access-point" size="1.5rem" /></div><div class="icon-card-label">access-point</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="access-point-network" size="1.5rem" /></div><div class="icon-card-label">access-point-network</div></div>
+</div>
+
+## 보안
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="shield-lock" size="1.5rem" /></div><div class="icon-card-label">shield-lock</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="lock" size="1.5rem" /></div><div class="icon-card-label">lock</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="key" size="1.5rem" /></div><div class="icon-card-label">key</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="fire" size="1.5rem" /></div><div class="icon-card-label">fire</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="eye" size="1.5rem" /></div><div class="icon-card-label">eye</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="incognito" size="1.5rem" /></div><div class="icon-card-label">incognito</div></div>
+</div>
+
+## 클라우드 &amp; DevOps
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud" size="1.5rem" /></div><div class="icon-card-label">cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="server" size="1.5rem" /></div><div class="icon-card-label">server</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="database" size="1.5rem" /></div><div class="icon-card-label">database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="kubernetes" size="1.5rem" /></div><div class="icon-card-label">kubernetes</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="docker" size="1.5rem" /></div><div class="icon-card-label">docker</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="terraform" size="1.5rem" /></div><div class="icon-card-label">terraform</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="console" size="1.5rem" /></div><div class="icon-card-label">console</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="memory" size="1.5rem" /></div><div class="icon-card-label">memory</div></div>
+</div>
+
+## 데이터 &amp; 분석
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="code-tags" size="1.5rem" /></div><div class="icon-card-label">code-tags</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="github" size="1.5rem" /></div><div class="icon-card-label">github</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="lightning-bolt" size="1.5rem" /></div><div class="icon-card-label">lightning-bolt</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="source-branch" size="1.5rem" /></div><div class="icon-card-label">source-branch</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="clipboard-text" size="1.5rem" /></div><div class="icon-card-label">clipboard-text</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="magnify" size="1.5rem" /></div><div class="icon-card-label">magnify</div></div>
+</div>
+
+## 전체 아이콘 탐색
+
+7,638개의 Material Design Icons 전체 목록을 보려면 [Iconify MDI 탐색기](https://icon-sets.iconify.design/mdi/)를 방문하세요.

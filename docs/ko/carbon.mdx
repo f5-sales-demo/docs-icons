@@ -1,0 +1,93 @@
+---
+title: Carbon Icons
+description: >-
+  Carbon Icons 큐레이션 레퍼런스 — IBM 디자인 언어에서 제공하는 2,582개의 엔터프라이즈급 아이콘을 Icon 컴포넌트를 통해
+  사용할 수 있습니다.
+sidebar:
+  label: Carbon
+  order: 7
+i18n:
+  sourceHash: c4fd1e4f8504
+  translator: machine
+---
+
+import Icon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+
+[Carbon Icons](https://icon-sets.iconify.design/carbon/)는 IBM의 엔터프라이즈 디자인 언어에서 제공하는 2,582개의 깔끔한 아웃라인 아이콘을 제공합니다. `@f5xc-salesdemos/icons-carbon`의 `Icon` 컴포넌트를 사용하여 이름으로 아이콘을 렌더링할 수 있습니다.
+
+## 사용법
+
+```astro
+---
+import Icon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+---
+
+<Icon name="cloud" />
+<Icon name="security" size="2rem" />
+<Icon name="network-3" size="1.5rem" label="Network" />
+```
+
+아이콘은 `currentColor`를 사용하는 인라인 SVG로 렌더링되므로 라이트 모드와 다크 모드에 자동으로 적응합니다.
+
+## 일반
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="application" size="1.5rem" /></div><div class="icon-card-label">application</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="dashboard" size="1.5rem" /></div><div class="icon-card-label">dashboard</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="settings" size="1.5rem" /></div><div class="icon-card-label">settings</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="user" size="1.5rem" /></div><div class="icon-card-label">user</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="document" size="1.5rem" /></div><div class="icon-card-label">document</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="search" size="1.5rem" /></div><div class="icon-card-label">search</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="notification" size="1.5rem" /></div><div class="icon-card-label">notification</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="earth" size="1.5rem" /></div><div class="icon-card-label">earth</div></div>
+</div>
+
+## 네트워킹
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="network-3" size="1.5rem" /></div><div class="icon-card-label">network-3</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="connection-signal" size="1.5rem" /></div><div class="icon-card-label">connection-signal</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="connection-two-way" size="1.5rem" /></div><div class="icon-card-label">connection-two-way</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="content-delivery-network" size="1.5rem" /></div><div class="icon-card-label">content-delivery-network</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="api" size="1.5rem" /></div><div class="icon-card-label">api</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="globe" size="1.5rem" /></div><div class="icon-card-label">globe</div></div>
+</div>
+
+## 클라우드
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud" size="1.5rem" /></div><div class="icon-card-label">cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud-monitoring" size="1.5rem" /></div><div class="icon-card-label">cloud-monitoring</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud-app" size="1.5rem" /></div><div class="icon-card-label">cloud-app</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud-logging" size="1.5rem" /></div><div class="icon-card-label">cloud-logging</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud-satellite" size="1.5rem" /></div><div class="icon-card-label">cloud-satellite</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cloud-download" size="1.5rem" /></div><div class="icon-card-label">cloud-download</div></div>
+</div>
+
+## 데이터 &amp; 분석
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="data-base" size="1.5rem" /></div><div class="icon-card-label">data-base</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="chart-bar" size="1.5rem" /></div><div class="icon-card-label">chart-bar</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="analytics" size="1.5rem" /></div><div class="icon-card-label">analytics</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="chart-network" size="1.5rem" /></div><div class="icon-card-label">chart-network</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="filter" size="1.5rem" /></div><div class="icon-card-label">filter</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="folder" size="1.5rem" /></div><div class="icon-card-label">folder</div></div>
+</div>
+
+## 인터페이스
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="terminal" size="1.5rem" /></div><div class="icon-card-label">terminal</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="code" size="1.5rem" /></div><div class="icon-card-label">code</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="security" size="1.5rem" /></div><div class="icon-card-label">security</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="warning" size="1.5rem" /></div><div class="icon-card-label">warning</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="checkmark" size="1.5rem" /></div><div class="icon-card-label">checkmark</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="email" size="1.5rem" /></div><div class="icon-card-label">email</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="download" size="1.5rem" /></div><div class="icon-card-label">download</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="upload" size="1.5rem" /></div><div class="icon-card-label">upload</div></div>
+</div>
+
+## 전체 아이콘 탐색
+
+2,582개의 Carbon Icons 전체 목록을 확인하려면 [Iconify Carbon 탐색기](https://icon-sets.iconify.design/carbon/)를 방문하세요.

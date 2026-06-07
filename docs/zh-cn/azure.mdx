@@ -1,0 +1,110 @@
+---
+title: Azure 架构图标
+description: Azure 架构图标精选参考 — 606 个彩色服务图标，适用于云基础设施图表和文档。
+sidebar:
+  label: Azure
+  order: 15
+i18n:
+  sourceHash: 9ce4630285f8
+  translator: machine
+---
+
+import Icon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+
+[Azure 架构图标](https://learn.microsoft.com/en-us/azure/architecture/icons/) 提供了 606 个彩色服务图标，用于记录 Azure 基础设施。使用 `@f5xc-salesdemos/icons-azure` 中的 `Icon` 组件，可以按名称渲染任意图标。默认尺寸为 18x18，带有渐变填充。
+
+## 用法
+
+```astro
+---
+import Icon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+---
+
+<Icon name="virtual-machine" />
+<Icon name="kubernetes-services" size="2rem" />
+<Icon name="load-balancers" size="1.5rem" label="Load Balancer" />
+```
+
+这些图标使用原始供应商颜色（而非 `currentColor`）。颜色嵌入在 SVG 标记中，在浅色和深色模式下均保持不变。
+
+## 计算
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="virtual-machine" size="1.5rem" /></div><div class="icon-card-label">virtual-machine</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="function-apps" size="1.5rem" /></div><div class="icon-card-label">function-apps</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="kubernetes-services" size="1.5rem" /></div><div class="icon-card-label">kubernetes-services</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="app-services" size="1.5rem" /></div><div class="icon-card-label">app-services</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="container-instances" size="1.5rem" /></div><div class="icon-card-label">container-instances</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="container-registries" size="1.5rem" /></div><div class="icon-card-label">container-registries</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="vm-scale-sets" size="1.5rem" /></div><div class="icon-card-label">vm-scale-sets</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="batch-accounts" size="1.5rem" /></div><div class="icon-card-label">batch-accounts</div></div>
+</div>
+
+## 网络
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="load-balancers" size="1.5rem" /></div><div class="icon-card-label">load-balancers</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="application-gateways" size="1.5rem" /></div><div class="icon-card-label">application-gateways</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="virtual-networks" size="1.5rem" /></div><div class="icon-card-label">virtual-networks</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="dns-zones" size="1.5rem" /></div><div class="icon-card-label">dns-zones</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="front-door-and-cdn-profiles" size="1.5rem" /></div><div class="icon-card-label">front-door-and-cdn-profiles</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="firewalls" size="1.5rem" /></div><div class="icon-card-label">firewalls</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="expressroute-circuits" size="1.5rem" /></div><div class="icon-card-label">expressroute-circuits</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="virtual-wans" size="1.5rem" /></div><div class="icon-card-label">virtual-wans</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="traffic-manager-profiles" size="1.5rem" /></div><div class="icon-card-label">traffic-manager-profiles</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="nat" size="1.5rem" /></div><div class="icon-card-label">nat</div></div>
+</div>
+
+## 数据与存储
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="storage-accounts" size="1.5rem" /></div><div class="icon-card-label">storage-accounts</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="azure-cosmos-db" size="1.5rem" /></div><div class="icon-card-label">azure-cosmos-db</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="sql-database" size="1.5rem" /></div><div class="icon-card-label">sql-database</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cache-redis" size="1.5rem" /></div><div class="icon-card-label">cache-redis</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="azure-database-postgresql-server" size="1.5rem" /></div><div class="icon-card-label">azure-database-postgresql-server</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="azure-database-mysql-server" size="1.5rem" /></div><div class="icon-card-label">azure-database-mysql-server</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="azure-synapse-analytics" size="1.5rem" /></div><div class="icon-card-label">azure-synapse-analytics</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="data-factories" size="1.5rem" /></div><div class="icon-card-label">data-factories</div></div>
+</div>
+
+## 安全与身份
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="key-vaults" size="1.5rem" /></div><div class="icon-card-label">key-vaults</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="microsoft-defender-for-cloud" size="1.5rem" /></div><div class="icon-card-label">microsoft-defender-for-cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="azure-sentinel" size="1.5rem" /></div><div class="icon-card-label">azure-sentinel</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="application-security-groups" size="1.5rem" /></div><div class="icon-card-label">application-security-groups</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="entra-id-protection" size="1.5rem" /></div><div class="icon-card-label">entra-id-protection</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="ddos-protection-plans" size="1.5rem" /></div><div class="icon-card-label">ddos-protection-plans</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="conditional-access" size="1.5rem" /></div><div class="icon-card-label">conditional-access</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="web-application-firewall-policieswaf" size="1.5rem" /></div><div class="icon-card-label">web-application-firewall-policieswaf</div></div>
+</div>
+
+## AI 与机器学习
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="azure-openai" size="1.5rem" /></div><div class="icon-card-label">azure-openai</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="machine-learning" size="1.5rem" /></div><div class="icon-card-label">machine-learning</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cognitive-services" size="1.5rem" /></div><div class="icon-card-label">cognitive-services</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bot-services" size="1.5rem" /></div><div class="icon-card-label">bot-services</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="ai-studio" size="1.5rem" /></div><div class="icon-card-label">ai-studio</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="computer-vision" size="1.5rem" /></div><div class="icon-card-label">computer-vision</div></div>
+</div>
+
+## 管理
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="monitor" size="1.5rem" /></div><div class="icon-card-label">monitor</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="log-analytics-workspaces" size="1.5rem" /></div><div class="icon-card-label">log-analytics-workspaces</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="application-insights" size="1.5rem" /></div><div class="icon-card-label">application-insights</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="automation-accounts" size="1.5rem" /></div><div class="icon-card-label">automation-accounts</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="policy" size="1.5rem" /></div><div class="icon-card-label">policy</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="advisor" size="1.5rem" /></div><div class="icon-card-label">advisor</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="cost-management" size="1.5rem" /></div><div class="icon-card-label">cost-management</div></div>
+  <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="management-groups" size="1.5rem" /></div><div class="icon-card-label">management-groups</div></div>
+</div>
+
+## 浏览所有图标
+
+如需查看完整的 606 个 Azure 架构图标列表，请访问 [Microsoft Azure 架构图标](https://learn.microsoft.com/en-us/azure/architecture/icons/) 页面。

@@ -1,0 +1,52 @@
+---
+title: نظرة عامة على حزم Iconify
+description: >-
+  Overview of Material Design, Carbon, Phosphor, and Tabler icon packs —
+  comparison, shared usage patterns, and links to individual pack pages.
+sidebar:
+  label: نظرة عامة على Iconify
+  order: 10
+i18n:
+  sourceHash: 853482de4a8c
+  translator: machine
+---
+
+تتوفر عدة حزم أيقونات من Iconify كحزم npm مع مكونات `Icon` في Astro. كل حزمة لها استيرادها الخاص وتستخدم نفس واجهة برمجة التطبيقات المبنية على `name`.
+
+## مقارنة الحزم
+
+| الحزمة | البادئة | الأيقونات | النمط | الأنسب لـ | الصفحة |
+|------|--------|-------|-------|----------|------|
+| Material Design | `mdi` | 7,638 | مملوءة + مُحدّدة | الاستخدام العام، التغطية الأوسع | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2,582 | مُحدّدة | تصميم المؤسسات/IBM، خطوط نظيفة | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9,161 | أوزان متعددة | خيارات أوزان مرنة (من الرفيع إلى المملوء) | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6,034 | قائمة على الحدود | أيقونات خطية واضحة، حدود متسقة | [Tabler](/tabler/) |
+
+## الاستخدام
+
+كل حزمة لها مكون `Icon.astro` خاص بها:
+
+```astro
+---
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import PhIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+---
+
+<MdiIcon name="database" />
+<CarbonIcon name="cloud" />
+<PhIcon name="globe" />
+<TablerIcon name="shield" />
+```
+
+تُعرض الأيقونات كعناصر SVG مضمّنة باستخدام `currentColor` — فتتكيف تلقائيًا مع الوضع الفاتح والداكن.
+
+## اختيار الحزمة المناسبة
+
+- **التغطية الأوسع**: تمتلك Material Design Icons أكبر عدد من الأيقونات (7,638) مع متغيرات مملوءة ومُحدّدة لكل حالة استخدام تقريبًا.
+- **تصميم المؤسسات**: تتبع Carbon لغة تصميم IBM بخطوط محددة نظيفة ومتسقة مناسبة لتطبيقات الأعمال.
+- **مرونة الأوزان**: توفر Phosphor ستة متغيرات للوزن (رفيع، خفيف، عادي، عريض، مملوء، ثنائي اللون) لضبط الوزن البصري بدقة.
+- **حدود متسقة**: تستخدم Tabler عرض حد موحد بمقدار 2 بكسل عبر جميع الأيقونات البالغ عددها 6,034 للحصول على مظهر متماسك.
+
+راجع الصفحة المخصصة لكل حزمة للاطلاع على شبكات الأيقونات المُنتقاة وروابط التصفح.

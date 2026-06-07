@@ -1,0 +1,42 @@
+---
+title: 云架构图标概览
+description: AWS、Azure 和 GCP 彩色服务图标包概览——共享使用模式及各图标包页面链接。
+sidebar:
+  label: 云概览
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+三个图标包提供用于记录云基础设施的彩色服务图标。与单色图标包不同，这些图标包保留了原始供应商配色，适用于架构图。
+
+## 可用图标包
+
+| 图标包 | 图标数量 | 默认尺寸 | 页面 |
+|------|-------|-------------|------|
+| AWS 架构 | 885 | 48x48 | [AWS](/aws/) |
+| Azure 架构 | 606 | 18x18 | [Azure](/azure/) |
+| GCP 架构 | 216 | 24x24 | [GCP](/gcp/) |
+
+## 用法
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## 颜色渲染
+
+这些图标包使用原始供应商配色（而非 `currentColor`）。图标卡片上的 `no-invert` 类可在深色模式下保留颜色。在网格布局之外使用这些图标时，无需特殊处理——颜色已嵌入在 SVG 标记中。
+
+请参阅每个图标包的专属页面，查看按服务类别整理的精选图标网格。
+
+浏览完整图标集：[AWS 图标](https://aws.amazon.com/architecture/icons/) | [Azure 图标](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [GCP 图标](https://cloud.google.com/icons)

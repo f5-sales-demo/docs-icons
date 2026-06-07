@@ -1,0 +1,103 @@
+---
+title: आइकन संदर्भ
+description: >-
+  डॉक्यूमेंटेशन थीम में उपलब्ध सभी आइकन पैक का अवलोकन — उपयोग, डार्क मोड
+  व्यवहार, और चयन गाइड।
+sidebar:
+  label: अवलोकन
+  order: 2
+i18n:
+  sourceHash: 2da27471772e
+  translator: machine
+---
+
+import { Icon } from '@astrojs/starlight/components';
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+
+डॉक्यूमेंटेशन थीम कई पैक से हजारों आइकन तक पहुँच प्रदान करती है। प्रत्येक पैक एक ही पैटर्न का उपयोग करता है: पैक के `Icon.astro` कंपोनेंट को इम्पोर्ट करें और आइकन को नाम से संदर्भित करें।
+
+## उपलब्ध आइकन पैक
+
+| पैक | संख्या | उपयोग | पेज |
+|------|-------|-------|------|
+| Starlight बिल्ट-इन | ~200 | `<Icon name="star" />` | [Starlight बिल्ट-इन](/starlight/) |
+| F5 ब्रांड | 665 | `<Icon name="ai-admin" />` | [F5 ब्रांड](/brand/) |
+| Lucide | ~1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
+| Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
+| Carbon | 2,582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
+| Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
+| Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
+| F5 XC सर्विसेज | 30 | `<Icon name="bot-defense" />` | [F5 XC सर्विसेज](/f5xc/) |
+| Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
+| AWS आर्किटेक्चर | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| Azure आर्किटेक्चर | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| GCP आर्किटेक्चर | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+
+## रेंडरिंग विधि
+
+सभी आइकन पैक प्रति-पैकेज `Icon.astro` कंपोनेंट का उपयोग करते हैं जो इनलाइन SVG रेंडर करते हैं। प्रत्येक पैक का अपना इम्पोर्ट होता है:
+
+```astro
+---
+// Starlight built-in
+import { Icon } from '@astrojs/starlight/components';
+
+// Other packs — each has its own import
+import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+---
+
+<Icon name="star" />
+<LucideIcon name="rocket" />
+<MdiIcon name="database" />
+<F5xIcon name="bot-defense" />
+```
+
+आइकन `currentColor` का उपयोग करते हैं और बिना किसी विशेष हैंडलिंग के स्वचालित रूप से लाइट और डार्क मोड के अनुसार अनुकूलित हो जाते हैं।
+
+### Starlight बिल्ट-इन
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="setting" size="1.5rem" /></div><div class="icon-card-label">setting</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
+</div>
+
+### Lucide
+
+<div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><LucideIcon name="rocket" size="1.5rem" /></div><div class="icon-card-label">rocket</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><MdiIcon name="database" size="1.5rem" /></div><div class="icon-card-label">mdi/database</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><CarbonIcon name="cloud" size="1.5rem" /></div><div class="icon-card-label">carbon/cloud</div></div>
+  <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
+</div>
+
+## डार्क/लाइट मोड व्यवहार
+
+सभी `Icon` कंपोनेंट `currentColor` का उपयोग करके इनलाइन SVG रेंडर करते हैं। वे स्वचालित रूप से वर्तमान थीम के अनुसार अनुकूलित हो जाते हैं — किसी विशेष CSS या क्लास हैंडलिंग की आवश्यकता नहीं है।
+
+F5 XC सर्विस आइकन CSS कस्टम प्रॉपर्टीज़ का उपयोग करते हैं जो स्वचालित रूप से लाइट और डार्क मोड के अनुसार अनुकूलित हो जाती हैं — किसी विशेष क्लास हैंडलिंग की आवश्यकता नहीं है। अन्य मल्टी-कलर आइकन (जैसे HashiCorp Flight कलर वेरिएंट) के लिए, `.icon-card-image` पर `no-invert` क्लास डार्क मोड में मूल रंगों को संरक्षित रखती है।
+
+## कौन सा पैक उपयोग करें?
+
+| उपयोग का मामला | अनुशंसित पैक | कारण |
+|----------|------------------|-----|
+| सामान्य UI (एरो, क्लोज, सर्च) | Starlight बिल्ट-इन | शून्य कॉन्फ़िग, हमेशा उपलब्ध |
+| F5 प्रोडक्ट डायग्राम | F5 ब्रांड | डोमेन-विशिष्ट नेटवर्किंग/सिक्योरिटी आर्ट |
+| आधुनिक स्ट्रोक आइकन | Lucide | स्वच्छ, सुसंगत 1,600+ आइकन |
+| बड़े पैमाने पर फिल्ड/आउटलाइंड आइकन | Material Design (mdi) | 7,638 आइकन के साथ सबसे बड़ा सेट |
+| IBM डिज़ाइन भाषा | Carbon | 2,582 एंटरप्राइज़-ग्रेड आइकन |
+| लचीले वेट विकल्प | Phosphor | छह वेट वेरिएंट के साथ 9,161 आइकन |
+| स्पष्ट लाइन आइकन | Tabler | सुसंगत 2px स्ट्रोक के साथ 6,034 आइकन |
+| F5 XC सर्विस डायग्राम | F5 XC सर्विसेज | 30 डिस्ट्रीब्यूटेड क्लाउड सर्विस आइकन |
+| ब्रांड/कंपनी लोगो | Simple Icons | वेंडर और सर्विसेज के लिए 3,200+ ब्रांड आइकन |
+| क्लाउड/इंफ्रा वेंडर लोगो | HashiCorp Flight | AWS, GCP, Azure, K8s वेंडर आइकन |
+| AWS आर्किटेक्चर डायग्राम | AWS आर्किटेक्चर | AWS इंफ्रास्ट्रक्चर के लिए 885 कलर सर्विस आइकन |
+| Azure आर्किटेक्चर डायग्राम | Azure आर्किटेक्चर | Azure इंफ्रास्ट्रक्चर के लिए 606 कलर सर्विस आइकन |
+| GCP आर्किटेक्चर डायग्राम | GCP आर्किटेक्चर | Google Cloud इंफ्रास्ट्रक्चर के लिए 216 कलर सर्विस आइकन |

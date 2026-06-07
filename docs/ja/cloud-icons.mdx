@@ -1,0 +1,42 @@
+---
+title: クラウドアーキテクチャアイコン概要
+description: AWS、Azure、GCP のカラーサービスアイコンパックの概要 — 共通の使用パターンと各パックページへのリンク。
+sidebar:
+  label: クラウド概要
+  order: 17
+i18n:
+  sourceHash: ab8b89e21cd1
+  translator: machine
+---
+
+3つのアイコンパックが、クラウドインフラストラクチャのドキュメント作成用にカラーサービスアイコンを提供します。モノクロのアイコンパックとは異なり、これらはアーキテクチャ図のためにベンダー本来のカラーを保持します。
+
+## 利用可能なパック
+
+| パック | アイコン数 | デフォルトサイズ | ページ |
+|------|-------|-------------|------|
+| AWS Architecture | 885 | 48x48 | [AWS](/aws/) |
+| Azure Architecture | 606 | 18x18 | [Azure](/azure/) |
+| GCP Architecture | 216 | 24x24 | [GCP](/gcp/) |
+
+## 使用方法
+
+```astro
+---
+import AwsIcon from '@f5xc-salesdemos/icons-aws/Icon.astro';
+import AzureIcon from '@f5xc-salesdemos/icons-azure/Icon.astro';
+import GcpIcon from '@f5xc-salesdemos/icons-gcp/Icon.astro';
+---
+
+<AwsIcon name="lambda" />
+<AzureIcon name="virtual-machine" />
+<GcpIcon name="cloud-storage" />
+```
+
+## カラーレンダリング
+
+これらのアイコンパックはベンダー本来のカラーを使用します（`currentColor` ではありません）。アイコンカードの `no-invert` クラスにより、ダークモードでもカラーが保持されます。これらのアイコンをグリッドレイアウト外で使用する場合、特別な処理は不要です — カラーは SVG マークアップに埋め込まれています。
+
+サービスカテゴリ別に整理されたアイコングリッドについては、各パックの専用ページをご覧ください。
+
+フルアイコンセットを閲覧: [AWS Icons](https://aws.amazon.com/architecture/icons/) | [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) | [GCP Icons](https://cloud.google.com/icons)
