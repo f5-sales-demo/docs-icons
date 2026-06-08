@@ -14,7 +14,7 @@
     "icons.json"
   ],
   "dependencies": {
-    "@iconify-json/carbon": "^1.2.22"
+    "@iconify-json/carbon": "^1.2.23"
   },
   "publishConfig": {
     "access": "public"
