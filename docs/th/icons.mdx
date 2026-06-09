@@ -1,8 +1,8 @@
 ---
-title: คู่มืออ้างอิงไอคอน
+title: อ้างอิงไอคอน
 description: >-
-  ภาพรวมของชุดไอคอนทั้งหมดที่มีในธีมเอกสาร — การใช้งาน, พฤติกรรมในโหมดมืด,
-  และคู่มือการเลือกใช้
+  ภาพรวมของชุดไอคอนทั้งหมดที่มีในธีมเอกสาร — การใช้งาน, พฤติกรรมโหมดมืด
+  และคำแนะนำในการเลือก
 sidebar:
   label: ภาพรวม
   order: 2
@@ -17,13 +17,13 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-ธีมเอกสารนี้ให้การเข้าถึงไอคอนหลายพันรายการจากหลายชุด ทุกชุดใช้รูปแบบเดียวกัน: นำเข้าคอมโพเนนต์ `Icon.astro` ของชุดนั้นแล้วอ้างอิงไอคอนตามชื่อ
+ธีมเอกสารนี้ให้การเข้าถึงไอคอนนับพันจากหลายชุด ทุกชุดใช้รูปแบบเดียวกัน: นำเข้าคอมโพเนนต์ `Icon.astro` ของชุดนั้นและอ้างอิงไอคอนตามชื่อ
 
 ## ชุดไอคอนที่มีให้ใช้งาน
 
 | ชุด | จำนวน | การใช้งาน | หน้า |
 |------|-------|-------|------|
-| Starlight Built-in | ~200 | `<Icon name="star" />` | [Starlight Built-in](/starlight/) |
+| Starlight ในตัว | ~200 | `<Icon name="star" />` | [Starlight ในตัว](/starlight/) |
 | F5 Brand | 665 | `<Icon name="ai-admin" />` | [F5 Brand](/brand/) |
 | Lucide | ~1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
 | Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
@@ -39,14 +39,14 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
 ## วิธีการเรนเดอร์
 
-ชุดไอคอนทั้งหมดใช้คอมโพเนนต์ `Icon.astro` แบบแยกตามแพ็กเกจที่เรนเดอร์เป็น SVG แบบ inline แต่ละชุดมีการนำเข้าของตัวเอง:
+ชุดไอคอนทั้งหมดใช้คอมโพเนนต์ `Icon.astro` ต่อแพ็กเกจที่เรนเดอร์ SVG แบบอินไลน์ แต่ละชุดมีการนำเข้าของตัวเอง:
 
 ```astro
 ---
-// Starlight built-in
+// Starlight ในตัว
 import { Icon } from '@astrojs/starlight/components';
 
-// Other packs — each has its own import
+// ชุดอื่น ๆ — แต่ละชุดมีการนำเข้าของตัวเอง
 import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
 import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
@@ -58,9 +58,9 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 <F5xIcon name="bot-defense" />
 ```
 
-ไอคอนใช้ `currentColor` และปรับตัวตามโหมดสว่างและโหมดมืดโดยอัตโนมัติโดยไม่จำเป็นต้องจัดการเป็นพิเศษ
+ไอคอนใช้ `currentColor` และปรับตัวโดยอัตโนมัติตามโหมดสว่างและโหมดมืดโดยไม่ต้องมีการจัดการพิเศษ
 
-### Starlight Built-in
+### Starlight ในตัว
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
@@ -78,26 +78,26 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
 </div>
 
-## พฤติกรรมในโหมดมืด/สว่าง
+## พฤติกรรมโหมดมืด/สว่าง
 
-คอมโพเนนต์ `Icon` ทั้งหมดเรนเดอร์ SVG แบบ inline โดยใช้ `currentColor` ไอคอนจะปรับตัวตามธีมปัจจุบันโดยอัตโนมัติ — ไม่จำเป็นต้องจัดการ CSS หรือคลาสเป็นพิเศษ
+คอมโพเนนต์ `Icon` ทั้งหมดเรนเดอร์ SVG แบบอินไลน์โดยใช้ `currentColor` ซึ่งปรับตัวตามธีมปัจจุบันโดยอัตโนมัติ — ไม่จำเป็นต้องมีการจัดการ CSS หรือคลาสพิเศษ
 
-ไอคอน F5 XC service ใช้ CSS custom properties ที่ปรับตัวตามโหมดสว่างและโหมดมืดโดยอัตโนมัติ — ไม่จำเป็นต้องจัดการคลาสเป็นพิเศษ สำหรับไอคอนหลายสีอื่น ๆ (เช่น HashiCorp Flight ที่มีตัวเลือกสี) คลาส `no-invert` บน `.icon-card-image` จะรักษาสีดั้งเดิมในโหมดมืด
+ไอคอน F5 XC service ใช้ CSS custom properties ที่ปรับตัวตามโหมดสว่างและโหมดมืดโดยอัตโนมัติ — ไม่จำเป็นต้องมีการจัดการคลาสพิเศษ สำหรับไอคอนหลายสีอื่น ๆ (เช่น ตัวเลือกสีของ HashiCorp Flight) คลาส `no-invert` บน `.icon-card-image` จะรักษาสีดั้งเดิมในโหมดมืด
 
-## ควรใช้ชุดไหน?
+## ฉันควรใช้ชุดไหน?
 
 | กรณีการใช้งาน | ชุดที่แนะนำ | เหตุผล |
 |----------|------------------|-----|
-| UI ทั่วไป (ลูกศร, ปิด, ค้นหา) | Starlight Built-in | ไม่ต้องกำหนดค่า พร้อมใช้งานเสมอ |
-| แผนภาพผลิตภัณฑ์ F5 | F5 Brand | ศิลปะเฉพาะด้านเครือข่าย/ความปลอดภัย |
-| ไอคอนเส้นขอบแบบทันสมัย | Lucide | สะอาด สม่ำเสมอ มากกว่า 1,600 ไอคอน |
-| ไอคอนแบบเติม/เส้นขอบจำนวนมาก | Material Design (mdi) | ชุดใหญ่ที่สุดด้วยไอคอน 7,638 รายการ |
-| ภาษาการออกแบบ IBM | Carbon | ไอคอนระดับองค์กร 2,582 รายการ |
-| ตัวเลือกน้ำหนักที่ยืดหยุ่น | Phosphor | ไอคอน 9,161 รายการพร้อมตัวเลือกน้ำหนักหกแบบ |
-| ไอคอนเส้นที่คมชัด | Tabler | ไอคอน 6,034 รายการด้วยเส้นขอบ 2px สม่ำเสมอ |
-| แผนภาพบริการ F5 XC | F5 XC Services | ไอคอนบริการ Distributed Cloud 30 รายการ |
-| โลโก้แบรนด์/บริษัท | Simple Icons | ไอคอนแบรนด์มากกว่า 3,200 รายการสำหรับผู้จำหน่ายและบริการ |
-| โลโก้ผู้จำหน่ายคลาวด์/โครงสร้างพื้นฐาน | HashiCorp Flight | ไอคอนผู้จำหน่าย AWS, GCP, Azure, K8s |
-| แผนภาพสถาปัตยกรรม AWS | AWS Architecture | ไอคอนบริการสี 885 รายการสำหรับโครงสร้างพื้นฐาน AWS |
-| แผนภาพสถาปัตยกรรม Azure | Azure Architecture | ไอคอนบริการสี 606 รายการสำหรับโครงสร้างพื้นฐาน Azure |
-| แผนภาพสถาปัตยกรรม GCP | GCP Architecture | ไอคอนบริการสี 216 รายการสำหรับโครงสร้างพื้นฐาน Google Cloud |
+| UI ทั่วไป (ลูกศร, ปิด, ค้นหา) | Starlight ในตัว | ไม่ต้องตั้งค่า พร้อมใช้งานเสมอ |
+| แผนภาพผลิตภัณฑ์ F5 | F5 Brand | ศิลปะเฉพาะทางด้านเครือข่าย/ความปลอดภัย |
+| ไอคอนแบบเส้นขีดสมัยใหม่ | Lucide | สะอาด สม่ำเสมอ มากกว่า 1,600 ไอคอน |
+| ไอคอนแบบเติม/แบบเส้นขอบขนาดใหญ่ | Material Design (mdi) | ชุดใหญ่ที่สุดด้วย 7,638 ไอคอน |
+| ภาษาการออกแบบ IBM | Carbon | 2,582 ไอคอนระดับองค์กร |
+| ตัวเลือกน้ำหนักที่ยืดหยุ่น | Phosphor | 9,161 ไอคอนพร้อมตัวเลือกน้ำหนัก 6 แบบ |
+| ไอคอนเส้นคมชัด | Tabler | 6,034 ไอคอนพร้อมเส้นขีดขนาด 2px สม่ำเสมอ |
+| แผนภาพบริการ F5 XC | F5 XC Services | 30 ไอคอนบริการ Distributed Cloud |
+| โลโก้แบรนด์/บริษัท | Simple Icons | 3,200+ ไอคอนแบรนด์สำหรับผู้ขายและบริการ |
+| โลโก้ผู้ให้บริการคลาวด์/โครงสร้างพื้นฐาน | HashiCorp Flight | ไอคอนผู้ให้บริการ AWS, GCP, Azure, K8s |
+| แผนภาพสถาปัตยกรรม AWS | AWS Architecture | 885 ไอคอนบริการแบบสีสำหรับโครงสร้างพื้นฐาน AWS |
+| แผนภาพสถาปัตยกรรม Azure | Azure Architecture | 606 ไอคอนบริการแบบสีสำหรับโครงสร้างพื้นฐาน Azure |
+| แผนภาพสถาปัตยกรรม GCP | GCP Architecture | 216 ไอคอนบริการแบบสีสำหรับโครงสร้างพื้นฐาน Google Cloud |

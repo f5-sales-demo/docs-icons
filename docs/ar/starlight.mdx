@@ -2,7 +2,7 @@
 title: أيقونات Starlight المدمجة
 description: >-
   مرجع شامل لجميع الأيقونات المدمجة في Starlight والتي يزيد عددها عن 200 أيقونة
-  متاحة عبر مكوّن Icon.
+  متاحة عبر مكون Icon.
 sidebar:
   label: أيقونات Starlight المدمجة
   order: 3
@@ -13,11 +13,11 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-يتضمن Starlight أكثر من 200 أيقونة مدمجة متاحة عبر مكوّن `<Icon>` — دون الحاجة إلى أي تثبيت. إضافة `starlight-plugin-icons` مُهيّأة مسبقاً في القالب، لذا تعمل هذه الأيقونات في أي مستودع محتوى.
+يتضمن Starlight أكثر من 200 أيقونة مدمجة متاحة عبر مكون `<Icon>` — دون الحاجة إلى أي تثبيت. إضافة `starlight-plugin-icons` مُعدّة مسبقاً في القالب، لذا تعمل هذه الأيقونات في أي مستودع محتوى.
 
-## استخدام مكوّن الأيقونة
+## استخدام مكون الأيقونة
 
-قم باستيراد المكوّن ومرّر اسم الأيقونة:
+قم باستيراد المكون وتمرير اسم الأيقونة:
 
 ```mdx
 import { Icon } from '@astrojs/starlight/components';
@@ -32,13 +32,13 @@ import { Icon } from '@astrojs/starlight/components';
 | الخاصية | النوع | القيمة الافتراضية | الوصف |
 |------|------|---------|-------------|
 | `name` | `string` | — | **مطلوبة.** اسم الأيقونة من الجداول أدناه. |
-| `label` | `string` | — | تسمية إمكانية الوصول لقارئات الشاشة. استخدمها للأيقونات ذات المعنى؛ واحذفها للأيقونات الزخرفية. |
-| `size` | `string` | `"1em"` | قيمة حجم CSS تُطبّق على العرض والارتفاع. |
+| `label` | `string` | — | تسمية وصفية لقارئات الشاشة. استخدمها للأيقونات ذات المعنى؛ واحذفها للأيقونات الزخرفية. |
+| `size` | `string` | `"1em"` | قيمة حجم CSS تُطبق على العرض والارتفاع. |
 | `color` | `string` | `"currentColor"` | قيمة لون CSS. |
 | `class` | `string` | — | فئات CSS إضافية. |
 
 :::tip[إمكانية الوصول]
-أضف خاصية `label` عندما تنقل الأيقونة معنى (مثل أيقونة رابط). احذف `label` للأيقونات الزخرفية البحتة — سيخفيها Starlight تلقائياً عن تقنيات المساعدة.
+أضف خاصية `label` عندما تنقل الأيقونة معنى معيناً (مثل أيقونة رابط). احذف `label` للأيقونات الزخرفية البحتة — سيقوم Starlight بإخفائها عن تقنيات المساعدة تلقائياً.
 :::
 
 ## أيقونات التنقل
@@ -178,7 +178,7 @@ import { Icon } from '@astrojs/starlight/components';
 
 ## أيقونات ملفات Seti
 
-تستخدم أيقونات Seti البادئة `seti:` وهي مصممة لتمثيل أنواع الملفات. تعمل في مكوّن `<Icon>` ومكوّن `<FileTree>`.
+تستخدم أيقونات Seti البادئة `seti:` وهي مصممة لتمثيل أنواع الملفات. تعمل في مكون `<Icon>` ومكون `<FileTree>`.
 
 ```mdx
 <Icon name="seti:typescript" />
@@ -228,7 +228,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:wasm" size="1.5rem" /></div><div class="icon-card-label">seti:wasm</div></div>
 </div>
 
-### الويب والترميز
+### الويب ولغات التوصيف
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:html" size="1.5rem" /></div><div class="icon-card-label">seti:html</div></div>

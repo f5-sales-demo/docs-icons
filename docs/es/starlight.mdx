@@ -13,7 +13,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight incluye más de 200 iconos integrados disponibles a través del componente `<Icon>` — sin necesidad de instalación. El plugin `starlight-plugin-icons` ya está configurado en el tema, por lo que estos iconos funcionan en cualquier repositorio de contenido.
+Starlight incluye más de 200 iconos integrados disponibles a través del componente `<Icon>` — no se necesita instalación. El plugin `starlight-plugin-icons` ya está configurado en el tema, por lo que estos iconos funcionan en cualquier repositorio de contenido.
 
 ## Uso del componente Icon
 
@@ -29,7 +29,7 @@ import { Icon } from '@astrojs/starlight/components';
 
 ### Props
 
-| Prop | Tipo | Por defecto | Descripción |
+| Prop | Tipo | Predeterminado | Descripción |
 |------|------|---------|-------------|
 | `name` | `string` | — | **Requerido.** El nombre del icono de las tablas a continuación. |
 | `label` | `string` | — | Etiqueta accesible para lectores de pantalla. Úsela para iconos significativos; omítala para los decorativos. |
@@ -38,7 +38,7 @@ import { Icon } from '@astrojs/starlight/components';
 | `class` | `string` | — | Clases CSS adicionales. |
 
 :::tip[Accesibilidad]
-Agregue una prop `label` cuando un icono transmita significado (por ejemplo, un icono de enlace). Omita `label` para iconos puramente decorativos — Starlight los ocultará automáticamente de la tecnología de asistencia.
+Añada una prop `label` cuando un icono transmita significado (por ejemplo, un icono de enlace). Omita `label` para iconos puramente decorativos — Starlight los ocultará automáticamente de la tecnología de asistencia.
 :::
 
 ## Iconos de navegación
@@ -54,7 +54,7 @@ Agregue una prop `label` cuando un icono transmita significado (por ejemplo, un 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="left-arrow" size="1.5rem" /></div><div class="icon-card-label">left-arrow</div></div>
 </div>
 
-## Iconos de UI e interfaz
+## Iconos de interfaz de usuario
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bars" size="1.5rem" /></div><div class="icon-card-label">bars</div></div>
@@ -178,7 +178,7 @@ Agregue una prop `label` cuando un icono transmita significado (por ejemplo, un 
 
 ## Iconos de archivos Seti
 
-Los iconos Seti usan el prefijo `seti:` y están diseñados para la representación de tipos de archivo. Funcionan en el componente `<Icon>` y en el componente `<FileTree>`.
+Los iconos Seti usan el prefijo `seti:` y están diseñados para representar tipos de archivo. Funcionan en el componente `<Icon>` y en el componente `<FileTree>`.
 
 ```mdx
 <Icon name="seti:typescript" />

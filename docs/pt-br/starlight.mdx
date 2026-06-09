@@ -2,7 +2,7 @@
 title: Ícones Integrados do Starlight
 description: >-
   Referência completa para todos os mais de 200 ícones integrados do Starlight
-  disponíveis via o componente Icon.
+  disponíveis através do componente Icon.
 sidebar:
   label: Integrados do Starlight
   order: 3
@@ -13,7 +13,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-O Starlight inclui mais de 200 ícones integrados disponíveis via o componente `<Icon>` — sem necessidade de instalação. O plugin `starlight-plugin-icons` já está configurado no tema, então esses ícones funcionam em qualquer repositório de conteúdo.
+O Starlight inclui mais de 200 ícones integrados disponíveis através do componente `<Icon>` — sem necessidade de instalação. O plugin `starlight-plugin-icons` já está configurado no tema, então esses ícones funcionam em qualquer repositório de conteúdo.
 
 ## Usando o Componente Icon
 
@@ -27,18 +27,18 @@ import { Icon } from '@astrojs/starlight/components';
 <Icon name="seti:python" label="Python file" />
 ```
 
-### Props
+### Propriedades
 
-| Prop | Tipo | Padrão | Descrição |
-|------|------|--------|-----------|
-| `name` | `string` | — | **Obrigatória.** O nome do ícone das tabelas abaixo. |
-| `label` | `string` | — | Rótulo acessível para leitores de tela. Use para ícones significativos; omita para ícones decorativos. |
+| Propriedade | Tipo | Padrão | Descrição |
+|------|------|---------|-------------|
+| `name` | `string` | — | **Obrigatório.** O nome do ícone das tabelas abaixo. |
+| `label` | `string` | — | Rótulo acessível para leitores de tela. Use para ícones com significado; omita para ícones decorativos. |
 | `size` | `string` | `"1em"` | Valor de tamanho CSS aplicado à largura e altura. |
 | `color` | `string` | `"currentColor"` | Valor de cor CSS. |
 | `class` | `string` | — | Classes CSS adicionais. |
 
 :::tip[Acessibilidade]
-Adicione a prop `label` quando um ícone transmite significado (por exemplo, um ícone de link). Omita `label` para ícones puramente decorativos — o Starlight os ocultará automaticamente de tecnologias assistivas.
+Adicione uma propriedade `label` quando um ícone transmite significado (por exemplo, um ícone de link). Omita `label` para ícones puramente decorativos — o Starlight os ocultará automaticamente das tecnologias assistivas.
 :::
 
 ## Ícones de Navegação
@@ -130,7 +130,7 @@ Adicione a prop `label` quando um ícone transmite significado (por exemplo, um 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="tiktok" size="1.5rem" /></div><div class="icon-card-label">tiktok</div></div>
 </div>
 
-## Ícones de Tecnologia &amp; Frameworks
+## Ícones de Tecnologia &amp; Framework
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="astro" size="1.5rem" /></div><div class="icon-card-label">astro</div></div>

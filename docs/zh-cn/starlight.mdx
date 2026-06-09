@@ -1,6 +1,6 @@
 ---
 title: Starlight 内置图标
-description: 通过 Icon 组件可用的 200 多个 Starlight 内置图标的完整参考。
+description: 通过 Icon 组件可用的全部 200+ 个 Starlight 内置图标完整参考。
 sidebar:
   label: Starlight 内置图标
   order: 3
@@ -11,7 +11,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight 包含 200 多个内置图标，可通过 `<Icon>` 组件使用——无需额外安装。`starlight-plugin-icons` 插件已在主题中预配置，因此这些图标可在任何内容仓库中使用。
+Starlight 包含超过 200 个内置图标，可通过 `<Icon>` 组件使用——无需额外安装。主题中已配置了 `starlight-plugin-icons` 插件，因此这些图标可在任何内容仓库中使用。
 
 ## 使用 Icon 组件
 
@@ -29,14 +29,14 @@ import { Icon } from '@astrojs/starlight/components';
 
 | 属性 | 类型 | 默认值 | 描述 |
 |------|------|---------|-------------|
-| `name` | `string` | — | **必填。** 下方表格中的图标名称。 |
-| `label` | `string` | — | 供屏幕阅读器使用的无障碍标签。用于有实际含义的图标；纯装饰性图标可省略。 |
+| `name` | `string` | — | **必填。**下方表格中的图标名称。 |
+| `label` | `string` | — | 供屏幕阅读器使用的无障碍标签。用于有实际含义的图标；装饰性图标可省略。 |
 | `size` | `string` | `"1em"` | 应用于宽度和高度的 CSS 尺寸值。 |
 | `color` | `string` | `"currentColor"` | CSS 颜色值。 |
-| `class` | `string` | — | 附加的 CSS 类名。 |
+| `class` | `string` | — | 额外的 CSS 类名。 |
 
 :::tip[无障碍]
-当图标传达含义时（例如链接图标），请添加 `label` 属性。对于纯装饰性图标则省略 `label`——Starlight 会自动将其从辅助技术中隐藏。
+当图标传达含义时（例如链接图标），请添加 `label` 属性。对于纯装饰性图标，请省略 `label`——Starlight 会自动将其对辅助技术隐藏。
 :::
 
 ## 导航图标
@@ -52,7 +52,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="left-arrow" size="1.5rem" /></div><div class="icon-card-label">left-arrow</div></div>
 </div>
 
-## UI 和界面图标
+## UI 与界面图标
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bars" size="1.5rem" /></div><div class="icon-card-label">bars</div></div>
@@ -87,7 +87,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
 </div>
 
-## 社交和社区图标
+## 社交与社区图标
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="github" size="1.5rem" /></div><div class="icon-card-label">github</div></div>
@@ -128,7 +128,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="tiktok" size="1.5rem" /></div><div class="icon-card-label">tiktok</div></div>
 </div>
 
-## 技术和框架图标
+## 技术与框架图标
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="astro" size="1.5rem" /></div><div class="icon-card-label">astro</div></div>
@@ -159,7 +159,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="substack" size="1.5rem" /></div><div class="icon-card-label">substack</div></div>
 </div>
 
-### 编辑器和浏览器
+### 编辑器与浏览器
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="vscode" size="1.5rem" /></div><div class="icon-card-label">vscode</div></div>
@@ -226,7 +226,7 @@ Seti 图标使用 `seti:` 前缀，专为文件类型表示而设计。它们可
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:wasm" size="1.5rem" /></div><div class="icon-card-label">seti:wasm</div></div>
 </div>
 
-### Web 和标记语言
+### Web 与标记语言
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:html" size="1.5rem" /></div><div class="icon-card-label">seti:html</div></div>
@@ -243,7 +243,7 @@ Seti 图标使用 `seti:` 前缀，专为文件类型表示而设计。它们可
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:tex" size="1.5rem" /></div><div class="icon-card-label">seti:tex</div></div>
 </div>
 
-### 框架和模板
+### 框架与模板
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:react" size="1.5rem" /></div><div class="icon-card-label">seti:react</div></div>
@@ -264,7 +264,7 @@ Seti 图标使用 `seti:` 前缀，专为文件类型表示而设计。它们可
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:coldfusion" size="1.5rem" /></div><div class="icon-card-label">seti:coldfusion</div></div>
 </div>
 
-### DevOps 和构建工具
+### DevOps 与构建工具
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:docker" size="1.5rem" /></div><div class="icon-card-label">seti:docker</div></div>
@@ -295,7 +295,7 @@ Seti 图标使用 `seti:` 前缀，专为文件类型表示而设计。它们可
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:pipeline" size="1.5rem" /></div><div class="icon-card-label">seti:pipeline</div></div>
 </div>
 
-### 文件类型和其他
+### 文件类型与其他
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:folder" size="1.5rem" /></div><div class="icon-card-label">seti:folder</div></div>

@@ -15,12 +15,12 @@ i18n:
 
 ## 팩 비교
 
-| 팩 | 접두사 | 아이콘 수 | 스타일 | 적합한 용도 | 페이지 |
+| 팩 | 접두사 | 아이콘 수 | 스타일 | 최적 용도 | 페이지 |
 |------|--------|-------|-------|----------|------|
-| Material Design | `mdi` | 7,638 | 채움 + 윤곽선 | 범용, 가장 넓은 범위 | [Material Design](/mdi/) |
-| Carbon | `carbon` | 2,582 | 윤곽선 | 엔터프라이즈/IBM 디자인, 깔끔한 선 | [Carbon](/carbon/) |
-| Phosphor | `ph` | 9,161 | 다양한 두께 | 유연한 두께 옵션 (thin에서 fill까지) | [Phosphor](/phosphor/) |
-| Tabler | `tabler` | 6,034 | 스트로크 기반 | 선명한 라인 아이콘, 일관된 스트로크 | [Tabler](/tabler/) |
+| Material Design | `mdi` | 7,638 | Filled + outlined | 범용, 가장 넓은 커버리지 | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2,582 | Outlined | 엔터프라이즈/IBM 디자인, 깔끔한 선 | [Carbon](/carbon/) |
+| Phosphor | `ph` | 9,161 | 다양한 굵기 | 유연한 굵기 옵션 (thin에서 fill까지) | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6,034 | Stroke 기반 | 선명한 라인 아이콘, 일관된 stroke | [Tabler](/tabler/) |
 
 ## 사용법
 
@@ -40,13 +40,13 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 <TablerIcon name="shield" />
 ```
 
-아이콘은 `currentColor`를 사용하여 인라인 SVG로 렌더링되므로 라이트 모드와 다크 모드에 자동으로 적응합니다.
+아이콘은 `currentColor`를 사용하는 인라인 SVG로 렌더링되며, 라이트 모드와 다크 모드에 자동으로 적응합니다.
 
-## 팩 선택하기
+## 팩 선택 가이드
 
-- **가장 넓은 범위**: Material Design Icons는 가장 많은 아이콘(7,638개)을 보유하며 거의 모든 사용 사례에 대해 채움 및 윤곽선 변형을 제공합니다.
-- **엔터프라이즈 디자인**: Carbon은 비즈니스 애플리케이션에 적합한 깔끔하고 일관된 윤곽선으로 IBM의 디자인 언어를 따릅니다.
-- **두께 유연성**: Phosphor는 시각적 두께를 세밀하게 조정할 수 있는 6가지 두께 변형(thin, light, regular, bold, fill, duotone)을 제공합니다.
-- **일관된 스트로크**: Tabler는 모든 6,034개 아이콘에 균일한 2px 스트로크 너비를 사용하여 통일된 외관을 제공합니다.
+- **가장 넓은 커버리지**: Material Design Icons는 가장 많은 아이콘(7,638개)을 보유하며, 거의 모든 사용 사례에 대해 filled 및 outlined 변형을 제공합니다.
+- **엔터프라이즈 디자인**: Carbon은 IBM의 디자인 언어를 따르며, 비즈니스 애플리케이션에 적합한 깔끔하고 일관된 아웃라인을 제공합니다.
+- **굵기 유연성**: Phosphor는 시각적 굵기를 세밀하게 조정할 수 있는 6가지 굵기 변형(thin, light, regular, bold, fill, duotone)을 제공합니다.
+- **일관된 stroke**: Tabler는 모든 6,034개 아이콘에 걸쳐 균일한 2px stroke 너비를 사용하여 통일된 외관을 제공합니다.
 
 선별된 아이콘 그리드와 탐색 링크는 각 팩의 전용 페이지를 참조하세요.

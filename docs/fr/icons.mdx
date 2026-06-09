@@ -17,7 +17,7 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-Le thème de documentation donne accès à des milliers d'icônes provenant de multiples packs. Chaque pack utilise le même modèle : importez le composant `Icon.astro` du pack et référencez les icônes par leur nom.
+Le thème de documentation fournit l'accès à des milliers d'icônes provenant de multiples packs. Chaque pack utilise le même modèle : importez le composant `Icon.astro` du pack et référencez les icônes par leur nom.
 
 ## Packs d'icônes disponibles
 
@@ -39,14 +39,14 @@ Le thème de documentation donne accès à des milliers d'icônes provenant de m
 
 ## Méthode de rendu
 
-Tous les packs d'icônes utilisent des composants `Icon.astro` par paquet qui génèrent des SVG en ligne. Chaque pack possède son propre import :
+Tous les packs d'icônes utilisent des composants `Icon.astro` par package qui effectuent le rendu de SVG en ligne. Chaque pack possède son propre import :
 
 ```astro
 ---
 // Starlight intégré
 import { Icon } from '@astrojs/starlight/components';
 
-// Autres packs — chacun possède son propre import
+// Autres packs — chacun a son propre import
 import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
 import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
@@ -58,7 +58,7 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 <F5xIcon name="bot-defense" />
 ```
 
-Les icônes utilisent `currentColor` et s'adaptent automatiquement aux modes clair et sombre sans nécessiter de traitement particulier.
+Les icônes utilisent `currentColor` et s'adaptent automatiquement aux modes clair et sombre sans aucune manipulation spéciale nécessaire.
 
 ### Starlight intégré
 
@@ -80,23 +80,23 @@ Les icônes utilisent `currentColor` et s'adaptent automatiquement aux modes cla
 
 ## Comportement en mode sombre/clair
 
-Tous les composants `Icon` génèrent des SVG en ligne utilisant `currentColor`. Ils s'adaptent automatiquement au thème actuel — aucune gestion CSS ou de classe spéciale n'est nécessaire.
+Tous les composants `Icon` effectuent le rendu de SVG en ligne utilisant `currentColor`. Ils s'adaptent automatiquement au thème actuel — aucune gestion spéciale de CSS ou de classes n'est nécessaire.
 
-Les icônes de services F5 XC utilisent des propriétés CSS personnalisées qui s'adaptent automatiquement aux modes clair et sombre — aucune gestion de classe spéciale n'est nécessaire. Pour les autres icônes multicolores (comme les variantes de couleur HashiCorp Flight), la classe `no-invert` sur `.icon-card-image` préserve les couleurs d'origine en mode sombre.
+Les icônes de services F5 XC utilisent des propriétés personnalisées CSS qui s'adaptent automatiquement aux modes clair et sombre — aucune gestion spéciale de classes n'est nécessaire. Pour les autres icônes multicolores (comme les variantes de couleur HashiCorp Flight), la classe `no-invert` sur `.icon-card-image` préserve les couleurs d'origine en mode sombre.
 
-## Quel pack dois-je utiliser ?
+## Quel pack devrais-je utiliser ?
 
 | Cas d'utilisation | Pack recommandé | Pourquoi |
 |-------------------|-----------------|----------|
 | Interface générale (flèches, fermer, recherche) | Starlight intégré | Aucune configuration, toujours disponible |
-| Diagrammes produits F5 | F5 Brand | Illustrations spécifiques au domaine réseau/sécurité |
-| Icônes à trait moderne | Lucide | 1 600+ icônes propres et cohérentes |
-| Icônes pleines/contour à grande échelle | Material Design (mdi) | Le plus grand ensemble avec 7 638 icônes |
-| Langage de design IBM | Carbon | 2 582 icônes de niveau entreprise |
-| Options de graisse flexibles | Phosphor | 9 161 icônes avec six variantes de graisse |
-| Icônes lignes nettes | Tabler | 6 034 icônes avec un trait cohérent de 2px |
+| Diagrammes de produits F5 | F5 Brand | Art spécifique au domaine réseau/sécurité |
+| Icônes modernes en trait | Lucide | Plus de 1 600 icônes propres et cohérentes |
+| Icônes pleines/contourées à grande échelle | Material Design (mdi) | Plus grand ensemble avec 7 638 icônes |
+| Langage de design IBM | Carbon | 2 582 icônes de qualité entreprise |
+| Options de poids flexibles | Phosphor | 9 161 icônes avec six variantes de poids |
+| Icônes en lignes nettes | Tabler | 6 034 icônes avec un trait cohérent de 2px |
 | Diagrammes de services F5 XC | F5 XC Services | 30 icônes de services Distributed Cloud |
-| Logos de marques/entreprises | Simple Icons | 3 200+ icônes de marques pour fournisseurs et services |
+| Logos de marques/entreprises | Simple Icons | Plus de 3 200 icônes de marques pour fournisseurs et services |
 | Logos de fournisseurs cloud/infra | HashiCorp Flight | Icônes de fournisseurs AWS, GCP, Azure, K8s |
 | Diagrammes d'architecture AWS | AWS Architecture | 885 icônes de services en couleur pour l'infrastructure AWS |
 | Diagrammes d'architecture Azure | Azure Architecture | 606 icônes de services en couleur pour l'infrastructure Azure |
