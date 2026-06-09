@@ -13,7 +13,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight में 200 से अधिक बिल्ट-इन आइकन शामिल हैं जो `<Icon>` कंपोनेंट के माध्यम से उपलब्ध हैं — किसी इंस्टॉलेशन की आवश्यकता नहीं। `starlight-plugin-icons` प्लगइन पहले से ही थीम में कॉन्फ़िगर किया गया है, इसलिए ये आइकन किसी भी कंटेंट रिपो में काम करते हैं।
+Starlight में 200 से अधिक बिल्ट-इन आइकन शामिल हैं जो `<Icon>` कंपोनेंट के माध्यम से उपलब्ध हैं — किसी इंस्टॉलेशन की आवश्यकता नहीं है। `starlight-plugin-icons` प्लगइन थीम में पहले से कॉन्फ़िगर किया गया है, इसलिए ये आइकन किसी भी कंटेंट रिपो में काम करते हैं।
 
 ## Icon कंपोनेंट का उपयोग
 
@@ -32,13 +32,13 @@ import { Icon } from '@astrojs/starlight/components';
 | प्रॉप | प्रकार | डिफ़ॉल्ट | विवरण |
 |------|------|---------|-------------|
 | `name` | `string` | — | **आवश्यक।** नीचे दी गई तालिकाओं से आइकन का नाम। |
-| `label` | `string` | — | स्क्रीन रीडर के लिए एक्सेसिबल लेबल। अर्थपूर्ण आइकन के लिए उपयोग करें; सजावटी आइकन के लिए छोड़ दें। |
-| `size` | `string` | `"1em"` | चौड़ाई और ऊंचाई पर लागू होने वाला CSS आकार मान। |
+| `label` | `string` | — | स्क्रीन रीडर के लिए सुलभ लेबल। अर्थपूर्ण आइकन के लिए उपयोग करें; सजावटी आइकन के लिए छोड़ दें। |
+| `size` | `string` | `"1em"` | चौड़ाई और ऊंचाई पर लागू CSS आकार मान। |
 | `color` | `string` | `"currentColor"` | CSS रंग मान। |
 | `class` | `string` | — | अतिरिक्त CSS क्लासेस। |
 
-:::tip[एक्सेसिबिलिटी]
-जब कोई आइकन अर्थ व्यक्त करता है (जैसे लिंक आइकन) तो `label` प्रॉप जोड़ें। पूरी तरह से सजावटी आइकन के लिए `label` छोड़ दें — Starlight उन्हें सहायक तकनीक से स्वचालित रूप से छिपा देगा।
+:::tip[सुलभता]
+जब कोई आइकन अर्थ व्यक्त करता है (जैसे लिंक आइकन) तो `label` प्रॉप जोड़ें। पूरी तरह सजावटी आइकन के लिए `label` छोड़ दें — Starlight उन्हें सहायक तकनीक से स्वचालित रूप से छिपा देगा।
 :::
 
 ## नेविगेशन आइकन
@@ -130,7 +130,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="tiktok" size="1.5rem" /></div><div class="icon-card-label">tiktok</div></div>
 </div>
 
-## तकनीक एवं फ्रेमवर्क आइकन
+## टेक्नोलॉजी एवं फ्रेमवर्क आइकन
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="astro" size="1.5rem" /></div><div class="icon-card-label">astro</div></div>

@@ -1,8 +1,8 @@
 ---
-title: Starlight 기본 제공 아이콘
-description: Icon 컴포넌트를 통해 사용할 수 있는 200개 이상의 Starlight 기본 제공 아이콘에 대한 전체 참조 문서입니다.
+title: Starlight 내장 아이콘
+description: Icon 컴포넌트를 통해 사용할 수 있는 200개 이상의 Starlight 내장 아이콘에 대한 전체 참조 문서입니다.
 sidebar:
-  label: Starlight 기본 제공
+  label: Starlight 내장 아이콘
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -11,11 +11,11 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight에는 `<Icon>` 컴포넌트를 통해 사용할 수 있는 200개 이상의 기본 제공 아이콘이 포함되어 있습니다 — 별도의 설치가 필요 없습니다. `starlight-plugin-icons` 플러그인이 이미 테마에 구성되어 있으므로, 이 아이콘들은 모든 콘텐츠 저장소에서 작동합니다.
+Starlight에는 `<Icon>` 컴포넌트를 통해 사용할 수 있는 200개 이상의 내장 아이콘이 포함되어 있으며, 별도의 설치가 필요하지 않습니다. `starlight-plugin-icons` 플러그인은 이미 테마에 구성되어 있으므로, 이 아이콘들은 모든 콘텐츠 저장소에서 작동합니다.
 
-## Icon 컴포넌트 사용하기
+## Icon 컴포넌트 사용법
 
-컴포넌트를 가져오고 아이콘 이름을 전달합니다:
+컴포넌트를 import하고 아이콘 이름을 전달하세요:
 
 ```mdx
 import { Icon } from '@astrojs/starlight/components';
@@ -30,16 +30,16 @@ import { Icon } from '@astrojs/starlight/components';
 | Prop | 타입 | 기본값 | 설명 |
 |------|------|---------|-------------|
 | `name` | `string` | — | **필수.** 아래 표에서 아이콘 이름을 선택합니다. |
-| `label` | `string` | — | 스크린 리더를 위한 접근성 레이블입니다. 의미를 전달하는 아이콘에 사용하고, 장식용 아이콘에는 생략합니다. |
+| `label` | `string` | — | 스크린 리더를 위한 접근성 라벨입니다. 의미가 있는 아이콘에 사용하고, 장식용 아이콘에는 생략합니다. |
 | `size` | `string` | `"1em"` | 너비와 높이에 적용되는 CSS 크기 값입니다. |
 | `color` | `string` | `"currentColor"` | CSS 색상 값입니다. |
 | `class` | `string` | — | 추가 CSS 클래스입니다. |
 
 :::tip[접근성]
-아이콘이 의미를 전달할 때(예: 링크 아이콘) `label` prop을 추가하세요. 순수하게 장식용인 아이콘에는 `label`을 생략하세요 — Starlight가 자동으로 보조 기술에서 숨깁니다.
+아이콘이 의미를 전달하는 경우(예: 링크 아이콘) `label` prop을 추가하세요. 순수하게 장식용인 아이콘에는 `label`을 생략하세요 — Starlight가 자동으로 보조 기술에서 해당 아이콘을 숨깁니다.
 :::
 
-## 탐색 아이콘
+## 내비게이션 아이콘
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="up-caret" size="1.5rem" /></div><div class="icon-card-label">up-caret</div></div>
@@ -159,7 +159,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="substack" size="1.5rem" /></div><div class="icon-card-label">substack</div></div>
 </div>
 
-### 에디터 &amp; 브라우저
+### 편집기 &amp; 브라우저
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="vscode" size="1.5rem" /></div><div class="icon-card-label">vscode</div></div>
@@ -176,7 +176,7 @@ import { Icon } from '@astrojs/starlight/components';
 
 ## Seti 파일 아이콘
 
-Seti 아이콘은 `seti:` 접두사를 사용하며 파일 유형 표현을 위해 설계되었습니다. `<Icon>` 컴포넌트와 `<FileTree>` 컴포넌트에서 모두 사용할 수 있습니다.
+Seti 아이콘은 `seti:` 접두사를 사용하며 파일 유형을 나타내기 위해 설계되었습니다. `<Icon>` 컴포넌트와 `<FileTree>` 컴포넌트에서 모두 사용할 수 있습니다.
 
 ```mdx
 <Icon name="seti:typescript" />

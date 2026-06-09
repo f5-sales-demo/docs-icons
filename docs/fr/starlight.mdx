@@ -1,10 +1,10 @@
 ---
 title: Icônes intégrées de Starlight
 description: >-
-  Référence complète de toutes les 200+ icônes intégrées de Starlight
-  disponibles via le composant Icon.
+  Référence complète des plus de 200 icônes intégrées de Starlight disponibles
+  via le composant Icon.
 sidebar:
-  label: Intégrées à Starlight
+  label: Icônes intégrées de Starlight
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -29,16 +29,16 @@ import { Icon } from '@astrojs/starlight/components';
 
 ### Propriétés
 
-| Propriété | Type | Par défaut | Description |
+| Propriété | Type | Défaut | Description |
 |------|------|---------|-------------|
 | `name` | `string` | — | **Requis.** Le nom de l'icône parmi les tableaux ci-dessous. |
-| `label` | `string` | — | Libellé accessible pour les lecteurs d'écran. À utiliser pour les icônes significatives ; à omettre pour les icônes décoratives. |
-| `size` | `string` | `"1em"` | Valeur de taille CSS appliquée à la largeur et la hauteur. |
-| `color` | `string` | `"currentColor"` | Valeur de couleur CSS. |
+| `label` | `string` | — | Libellé accessible pour les lecteurs d'écran. À utiliser pour les icônes porteuses de sens ; à omettre pour les icônes décoratives. |
+| `size` | `string` | `"1em"` | Valeur CSS de taille appliquée à la largeur et la hauteur. |
+| `color` | `string` | `"currentColor"` | Valeur CSS de couleur. |
 | `class` | `string` | — | Classes CSS supplémentaires. |
 
 :::tip[Accessibilité]
-Ajoutez une propriété `label` lorsqu'une icône véhicule un sens (par ex. une icône de lien). Omettez `label` pour les icônes purement décoratives — Starlight les masquera automatiquement des technologies d'assistance.
+Ajoutez une propriété `label` lorsqu'une icône a une signification (par exemple, une icône de lien). Omettez `label` pour les icônes purement décoratives — Starlight les masquera automatiquement des technologies d'assistance.
 :::
 
 ## Icônes de navigation
@@ -89,7 +89,7 @@ Ajoutez une propriété `label` lorsqu'une icône véhicule un sens (par ex. une
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
 </div>
 
-## Icônes sociales et communautaires
+## Icônes de réseaux sociaux et communauté
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="github" size="1.5rem" /></div><div class="icon-card-label">github</div></div>
@@ -178,7 +178,7 @@ Ajoutez une propriété `label` lorsqu'une icône véhicule un sens (par ex. une
 
 ## Icônes de fichiers Seti
 
-Les icônes Seti utilisent le préfixe `seti:` et sont conçues pour représenter les types de fichiers. Elles fonctionnent dans le composant `<Icon>` et le composant `<FileTree>`.
+Les icônes Seti utilisent le préfixe `seti:` et sont conçues pour la représentation des types de fichiers. Elles fonctionnent dans le composant `<Icon>` et dans le composant `<FileTree>`.
 
 ```mdx
 <Icon name="seti:typescript" />
@@ -245,7 +245,7 @@ Les icônes Seti utilisent le préfixe `seti:` et sont conçues pour représente
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:tex" size="1.5rem" /></div><div class="icon-card-label">seti:tex</div></div>
 </div>
 
-### Frameworks et templates
+### Frameworks et modèles
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:react" size="1.5rem" /></div><div class="icon-card-label">seti:react</div></div>

@@ -1,8 +1,8 @@
 ---
 title: Integrierte Starlight-Icons
 description: >-
-  Vollständige Referenz für alle über 200 integrierten Starlight-Icons, die über
-  die Icon-Komponente verfügbar sind.
+  Vollständige Referenz für alle 200+ integrierten Starlight-Icons, die über die
+  Icon-Komponente verfügbar sind.
 sidebar:
   label: Integrierte Starlight-Icons
   order: 3
@@ -32,13 +32,13 @@ import { Icon } from '@astrojs/starlight/components';
 | Prop | Typ | Standard | Beschreibung |
 |------|------|---------|-------------|
 | `name` | `string` | — | **Erforderlich.** Der Icon-Name aus den untenstehenden Tabellen. |
-| `label` | `string` | — | Barrierefreie Bezeichnung für Screenreader. Verwenden Sie diese für bedeutungstragende Icons; lassen Sie sie bei dekorativen Icons weg. |
+| `label` | `string` | — | Barrierefreies Label für Screenreader. Verwenden Sie es für bedeutungstragende Icons; lassen Sie es bei dekorativen Icons weg. |
 | `size` | `string` | `"1em"` | CSS-Größenwert, der auf Breite und Höhe angewendet wird. |
 | `color` | `string` | `"currentColor"` | CSS-Farbwert. |
 | `class` | `string` | — | Zusätzliche CSS-Klassen. |
 
 :::tip[Barrierefreiheit]
-Fügen Sie eine `label`-Prop hinzu, wenn ein Icon eine Bedeutung vermittelt (z. B. ein Link-Icon). Lassen Sie `label` bei rein dekorativen Icons weg — Starlight verbirgt sie automatisch vor assistiven Technologien.
+Fügen Sie ein `label`-Prop hinzu, wenn ein Icon eine Bedeutung vermittelt (z. B. ein Link-Icon). Lassen Sie `label` bei rein dekorativen Icons weg — Starlight verbirgt sie automatisch vor unterstützenden Technologien.
 :::
 
 ## Navigations-Icons
@@ -89,7 +89,7 @@ Fügen Sie eine `label`-Prop hinzu, wenn ein Icon eine Bedeutung vermittelt (z. 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
 </div>
 
-## Social- &amp; Community-Icons
+## Soziale &amp; Community-Icons
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="github" size="1.5rem" /></div><div class="icon-card-label">github</div></div>
@@ -297,7 +297,7 @@ Seti-Icons verwenden das Präfix `seti:` und sind für die Darstellung von Datei
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:pipeline" size="1.5rem" /></div><div class="icon-card-label">seti:pipeline</div></div>
 </div>
 
-### Dateitypen &amp; Verschiedenes
+### Dateitypen &amp; Sonstiges
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:folder" size="1.5rem" /></div><div class="icon-card-label">seti:folder</div></div>

@@ -1,7 +1,7 @@
 ---
 title: Iconify-Pakete Übersicht
 description: >-
-  Übersicht über die Icon-Pakete Material Design, Carbon, Phosphor und Tabler —
+  Übersicht über Material Design, Carbon, Phosphor und Tabler Icon-Pakete —
   Vergleich, gemeinsame Nutzungsmuster und Links zu den einzelnen Paketseiten.
 sidebar:
   label: Iconify Übersicht
@@ -11,14 +11,14 @@ i18n:
   translator: machine
 ---
 
-Mehrere Iconify-Icon-Pakete sind als npm-Pakete mit Astro `Icon`-Komponenten verfügbar. Jedes Paket hat seinen eigenen Import und verwendet dieselbe `name`-basierte API.
+Mehrere Iconify-Icon-Pakete sind als npm-Pakete mit Astro `Icon`-Komponenten verfügbar. Jedes Paket hat seinen eigenen Import und verwendet die gleiche `name`-basierte API.
 
 ## Paketvergleich
 
 | Paket | Präfix | Icons | Stil | Ideal für | Seite |
 |-------|--------|-------|------|-----------|-------|
-| Material Design | `mdi` | 7.638 | Gefüllt + umrissen | Universell einsetzbar, breiteste Abdeckung | [Material Design](/mdi/) |
-| Carbon | `carbon` | 2.582 | Umrissen | Enterprise-/IBM-Design, klare Linien | [Carbon](/carbon/) |
+| Material Design | `mdi` | 7.638 | Gefüllt + umrandet | Allgemeine Nutzung, breiteste Abdeckung | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2.582 | Umrandet | Enterprise/IBM-Design, klare Linien | [Carbon](/carbon/) |
 | Phosphor | `ph` | 9.161 | Mehrere Strichstärken | Flexible Strichstärkenoptionen (dünn bis gefüllt) | [Phosphor](/phosphor/) |
 | Tabler | `tabler` | 6.034 | Strichbasiert | Klare Linien-Icons, einheitliche Strichstärke | [Tabler](/tabler/) |
 
@@ -40,13 +40,13 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 <TablerIcon name="shield" />
 ```
 
-Icons werden als Inline-SVGs mit `currentColor` gerendert — sie passen sich automatisch an den Hell- und Dunkelmodus an.
+Icons werden als Inline-SVGs mit `currentColor` gerendert — sie passen sich automatisch an den hellen und dunklen Modus an.
 
 ## Ein Paket auswählen
 
-- **Breiteste Abdeckung**: Material Design Icons bietet die meisten Icons (7.638) mit gefüllten und umrissenen Varianten für praktisch jeden Anwendungsfall.
-- **Enterprise-Design**: Carbon folgt der IBM-Designsprache mit klaren, einheitlichen Umrissen, die für Geschäftsanwendungen geeignet sind.
-- **Strichstärken-Flexibilität**: Phosphor bietet sechs Strichstärken-Varianten (dünn, leicht, regulär, fett, gefüllt, duotone) zur Feinabstimmung der visuellen Gewichtung.
-- **Einheitliche Striche**: Tabler verwendet eine gleichmäßige Strichstärke von 2px bei allen 6.034 Icons für ein kohärentes Erscheinungsbild.
+- **Breiteste Abdeckung**: Material Design Icons bietet die meisten Icons (7.638) mit gefüllten und umrandeten Varianten für praktisch jeden Anwendungsfall.
+- **Enterprise-Design**: Carbon folgt IBMs Designsprache mit klaren, einheitlichen Umrissen, die für Geschäftsanwendungen geeignet sind.
+- **Strichstärken-Flexibilität**: Phosphor bietet sechs Strichstärkenvarianten (dünn, leicht, regulär, fett, gefüllt, Duoton) zur Feinabstimmung der visuellen Gewichtung.
+- **Einheitliche Striche**: Tabler verwendet eine gleichmäßige Strichstärke von 2px über alle 6.034 Icons hinweg für ein einheitliches Erscheinungsbild.
 
-Auf der jeweiligen Paketseite finden Sie kuratierte Icon-Raster und Links zum Durchstöbern.
+Auf der jeweiligen Paketseite finden Sie kuratierte Icon-Raster und Links zum Durchsuchen.

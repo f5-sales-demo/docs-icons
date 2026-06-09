@@ -17,7 +17,7 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-O tema de documentação fornece acesso a milhares de ícones de múltiplos pacotes. Todos os pacotes utilizam o mesmo padrão: importe o componente `Icon.astro` do pacote e referencie os ícones pelo nome.
+O tema de documentação fornece acesso a milhares de ícones de múltiplos pacotes. Todos os pacotes seguem o mesmo padrão: importe o componente `Icon.astro` do pacote e referencie os ícones pelo nome.
 
 ## Pacotes de Ícones Disponíveis
 
@@ -80,19 +80,19 @@ Os ícones utilizam `currentColor` e se adaptam automaticamente aos modos claro 
 
 ## Comportamento no Modo Escuro/Claro
 
-Todos os componentes `Icon` renderizam SVGs inline utilizando `currentColor`. Eles se adaptam automaticamente ao tema atual — nenhum tratamento especial de CSS ou classes é necessário.
+Todos os componentes `Icon` renderizam SVGs inline usando `currentColor`. Eles se adaptam automaticamente ao tema atual — nenhum tratamento especial de CSS ou classes é necessário.
 
-Os ícones de serviços F5 XC utilizam propriedades CSS personalizadas que se adaptam automaticamente aos modos claro e escuro — nenhum tratamento especial de classes é necessário. Para outros ícones multicoloridos (como as variantes de cor do HashiCorp Flight), a classe `no-invert` em `.icon-card-image` preserva as cores originais no modo escuro.
+Os ícones de serviços F5 XC utilizam propriedades personalizadas CSS que se adaptam automaticamente aos modos claro e escuro — nenhum tratamento especial de classes é necessário. Para outros ícones multicoloridos (como variantes coloridas do HashiCorp Flight), a classe `no-invert` em `.icon-card-image` preserva as cores originais no modo escuro.
 
 ## Qual Pacote Devo Usar?
 
-| Caso de Uso | Pacote Recomendado | Motivo |
-|-------------|-------------------|--------|
-| UI geral (setas, fechar, buscar) | Starlight Integrado | Sem configuração, sempre disponível |
+| Caso de Uso | Pacote Recomendado | Por quê |
+|-------------|-------------------|---------|
+| UI geral (setas, fechar, busca) | Starlight Integrado | Configuração zero, sempre disponível |
 | Diagramas de produtos F5 | F5 Brand | Arte específica de redes/segurança |
 | Ícones modernos com traço | Lucide | Limpos, consistentes, mais de 1.600 ícones |
 | Ícones preenchidos/contornados em escala | Material Design (mdi) | Maior conjunto com 7.638 ícones |
-| Linguagem de design IBM | Carbon | 2.582 ícones de nível corporativo |
+| Linguagem de design IBM | Carbon | 2.582 ícones de nível empresarial |
 | Opções flexíveis de espessura | Phosphor | 9.161 ícones com seis variantes de espessura |
 | Ícones de linha nítidos | Tabler | 6.034 ícones com traço consistente de 2px |
 | Diagramas de serviços F5 XC | F5 XC Services | 30 ícones de serviços Distributed Cloud |
