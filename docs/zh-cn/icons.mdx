@@ -1,6 +1,6 @@
 ---
 title: 图标参考
-description: 文档主题中所有可用图标包的概览——用法、暗色模式行为和选择指南。
+description: 文档主题中所有可用图标包的概览——用法、深色模式行为和选择指南。
 sidebar:
   label: 概览
   order: 2
@@ -15,7 +15,7 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-文档主题提供了来自多个图标包的数千个图标。每个图标包使用相同的模式：导入该包的 `Icon.astro` 组件并通过名称引用图标。
+文档主题提供了来自多个图标包的数千个图标。每个图标包使用相同的模式：导入该包的 `Icon.astro` 组件，然后通过名称引用图标。
 
 ## 可用图标包
 
@@ -37,7 +37,7 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
 ## 渲染方式
 
-所有图标包使用各自包的 `Icon.astro` 组件来渲染内联 SVG。每个包都有自己的导入方式：
+所有图标包使用各自包内的 `Icon.astro` 组件来渲染内联 SVG。每个图标包有自己的导入方式：
 
 ```astro
 ---
@@ -56,7 +56,7 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 <F5xIcon name="bot-defense" />
 ```
 
-图标使用 `currentColor`，会自动适应亮色和暗色模式，无需特殊处理。
+图标使用 `currentColor`，会自动适应浅色和深色模式，无需特殊处理。
 
 ### Starlight 内置
 
@@ -76,26 +76,26 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
 </div>
 
-## 暗色/亮色模式行为
+## 深色/浅色模式行为
 
-所有 `Icon` 组件使用 `currentColor` 渲染内联 SVG。它们会自动适应当前主题——无需特殊的 CSS 或类名处理。
+所有 `Icon` 组件使用 `currentColor` 渲染内联 SVG。它们会自动适应当前主题——无需特殊的 CSS 或类处理。
 
-F5 XC 服务图标使用 CSS 自定义属性，会自动适应亮色和暗色模式——无需特殊的类名处理。对于其他多色图标（如 HashiCorp Flight 的彩色变体），在 `.icon-card-image` 上使用 `no-invert` 类可以在暗色模式下保留原始颜色。
+F5 XC 服务图标使用 CSS 自定义属性，会自动适应浅色和深色模式——无需特殊的类处理。对于其他多色图标（如 HashiCorp Flight 的彩色变体），`.icon-card-image` 上的 `no-invert` 类会在深色模式下保留原始颜色。
 
 ## 我应该使用哪个图标包？
 
 | 使用场景 | 推荐图标包 | 原因 |
 |----------|------------------|-----|
 | 通用 UI（箭头、关闭、搜索） | Starlight 内置 | 零配置，始终可用 |
-| F5 产品图表 | F5 品牌 | 特定领域的网络/安全图形 |
-| 现代描边图标 | Lucide | 简洁一致的 1,600+ 图标 |
-| 大规模填充/轮廓图标 | Material Design (mdi) | 最大的图标集，包含 7,638 个图标 |
+| F5 产品图表 | F5 品牌 | 针对网络/安全领域的专用图形 |
+| 现代描边图标 | Lucide | 简洁一致，1,600+ 图标 |
+| 大规模填充/描边图标 | Material Design (mdi) | 最大的图标集，含 7,638 个图标 |
 | IBM 设计语言 | Carbon | 2,582 个企业级图标 |
 | 灵活的粗细选项 | Phosphor | 9,161 个图标，六种粗细变体 |
-| 清晰的线条图标 | Tabler | 6,034 个图标，统一的 2px 描边 |
+| 清晰的线条图标 | Tabler | 6,034 个图标，统一 2px 描边 |
 | F5 XC 服务图表 | F5 XC 服务 | 30 个分布式云服务图标 |
-| 品牌/公司标志 | Simple Icons | 3,200+ 供应商和服务品牌图标 |
-| 云/基础设施供应商标志 | HashiCorp Flight | AWS、GCP、Azure、K8s 供应商图标 |
+| 品牌/公司徽标 | Simple Icons | 3,200+ 供应商和服务的品牌图标 |
+| 云/基础设施供应商徽标 | HashiCorp Flight | AWS、GCP、Azure、K8s 供应商图标 |
 | AWS 架构图 | AWS 架构 | 885 个彩色服务图标，用于 AWS 基础设施 |
 | Azure 架构图 | Azure 架构 | 606 个彩色服务图标，用于 Azure 基础设施 |
 | GCP 架构图 | GCP 架构 | 216 个彩色服务图标，用于 Google Cloud 基础设施 |

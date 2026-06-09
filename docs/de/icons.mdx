@@ -1,8 +1,8 @@
 ---
 title: Icon-Referenz
 description: >-
-  Übersicht über alle im Dokumentationstheme verfügbaren Icon-Pakete —
-  Verwendung, Dark-Mode-Verhalten und Auswahlhilfe.
+  Übersicht aller verfügbaren Icon-Pakete im Dokumentationsthema — Verwendung,
+  Verhalten im Dunkelmodus und Auswahlhilfe.
 sidebar:
   label: Übersicht
   order: 2
@@ -17,13 +17,13 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-Das Dokumentationstheme bietet Zugriff auf Tausende von Icons aus mehreren Paketen. Jedes Paket verwendet dasselbe Muster: Importieren Sie die `Icon.astro`-Komponente des Pakets und referenzieren Sie Icons über ihren Namen.
+Das Dokumentationsthema bietet Zugriff auf Tausende von Icons aus mehreren Paketen. Jedes Paket verwendet dasselbe Muster: Importieren Sie die `Icon.astro`-Komponente des Pakets und referenzieren Sie Icons über ihren Namen.
 
 ## Verfügbare Icon-Pakete
 
 | Paket | Anzahl | Verwendung | Seite |
 |-------|--------|------------|-------|
-| Starlight Built-in | ~200 | `<Icon name="star" />` | [Starlight Built-in](/starlight/) |
+| Starlight Integriert | ~200 | `<Icon name="star" />` | [Starlight Integriert](/starlight/) |
 | F5 Brand | 665 | `<Icon name="ai-admin" />` | [F5 Brand](/brand/) |
 | Lucide | ~1.600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
 | Material Design | 7.638 | `<Icon name="database" />` | [Material Design](/mdi/) |
@@ -60,7 +60,7 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 
 Icons verwenden `currentColor` und passen sich automatisch an den hellen und dunklen Modus an, ohne dass eine spezielle Behandlung erforderlich ist.
 
-### Starlight Built-in
+### Starlight Integriert
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="star" size="1.5rem" /></div><div class="icon-card-label">star</div></div>
@@ -78,22 +78,22 @@ Icons verwenden `currentColor` und passen sich automatisch an den hellen und dun
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><TablerIcon name="shield" size="1.5rem" /></div><div class="icon-card-label">tabler/shield</div></div>
 </div>
 
-## Dark/Light-Mode-Verhalten
+## Verhalten bei Dunkel-/Hellmodus
 
 Alle `Icon`-Komponenten rendern Inline-SVGs mit `currentColor`. Sie passen sich automatisch an das aktuelle Theme an — es ist keine spezielle CSS- oder Klassenbehandlung erforderlich.
 
-F5 XC Service-Icons verwenden CSS Custom Properties, die sich automatisch an den hellen und dunklen Modus anpassen — es ist keine spezielle Klassenbehandlung erforderlich. Für andere mehrfarbige Icons (wie HashiCorp Flight Farbvarianten) bewahrt die Klasse `no-invert` auf `.icon-card-image` die Originalfarben im Dark Mode.
+F5 XC Service-Icons verwenden benutzerdefinierte CSS-Eigenschaften, die sich automatisch an den hellen und dunklen Modus anpassen — es ist keine spezielle Klassenbehandlung erforderlich. Für andere mehrfarbige Icons (wie HashiCorp Flight Farbvarianten) bewahrt die Klasse `no-invert` auf `.icon-card-image` die Originalfarben im Dunkelmodus.
 
 ## Welches Paket sollte ich verwenden?
 
 | Anwendungsfall | Empfohlenes Paket | Warum |
 |----------------|-------------------|-------|
-| Allgemeine UI (Pfeile, Schließen, Suche) | Starlight Built-in | Keine Konfiguration nötig, immer verfügbar |
-| F5-Produktdiagramme | F5 Brand | Domänenspezifische Netzwerk-/Sicherheitsgrafiken |
+| Allgemeine UI (Pfeile, Schließen, Suche) | Starlight Integriert | Keine Konfiguration nötig, immer verfügbar |
+| F5 Produktdiagramme | F5 Brand | Domänenspezifische Netzwerk-/Sicherheitsgrafiken |
 | Moderne Strich-Icons | Lucide | Sauber, konsistent, über 1.600 Icons |
 | Gefüllte/umrandete Icons in großer Auswahl | Material Design (mdi) | Größtes Set mit 7.638 Icons |
-| IBM-Designsprache | Carbon | 2.582 Enterprise-Grade Icons |
-| Flexible Stärkeoptionen | Phosphor | 9.161 Icons mit sechs Gewichtsvarianten |
+| IBM Design-Sprache | Carbon | 2.582 Icons in Enterprise-Qualität |
+| Flexible Gewichtsoptionen | Phosphor | 9.161 Icons mit sechs Gewichtsvarianten |
 | Klare Linien-Icons | Tabler | 6.034 Icons mit konsistentem 2px-Strich |
 | F5 XC Service-Diagramme | F5 XC Services | 30 Distributed Cloud Service-Icons |
 | Marken-/Firmenlogos | Simple Icons | 3.200+ Marken-Icons für Anbieter und Dienste |

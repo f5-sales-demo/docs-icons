@@ -19,7 +19,7 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
 ## 利用可能なアイコンパック
 
-| パック | 数量 | 使用方法 | ページ |
+| パック | 数 | 使用方法 | ページ |
 |------|-------|-------|------|
 | Starlight 組み込み | 約200 | `<Icon name="star" />` | [Starlight 組み込み](/starlight/) |
 | F5 ブランド | 665 | `<Icon name="ai-admin" />` | [F5 ブランド](/brand/) |
@@ -29,7 +29,7 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 | Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
 | Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
 | F5 XC サービス | 30 | `<Icon name="bot-defense" />` | [F5 XC サービス](/f5xc/) |
-| Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
+| Simple Icons | 3,200以上 | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
 | HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
 | AWS アーキテクチャ | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
 | Azure アーキテクチャ | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
@@ -44,7 +44,7 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 // Starlight 組み込み
 import { Icon } from '@astrojs/starlight/components';
 
-// その他のパック — それぞれ独自のインポートがあります
+// その他のパック — それぞれ独自のインポートが必要
 import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
 import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
@@ -78,24 +78,24 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 
 ## ダーク/ライトモードの動作
 
-すべての `Icon` コンポーネントは `currentColor` を使用してインライン SVG をレンダリングします。現在のテーマに自動的に適応するため、特別な CSS やクラス処理は不要です。
+すべての `Icon` コンポーネントは `currentColor` を使用してインライン SVG をレンダリングします。現在のテーマに自動的に適応するため、特別な CSS やクラスの処理は不要です。
 
-F5 XC サービスアイコンは、ライトモードとダークモードに自動的に適応する CSS カスタムプロパティを使用しており、特別なクラス処理は不要です。その他のマルチカラーアイコン（HashiCorp Flight のカラーバリアントなど）については、`.icon-card-image` の `no-invert` クラスがダークモードで元の色を保持します。
+F5 XC サービスアイコンは、ライトモードとダークモードに自動的に適応する CSS カスタムプロパティを使用しており、特別なクラスの処理は不要です。その他のマルチカラーアイコン（HashiCorp Flight のカラーバリアントなど）については、`.icon-card-image` の `no-invert` クラスにより、ダークモードでもオリジナルの色が保持されます。
 
-## どのパックを使うべきか？
+## どのパックを使用すべきか？
 
 | ユースケース | 推奨パック | 理由 |
 |----------|------------------|-----|
 | 一般的な UI（矢印、閉じる、検索） | Starlight 組み込み | 設定不要、常に利用可能 |
-| F5 製品ダイアグラム | F5 ブランド | ネットワーキング/セキュリティ分野に特化したアート |
+| F5 製品ダイアグラム | F5 ブランド | ネットワーキング/セキュリティ専用のドメイン固有アート |
 | モダンなストロークアイコン | Lucide | クリーンで一貫性のある 1,600 以上のアイコン |
 | 大規模な塗りつぶし/アウトラインアイコン | Material Design (mdi) | 7,638 アイコンの最大セット |
 | IBM デザイン言語 | Carbon | 2,582 のエンタープライズグレードアイコン |
-| 柔軟なウェイトオプション | Phosphor | 6 つのウェイトバリアントを持つ 9,161 アイコン |
+| 柔軟なウェイトオプション | Phosphor | 6 種類のウェイトバリアントを持つ 9,161 アイコン |
 | シャープなラインアイコン | Tabler | 一貫した 2px ストロークの 6,034 アイコン |
 | F5 XC サービスダイアグラム | F5 XC サービス | 30 の Distributed Cloud サービスアイコン |
-| ブランド/企業ロゴ | Simple Icons | ベンダーやサービスの 3,200 以上のブランドアイコン |
+| ブランド/企業ロゴ | Simple Icons | ベンダーやサービス向けの 3,200 以上のブランドアイコン |
 | クラウド/インフラベンダーロゴ | HashiCorp Flight | AWS、GCP、Azure、K8s ベンダーアイコン |
-| AWS アーキテクチャダイアグラム | AWS アーキテクチャ | AWS インフラ用の 885 カラーサービスアイコン |
-| Azure アーキテクチャダイアグラム | Azure アーキテクチャ | Azure インフラ用の 606 カラーサービスアイコン |
-| GCP アーキテクチャダイアグラム | GCP アーキテクチャ | Google Cloud インフラ用の 216 カラーサービスアイコン |
+| AWS アーキテクチャダイアグラム | AWS アーキテクチャ | AWS インフラ向けの 885 のカラーサービスアイコン |
+| Azure アーキテクチャダイアグラム | Azure アーキテクチャ | Azure インフラ向けの 606 のカラーサービスアイコン |
+| GCP アーキテクチャダイアグラム | GCP アーキテクチャ | Google Cloud インフラ向けの 216 のカラーサービスアイコン |

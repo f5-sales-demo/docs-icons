@@ -4,7 +4,7 @@ description: >-
   Référence complète de toutes les 200+ icônes intégrées de Starlight
   disponibles via le composant Icon.
 sidebar:
-  label: Icônes intégrées de Starlight
+  label: Intégrées à Starlight
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -31,14 +31,14 @@ import { Icon } from '@astrojs/starlight/components';
 
 | Propriété | Type | Par défaut | Description |
 |------|------|---------|-------------|
-| `name` | `string` | — | **Obligatoire.** Le nom de l'icône parmi les tableaux ci-dessous. |
+| `name` | `string` | — | **Requis.** Le nom de l'icône parmi les tableaux ci-dessous. |
 | `label` | `string` | — | Libellé accessible pour les lecteurs d'écran. À utiliser pour les icônes significatives ; à omettre pour les icônes décoratives. |
-| `size` | `string` | `"1em"` | Valeur de taille CSS appliquée à la largeur et à la hauteur. |
+| `size` | `string` | `"1em"` | Valeur de taille CSS appliquée à la largeur et la hauteur. |
 | `color` | `string` | `"currentColor"` | Valeur de couleur CSS. |
 | `class` | `string` | — | Classes CSS supplémentaires. |
 
 :::tip[Accessibilité]
-Ajoutez une propriété `label` lorsqu'une icône transmet un sens (par ex. une icône de lien). Omettez `label` pour les icônes purement décoratives — Starlight les masquera automatiquement des technologies d'assistance.
+Ajoutez une propriété `label` lorsqu'une icône véhicule un sens (par ex. une icône de lien). Omettez `label` pour les icônes purement décoratives — Starlight les masquera automatiquement des technologies d'assistance.
 :::
 
 ## Icônes de navigation
@@ -178,7 +178,7 @@ Ajoutez une propriété `label` lorsqu'une icône transmet un sens (par ex. une 
 
 ## Icônes de fichiers Seti
 
-Les icônes Seti utilisent le préfixe `seti:` et sont conçues pour la représentation des types de fichiers. Elles fonctionnent dans le composant `<Icon>` et dans le composant `<FileTree>`.
+Les icônes Seti utilisent le préfixe `seti:` et sont conçues pour représenter les types de fichiers. Elles fonctionnent dans le composant `<Icon>` et le composant `<FileTree>`.
 
 ```mdx
 <Icon name="seti:typescript" />

@@ -1,10 +1,10 @@
 ---
-title: Iconos incorporados de Starlight
+title: Iconos integrados de Starlight
 description: >-
-  Referencia completa de los más de 200 iconos incorporados de Starlight
+  Referencia completa de los más de 200 iconos integrados de Starlight
   disponibles a través del componente Icon.
 sidebar:
-  label: Incorporados de Starlight
+  label: Integrados de Starlight
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -13,7 +13,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight incluye más de 200 iconos incorporados disponibles a través del componente `<Icon>` — sin necesidad de instalación. El plugin `starlight-plugin-icons` ya está configurado en el tema, por lo que estos iconos funcionan en cualquier repositorio de contenido.
+Starlight incluye más de 200 iconos integrados disponibles a través del componente `<Icon>` — sin necesidad de instalación. El plugin `starlight-plugin-icons` ya está configurado en el tema, por lo que estos iconos funcionan en cualquier repositorio de contenido.
 
 ## Uso del componente Icon
 
@@ -29,16 +29,16 @@ import { Icon } from '@astrojs/starlight/components';
 
 ### Props
 
-| Prop | Tipo | Predeterminado | Descripción |
+| Prop | Tipo | Por defecto | Descripción |
 |------|------|---------|-------------|
 | `name` | `string` | — | **Requerido.** El nombre del icono de las tablas a continuación. |
-| `label` | `string` | — | Etiqueta accesible para lectores de pantalla. Úsela para iconos con significado; omítala para los decorativos. |
+| `label` | `string` | — | Etiqueta accesible para lectores de pantalla. Úsela para iconos significativos; omítala para los decorativos. |
 | `size` | `string` | `"1em"` | Valor de tamaño CSS aplicado al ancho y alto. |
 | `color` | `string` | `"currentColor"` | Valor de color CSS. |
 | `class` | `string` | — | Clases CSS adicionales. |
 
 :::tip[Accesibilidad]
-Agregue una prop `label` cuando un icono transmita significado (por ejemplo, un icono de enlace). Omita `label` para iconos puramente decorativos — Starlight los ocultará automáticamente de la tecnología asistiva.
+Agregue una prop `label` cuando un icono transmita significado (por ejemplo, un icono de enlace). Omita `label` para iconos puramente decorativos — Starlight los ocultará automáticamente de la tecnología de asistencia.
 :::
 
 ## Iconos de navegación

@@ -1,8 +1,8 @@
 ---
 title: Iconify 팩 개요
 description: >-
-  Material Design, Carbon, Phosphor, Tabler 아이콘 팩에 대한 개요 — 비교, 공통 사용 패턴 및 개별 팩
-  페이지 링크.
+  Material Design, Carbon, Phosphor, Tabler 아이콘 팩의 개요 — 비교, 공통 사용 패턴, 개별 팩 페이지
+  링크.
 sidebar:
   label: Iconify 개요
   order: 10
@@ -11,20 +11,20 @@ i18n:
   translator: machine
 ---
 
-여러 Iconify 아이콘 팩이 Astro `Icon` 컴포넌트와 함께 npm 패키지로 제공됩니다. 각 팩은 고유한 import 경로를 가지며 동일한 `name` 기반 API를 사용합니다.
+여러 Iconify 아이콘 팩이 Astro `Icon` 컴포넌트와 함께 npm 패키지로 제공됩니다. 각 팩은 고유한 import를 가지며 동일한 `name` 기반 API를 사용합니다.
 
 ## 팩 비교
 
-| 팩 | 접두사 | 아이콘 수 | 스타일 | 최적 용도 | 페이지 |
+| 팩 | 접두사 | 아이콘 수 | 스타일 | 적합한 용도 | 페이지 |
 |------|--------|-------|-------|----------|------|
-| Material Design | `mdi` | 7,638 | 채움 + 외곽선 | 범용, 가장 넓은 커버리지 | [Material Design](/mdi/) |
-| Carbon | `carbon` | 2,582 | 외곽선 | 엔터프라이즈/IBM 디자인, 깔끔한 선 | [Carbon](/carbon/) |
+| Material Design | `mdi` | 7,638 | 채움 + 윤곽선 | 범용, 가장 넓은 범위 | [Material Design](/mdi/) |
+| Carbon | `carbon` | 2,582 | 윤곽선 | 엔터프라이즈/IBM 디자인, 깔끔한 선 | [Carbon](/carbon/) |
 | Phosphor | `ph` | 9,161 | 다양한 두께 | 유연한 두께 옵션 (thin에서 fill까지) | [Phosphor](/phosphor/) |
 | Tabler | `tabler` | 6,034 | 스트로크 기반 | 선명한 라인 아이콘, 일관된 스트로크 | [Tabler](/tabler/) |
 
 ## 사용법
 
-각 팩은 고유한 `Icon.astro` 컴포넌트를 제공합니다:
+각 팩은 고유한 `Icon.astro` 컴포넌트를 가지고 있습니다:
 
 ```astro
 ---
@@ -40,13 +40,13 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 <TablerIcon name="shield" />
 ```
 
-아이콘은 `currentColor`를 사용하는 인라인 SVG로 렌더링되므로 라이트 모드와 다크 모드에 자동으로 적응합니다.
+아이콘은 `currentColor`를 사용하여 인라인 SVG로 렌더링되므로 라이트 모드와 다크 모드에 자동으로 적응합니다.
 
-## 팩 선택 가이드
+## 팩 선택하기
 
-- **가장 넓은 커버리지**: Material Design Icons는 거의 모든 사용 사례에 대해 채움 및 외곽선 변형을 포함하여 가장 많은 아이콘(7,638개)을 보유하고 있습니다.
-- **엔터프라이즈 디자인**: Carbon은 비즈니스 애플리케이션에 적합한 깔끔하고 일관된 외곽선으로 IBM의 디자인 언어를 따릅니다.
-- **두께 유연성**: Phosphor는 시각적 두께를 세밀하게 조정할 수 있도록 6가지 두께 변형(thin, light, regular, bold, fill, duotone)을 제공합니다.
-- **일관된 스트로크**: Tabler는 6,034개의 모든 아이콘에 균일한 2px 스트로크 너비를 사용하여 통일감 있는 외관을 제공합니다.
+- **가장 넓은 범위**: Material Design Icons는 가장 많은 아이콘(7,638개)을 보유하며 거의 모든 사용 사례에 대해 채움 및 윤곽선 변형을 제공합니다.
+- **엔터프라이즈 디자인**: Carbon은 비즈니스 애플리케이션에 적합한 깔끔하고 일관된 윤곽선으로 IBM의 디자인 언어를 따릅니다.
+- **두께 유연성**: Phosphor는 시각적 두께를 세밀하게 조정할 수 있는 6가지 두께 변형(thin, light, regular, bold, fill, duotone)을 제공합니다.
+- **일관된 스트로크**: Tabler는 모든 6,034개 아이콘에 균일한 2px 스트로크 너비를 사용하여 통일된 외관을 제공합니다.
 
-선별된 아이콘 그리드와 탐색 링크는 각 팩의 전용 페이지를 참고하세요.
+선별된 아이콘 그리드와 탐색 링크는 각 팩의 전용 페이지를 참조하세요.

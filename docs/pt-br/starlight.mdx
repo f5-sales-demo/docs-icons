@@ -17,7 +17,7 @@ O Starlight inclui mais de 200 ícones integrados disponíveis via o componente 
 
 ## Usando o Componente Icon
 
-Importe o componente e passe o nome de um ícone:
+Importe o componente e passe um nome de ícone:
 
 ```mdx
 import { Icon } from '@astrojs/starlight/components';
@@ -31,14 +31,14 @@ import { Icon } from '@astrojs/starlight/components';
 
 | Prop | Tipo | Padrão | Descrição |
 |------|------|--------|-----------|
-| `name` | `string` | — | **Obrigatório.** O nome do ícone das tabelas abaixo. |
-| `label` | `string` | — | Rótulo acessível para leitores de tela. Use para ícones com significado; omita para ícones decorativos. |
-| `size` | `string` | `"1em"` | Valor CSS de tamanho aplicado à largura e altura. |
-| `color` | `string` | `"currentColor"` | Valor CSS de cor. |
+| `name` | `string` | — | **Obrigatória.** O nome do ícone das tabelas abaixo. |
+| `label` | `string` | — | Rótulo acessível para leitores de tela. Use para ícones significativos; omita para ícones decorativos. |
+| `size` | `string` | `"1em"` | Valor de tamanho CSS aplicado à largura e altura. |
+| `color` | `string` | `"currentColor"` | Valor de cor CSS. |
 | `class` | `string` | — | Classes CSS adicionais. |
 
 :::tip[Acessibilidade]
-Adicione a prop `label` quando um ícone transmite significado (ex.: um ícone de link). Omita `label` para ícones puramente decorativos — o Starlight os ocultará automaticamente das tecnologias assistivas.
+Adicione a prop `label` quando um ícone transmite significado (por exemplo, um ícone de link). Omita `label` para ícones puramente decorativos — o Starlight os ocultará automaticamente de tecnologias assistivas.
 :::
 
 ## Ícones de Navegação

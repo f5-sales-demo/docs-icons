@@ -1,6 +1,6 @@
 ---
 title: Iconify 图标包概览
-description: Material Design、Carbon、Phosphor 和 Tabler 图标包的概览 — 比较、共享使用模式以及各图标包页面的链接。
+description: Material Design、Carbon、Phosphor 和 Tabler 图标包概览 — 对比、通用使用模式及各图标包独立页面链接。
 sidebar:
   label: Iconify 概览
   order: 10
@@ -9,16 +9,16 @@ i18n:
   translator: machine
 ---
 
-多个 Iconify 图标包以 npm 包的形式提供，可与 Astro `Icon` 组件配合使用。每个图标包有各自的导入方式，并使用相同的基于 `name` 的 API。
+多个 Iconify 图标包以 npm 包的形式提供，并配有 Astro `Icon` 组件。每个图标包都有各自的导入方式，并使用相同的基于 `name` 的 API。
 
 ## 图标包对比
 
-| 图标包 | 前缀 | 图标数量 | 风格 | 最佳用途 | 页面 |
+| 图标包 | 前缀 | 图标数量 | 风格 | 最适用于 | 页面 |
 |------|--------|-------|-------|----------|------|
-| Material Design | `mdi` | 7,638 | 填充 + 轮廓 | 通用场景，覆盖面最广 | [Material Design](/mdi/) |
+| Material Design | `mdi` | 7,638 | 填充 + 轮廓 | 通用用途，覆盖范围最广 | [Material Design](/mdi/) |
 | Carbon | `carbon` | 2,582 | 轮廓 | 企业/IBM 设计，线条简洁 | [Carbon](/carbon/) |
-| Phosphor | `ph` | 9,161 | 多种粗细 | 灵活的粗细选项（从细到填充） | [Phosphor](/phosphor/) |
-| Tabler | `tabler` | 6,034 | 描边风格 | 清晰的线条图标，一致的描边 | [Tabler](/tabler/) |
+| Phosphor | `ph` | 9,161 | 多种粗细 | 灵活的粗细选项（细到填充） | [Phosphor](/phosphor/) |
+| Tabler | `tabler` | 6,034 | 描边 | 清晰的线条图标，一致的描边 | [Tabler](/tabler/) |
 
 ## 使用方法
 
@@ -38,13 +38,13 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 <TablerIcon name="shield" />
 ```
 
-图标以内联 SVG 的形式渲染，使用 `currentColor` — 它们会自动适应浅色和深色模式。
+图标以内联 SVG 形式渲染，使用 `currentColor` — 它们会自动适配亮色和暗色模式。
 
 ## 选择图标包
 
-- **覆盖面最广**：Material Design Icons 拥有最多的图标（7,638 个），提供填充和轮廓变体，几乎涵盖所有使用场景。
-- **企业级设计**：Carbon 遵循 IBM 的设计语言，提供简洁、一致的轮廓图标，适合企业应用。
-- **粗细灵活**：Phosphor 提供六种粗细变体（thin、light、regular、bold、fill、duotone），可精细调整视觉粗细。
-- **一致的描边**：Tabler 在所有 6,034 个图标中使用统一的 2px 描边宽度，呈现出统一的视觉效果。
+- **覆盖范围最广**：Material Design Icons 拥有最多的图标（7,638 个），提供填充和轮廓变体，几乎涵盖所有使用场景。
+- **企业设计**：Carbon 遵循 IBM 的设计语言，具有简洁一致的轮廓风格，适合商业应用。
+- **粗细灵活性**：Phosphor 提供六种粗细变体（细、轻、常规、粗、填充、双色调），可精细调整视觉粗细。
+- **一致的描边**：Tabler 在所有 6,034 个图标上使用统一的 2px 描边宽度，呈现一致的外观。
 
 请查看每个图标包的专属页面，浏览精选图标网格和浏览链接。
