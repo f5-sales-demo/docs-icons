@@ -1,5 +1,5 @@
 ---
-title: Starlight Built-in Icons
+title: ไอคอนในตัวของ Starlight
 description: >-
   เอกสารอ้างอิงฉบับสมบูรณ์สำหรับไอคอนในตัวของ Starlight กว่า 200
   รายการที่ใช้งานได้ผ่านคอมโพเนนต์ Icon
@@ -13,9 +13,9 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight มีไอคอนในตัวมากกว่า 200 รายการที่ใช้งานได้ผ่านคอมโพเนนต์ `<Icon>` — ไม่ต้องติดตั้งเพิ่มเติม ปลั๊กอิน `starlight-plugin-icons` ได้รับการกำหนดค่าไว้แล้วในธีม ดังนั้นไอคอนเหล่านี้จะทำงานได้ในทุก content repo
+Starlight มีไอคอนในตัวมากกว่า 200 รายการที่ใช้งานได้ผ่านคอมโพเนนต์ `<Icon>` — ไม่ต้องติดตั้งเพิ่มเติม ปลั๊กอิน `starlight-plugin-icons` ได้ถูกกำหนดค่าไว้ในธีมแล้ว ดังนั้นไอคอนเหล่านี้จึงใช้งานได้ในทุก content repo
 
-## การใช้งานคอมโพเนนต์ Icon
+## การใช้คอมโพเนนต์ Icon
 
 นำเข้าคอมโพเนนต์และส่งชื่อไอคอน:
 
@@ -29,16 +29,16 @@ import { Icon } from '@astrojs/starlight/components';
 
 ### Props
 
-| Prop | Type | Default | คำอธิบาย |
+| Prop | ชนิด | ค่าเริ่มต้น | คำอธิบาย |
 |------|------|---------|-------------|
 | `name` | `string` | — | **จำเป็น** ชื่อไอคอนจากตารางด้านล่าง |
-| `label` | `string` | — | ป้ายกำกับสำหรับการเข้าถึงโดยโปรแกรมอ่านหน้าจอ ใช้สำหรับไอคอนที่สื่อความหมาย ละไว้สำหรับไอคอนที่เป็นการตกแต่ง |
+| `label` | `string` | — | ป้ายกำกับสำหรับโปรแกรมอ่านหน้าจอ ใช้สำหรับไอคอนที่มีความหมาย ละเว้นสำหรับไอคอนที่เป็นการตกแต่ง |
 | `size` | `string` | `"1em"` | ค่าขนาด CSS ที่ใช้กับความกว้างและความสูง |
 | `color` | `string` | `"currentColor"` | ค่าสี CSS |
 | `class` | `string` | — | คลาส CSS เพิ่มเติม |
 
 :::tip[การเข้าถึง]
-เพิ่ม prop `label` เมื่อไอคอนสื่อความหมาย (เช่น ไอคอนลิงก์) ละ `label` ไว้สำหรับไอคอนที่เป็นการตกแต่งล้วนๆ — Starlight จะซ่อนไอคอนเหล่านั้นจากเทคโนโลยีช่วยเหลือโดยอัตโนมัติ
+เพิ่ม prop `label` เมื่อไอคอนสื่อความหมาย (เช่น ไอคอนลิงก์) ละเว้น `label` สำหรับไอคอนที่เป็นการตกแต่งเท่านั้น — Starlight จะซ่อนไอคอนเหล่านั้นจากเทคโนโลยีช่วยเหลือโดยอัตโนมัติ
 :::
 
 ## ไอคอนนำทาง
@@ -89,7 +89,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
 </div>
 
-## ไอคอนโซเชียล &amp; คอมมูนิตี้
+## ไอคอนโซเชียล &amp; ชุมชน
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="github" size="1.5rem" /></div><div class="icon-card-label">github</div></div>
@@ -161,7 +161,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="substack" size="1.5rem" /></div><div class="icon-card-label">substack</div></div>
 </div>
 
-### เอดิเตอร์ &amp; เบราว์เซอร์
+### โปรแกรมแก้ไข &amp; เบราว์เซอร์
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="vscode" size="1.5rem" /></div><div class="icon-card-label">vscode</div></div>
@@ -178,7 +178,7 @@ import { Icon } from '@astrojs/starlight/components';
 
 ## ไอคอนไฟล์ Seti
 
-ไอคอน Seti ใช้คำนำหน้า `seti:` และถูกออกแบบมาเพื่อแสดงประเภทไฟล์ สามารถใช้ได้ทั้งในคอมโพเนนต์ `<Icon>` และคอมโพเนนต์ `<FileTree>`
+ไอคอน Seti ใช้คำนำหน้า `seti:` และได้รับการออกแบบสำหรับการแสดงประเภทไฟล์ ไอคอนเหล่านี้ใช้งานได้ทั้งในคอมโพเนนต์ `<Icon>` และคอมโพเนนต์ `<FileTree>`
 
 ```mdx
 <Icon name="seti:typescript" />
@@ -266,7 +266,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:coldfusion" size="1.5rem" /></div><div class="icon-card-label">seti:coldfusion</div></div>
 </div>
 
-### DevOps &amp; เครื่องมือสร้าง
+### DevOps &amp; เครื่องมือบิลด์
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:docker" size="1.5rem" /></div><div class="icon-card-label">seti:docker</div></div>

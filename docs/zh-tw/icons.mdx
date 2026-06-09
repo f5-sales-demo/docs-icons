@@ -1,8 +1,8 @@
 ---
 title: 圖示參考
-description: 文件主題中所有可用圖示套件的概覽 — 使用方式、深色模式行為及選擇指南。
+description: 文件主題中所有可用圖示套件的總覽——使用方式、深色模式行為及選擇指南。
 sidebar:
-  label: 概覽
+  label: 總覽
   order: 2
 i18n:
   sourceHash: 2da27471772e
@@ -17,7 +17,7 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
 文件主題提供來自多個套件的數千個圖示。每個套件都使用相同的模式：匯入該套件的 `Icon.astro` 元件並以名稱引用圖示。
 
-## 可用的圖示套件
+## 可用圖示套件
 
 | 套件 | 數量 | 使用方式 | 頁面 |
 |------|-------|-------|------|
@@ -37,7 +37,7 @@ import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
 ## 渲染方式
 
-所有圖示套件都使用各自套件的 `Icon.astro` 元件來渲染內嵌 SVG。每個套件都有自己的匯入方式：
+所有圖示套件使用各自套件的 `Icon.astro` 元件來渲染內嵌 SVG。每個套件都有自己的匯入方式：
 
 ```astro
 ---
@@ -78,24 +78,24 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 
 ## 深色/淺色模式行為
 
-所有 `Icon` 元件都使用 `currentColor` 渲染內嵌 SVG。它們會自動適應當前主題 — 無需特別的 CSS 或類別處理。
+所有 `Icon` 元件都使用 `currentColor` 渲染內嵌 SVG。它們會自動適應當前主題——無需特別的 CSS 或 class 處理。
 
-F5 XC 服務圖示使用 CSS 自訂屬性，會自動適應淺色和深色模式 — 無需特別的類別處理。對於其他多色圖示（如 HashiCorp Flight 彩色變體），`.icon-card-image` 上的 `no-invert` 類別可在深色模式中保留原始顏色。
+F5 XC 服務圖示使用 CSS 自訂屬性，會自動適應淺色和深色模式——無需特別的 class 處理。對於其他多色圖示（如 HashiCorp Flight 彩色變體），在 `.icon-card-image` 上的 `no-invert` class 可在深色模式中保留原始色彩。
 
 ## 我應該使用哪個套件？
 
-| 使用情境 | 建議套件 | 原因 |
+| 使用情境 | 推薦套件 | 原因 |
 |----------|------------------|-----|
 | 一般 UI（箭頭、關閉、搜尋） | Starlight 內建 | 零設定，隨時可用 |
-| F5 產品圖表 | F5 品牌 | 領域特定的網路/安全圖形 |
-| 現代線條圖示 | Lucide | 簡潔一致的 1,600+ 圖示 |
-| 大量填充/描邊圖示 | Material Design (mdi) | 最大的圖示集，含 7,638 個圖示 |
+| F5 產品圖表 | F5 品牌 | 網路/安全領域專用圖示 |
+| 現代線條圖示 | Lucide | 簡潔一致的 1,600+ 個圖示 |
+| 大量填充/描邊圖示 | Material Design (mdi) | 最大的圖示集，共 7,638 個圖示 |
 | IBM 設計語言 | Carbon | 2,582 個企業級圖示 |
-| 靈活的粗細選項 | Phosphor | 9,161 個圖示，含六種粗細變體 |
-| 清晰的線條圖示 | Tabler | 6,034 個圖示，一致的 2px 描邊 |
-| F5 XC 服務圖表 | F5 XC 服務 | 30 個分散式雲端服務圖示 |
-| 品牌/公司標誌 | Simple Icons | 3,200+ 個供應商和服務的品牌圖示 |
-| 雲端/基礎架構供應商標誌 | HashiCorp Flight | AWS、GCP、Azure、K8s 供應商圖示 |
-| AWS 架構圖表 | AWS 架構 | 885 個 AWS 基礎架構彩色服務圖示 |
-| Azure 架構圖表 | Azure 架構 | 606 個 Azure 基礎架構彩色服務圖示 |
-| GCP 架構圖表 | GCP 架構 | 216 個 Google Cloud 基礎架構彩色服務圖示 |
+| 彈性粗細選項 | Phosphor | 9,161 個圖示，六種粗細變體 |
+| 清晰線條圖示 | Tabler | 6,034 個圖示，一致的 2px 描邊 |
+| F5 XC 服務圖表 | F5 XC 服務 | 30 個 Distributed Cloud 服務圖示 |
+| 品牌/公司標誌 | Simple Icons | 3,200+ 個廠商與服務品牌圖示 |
+| 雲端/基礎設施廠商標誌 | HashiCorp Flight | AWS、GCP、Azure、K8s 廠商圖示 |
+| AWS 架構圖 | AWS 架構 | 885 個 AWS 基礎設施彩色服務圖示 |
+| Azure 架構圖 | Azure 架構 | 606 個 Azure 基礎設施彩色服務圖示 |
+| GCP 架構圖 | GCP 架構 | 216 個 Google Cloud 基礎設施彩色服務圖示 |

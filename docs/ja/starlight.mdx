@@ -1,8 +1,8 @@
 ---
-title: Starlight ビルトインアイコン
-description: Icon コンポーネントで利用可能な200以上のStarlightビルトインアイコンの完全なリファレンスです。
+title: Starlight 組み込みアイコン
+description: Icon コンポーネントで利用可能な200以上の Starlight 組み込みアイコンの完全なリファレンスです。
 sidebar:
-  label: Starlight ビルトイン
+  label: Starlight 組み込み
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -11,7 +11,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlightには、`<Icon>` コンポーネントで利用可能な200以上のビルトインアイコンが含まれており、インストールは不要です。`starlight-plugin-icons` プラグインはテーマに既に設定されているため、これらのアイコンはどのコンテンツリポジトリでも動作します。
+Starlight には `<Icon>` コンポーネントで利用可能な200以上の組み込みアイコンが含まれており、インストールは不要です。`starlight-plugin-icons` プラグインはテーマに事前設定されているため、これらのアイコンはどのコンテンツリポジトリでも動作します。
 
 ## Icon コンポーネントの使用方法
 
@@ -25,18 +25,18 @@ import { Icon } from '@astrojs/starlight/components';
 <Icon name="seti:python" label="Python file" />
 ```
 
-### プロパティ
+### Props
 
-| プロパティ | 型 | デフォルト | 説明 |
+| Prop | 型 | デフォルト | 説明 |
 |------|------|---------|-------------|
-| `name` | `string` | — | **必須。** 以下の表に記載されたアイコン名。 |
-| `label` | `string` | — | スクリーンリーダー用のアクセシブルラベル。意味を持つアイコンに使用し、装飾的なアイコンでは省略します。 |
-| `size` | `string` | `"1em"` | 幅と高さに適用されるCSSサイズ値。 |
-| `color` | `string` | `"currentColor"` | CSSカラー値。 |
-| `class` | `string` | — | 追加のCSSクラス。 |
+| `name` | `string` | — | **必須。** 以下のテーブルに記載されているアイコン名。 |
+| `label` | `string` | — | スクリーンリーダー向けのアクセシブルラベル。意味のあるアイコンに使用し、装飾的なアイコンには省略してください。 |
+| `size` | `string` | `"1em"` | 幅と高さに適用される CSS サイズ値。 |
+| `color` | `string` | `"currentColor"` | CSS カラー値。 |
+| `class` | `string` | — | 追加の CSS クラス。 |
 
 :::tip[アクセシビリティ]
-アイコンが意味を伝える場合（例：リンクアイコン）は `label` プロパティを追加してください。純粋に装飾的なアイコンの場合は `label` を省略してください — Starlightは自動的に支援技術からそれらを非表示にします。
+アイコンが意味を伝える場合は `label` prop を追加してください（例：リンクアイコン）。純粋に装飾的なアイコンの場合は `label` を省略してください。Starlight が自動的に支援技術から非表示にします。
 :::
 
 ## ナビゲーションアイコン
@@ -176,7 +176,7 @@ import { Icon } from '@astrojs/starlight/components';
 
 ## Seti ファイルアイコン
 
-Seti アイコンは `seti:` プレフィックスを使用し、ファイルタイプの表現用に設計されています。`<Icon>` コンポーネントと `<FileTree>` コンポーネントの両方で使用できます。
+Seti アイコンは `seti:` プレフィックスを使用し、ファイルタイプの表現用に設計されています。`<Icon>` コンポーネントおよび `<FileTree>` コンポーネントで使用できます。
 
 ```mdx
 <Icon name="seti:typescript" />

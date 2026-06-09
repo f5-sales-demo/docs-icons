@@ -17,7 +17,7 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-El tema de documentación proporciona acceso a miles de iconos de múltiples paquetes. Todos los paquetes utilizan el mismo patrón: importar el componente `Icon.astro` del paquete y referenciar los iconos por nombre.
+El tema de documentación proporciona acceso a miles de iconos de múltiples paquetes. Todos los paquetes utilizan el mismo patrón: importe el componente `Icon.astro` del paquete y haga referencia a los iconos por nombre.
 
 ## Paquetes de Iconos Disponibles
 
@@ -43,10 +43,10 @@ Todos los paquetes de iconos utilizan componentes `Icon.astro` por paquete que r
 
 ```astro
 ---
-// Starlight built-in
+// Starlight integrado
 import { Icon } from '@astrojs/starlight/components';
 
-// Other packs — each has its own import
+// Otros paquetes — cada uno tiene su propia importación
 import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
 import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
@@ -80,20 +80,20 @@ Los iconos utilizan `currentColor` y se adaptan automáticamente al modo claro y
 
 ## Comportamiento en Modo Oscuro/Claro
 
-Todos los componentes `Icon` renderizan SVGs en línea utilizando `currentColor`. Se adaptan automáticamente al tema actual — no se necesita manejo especial de CSS ni de clases.
+Todos los componentes `Icon` renderizan SVGs en línea utilizando `currentColor`. Se adaptan automáticamente al tema actual — no se necesita ningún manejo especial de CSS o clases.
 
-Los iconos de servicios F5 XC utilizan propiedades personalizadas de CSS que se adaptan automáticamente al modo claro y oscuro — no se necesita manejo especial de clases. Para otros iconos multicolor (como las variantes de color de HashiCorp Flight), la clase `no-invert` en `.icon-card-image` preserva los colores originales en modo oscuro.
+Los iconos de servicios F5 XC utilizan propiedades personalizadas de CSS que se adaptan automáticamente al modo claro y oscuro — no se necesita ningún manejo especial de clases. Para otros iconos multicolor (como las variantes de color de HashiCorp Flight), la clase `no-invert` en `.icon-card-image` preserva los colores originales en modo oscuro.
 
-## ¿Qué Paquete Debo Usar?
+## ¿Qué Paquete Debería Usar?
 
 | Caso de Uso | Paquete Recomendado | Por qué |
 |-------------|---------------------|---------|
 | UI general (flechas, cerrar, buscar) | Starlight Integrado | Sin configuración, siempre disponible |
-| Diagramas de productos F5 | F5 Brand | Arte específico de redes/seguridad del dominio |
+| Diagramas de productos F5 | F5 Brand | Arte específico de dominio para redes/seguridad |
 | Iconos modernos de trazo | Lucide | Limpios, consistentes, más de 1,600 iconos |
 | Iconos rellenos/contorneados a escala | Material Design (mdi) | El conjunto más grande con 7,638 iconos |
-| Lenguaje de diseño IBM | Carbon | 2,582 iconos de grado empresarial |
-| Opciones flexibles de peso | Phosphor | 9,161 iconos con seis variantes de peso |
+| Lenguaje de diseño IBM | Carbon | 2,582 iconos de nivel empresarial |
+| Opciones flexibles de grosor | Phosphor | 9,161 iconos con seis variantes de grosor |
 | Iconos de línea nítidos | Tabler | 6,034 iconos con trazo consistente de 2px |
 | Diagramas de servicios F5 XC | F5 XC Services | 30 iconos de servicios Distributed Cloud |
 | Logos de marcas/empresas | Simple Icons | Más de 3,200 iconos de marcas para proveedores y servicios |

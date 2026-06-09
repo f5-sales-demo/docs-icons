@@ -4,7 +4,7 @@ description: >-
   Riferimento completo per tutte le oltre 200 icone integrate di Starlight
   disponibili tramite il componente Icon.
 sidebar:
-  label: Integrate di Starlight
+  label: Icone integrate di Starlight
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -13,11 +13,11 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight include oltre 200 icone integrate disponibili tramite il componente `<Icon>` — senza necessità di installazione. Il plugin `starlight-plugin-icons` è già configurato nel tema, quindi queste icone funzionano in qualsiasi repository di contenuti.
+Starlight include oltre 200 icone integrate disponibili tramite il componente `<Icon>` — nessuna installazione necessaria. Il plugin `starlight-plugin-icons` è già configurato nel tema, quindi queste icone funzionano in qualsiasi repository di contenuti.
 
 ## Utilizzo del componente Icon
 
-Importate il componente e passate il nome di un'icona:
+Importa il componente e passa il nome di un'icona:
 
 ```mdx
 import { Icon } from '@astrojs/starlight/components';
@@ -27,18 +27,18 @@ import { Icon } from '@astrojs/starlight/components';
 <Icon name="seti:python" label="Python file" />
 ```
 
-### Proprietà
+### Props
 
-| Proprietà | Tipo | Predefinito | Descrizione |
+| Prop | Tipo | Default | Descrizione |
 |------|------|---------|-------------|
-| `name` | `string` | — | **Obbligatoria.** Il nome dell'icona dalle tabelle sottostanti. |
-| `label` | `string` | — | Etichetta accessibile per gli screen reader. Usatela per icone significative; omettetela per quelle decorative. |
-| `size` | `string` | `"1em"` | Valore CSS di dimensione applicato a larghezza e altezza. |
-| `color` | `string` | `"currentColor"` | Valore CSS di colore. |
+| `name` | `string` | — | **Obbligatorio.** Il nome dell'icona dalle tabelle sottostanti. |
+| `label` | `string` | — | Etichetta accessibile per gli screen reader. Da usare per icone significative; da omettere per quelle decorative. |
+| `size` | `string` | `"1em"` | Valore di dimensione CSS applicato a larghezza e altezza. |
+| `color` | `string` | `"currentColor"` | Valore di colore CSS. |
 | `class` | `string` | — | Classi CSS aggiuntive. |
 
 :::tip[Accessibilità]
-Aggiungete una proprietà `label` quando un'icona trasmette un significato (ad esempio un'icona di collegamento). Omettete `label` per le icone puramente decorative — Starlight le nasconderà automaticamente alle tecnologie assistive.
+Aggiungi la prop `label` quando un'icona trasmette un significato (ad es. un'icona di link). Ometti `label` per le icone puramente decorative — Starlight le nasconderà automaticamente alle tecnologie assistive.
 :::
 
 ## Icone di navigazione
@@ -297,7 +297,7 @@ Le icone Seti utilizzano il prefisso `seti:` e sono progettate per la rappresent
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:pipeline" size="1.5rem" /></div><div class="icon-card-label">seti:pipeline</div></div>
 </div>
 
-### Tipi di file &amp; vari
+### Tipi di file &amp; varie
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:folder" size="1.5rem" /></div><div class="icon-card-label">seti:folder</div></div>

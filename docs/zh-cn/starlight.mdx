@@ -1,6 +1,6 @@
 ---
 title: Starlight 内置图标
-description: 通过 Icon 组件可用的全部 200 多个 Starlight 内置图标的完整参考。
+description: 通过 Icon 组件可用的 200 多个 Starlight 内置图标的完整参考。
 sidebar:
   label: Starlight 内置图标
   order: 3
@@ -11,7 +11,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight 包含 200 多个内置图标，可通过 `<Icon>` 组件使用——无需额外安装。`starlight-plugin-icons` 插件已在主题中预配置，因此这些图标可在任何内容仓库中直接使用。
+Starlight 包含 200 多个内置图标，可通过 `<Icon>` 组件使用——无需额外安装。`starlight-plugin-icons` 插件已在主题中预配置，因此这些图标可在任何内容仓库中使用。
 
 ## 使用 Icon 组件
 
@@ -30,13 +30,13 @@ import { Icon } from '@astrojs/starlight/components';
 | 属性 | 类型 | 默认值 | 描述 |
 |------|------|---------|-------------|
 | `name` | `string` | — | **必填。** 下方表格中的图标名称。 |
-| `label` | `string` | — | 供屏幕阅读器使用的无障碍标签。用于有语义含义的图标；纯装饰性图标可省略。 |
+| `label` | `string` | — | 供屏幕阅读器使用的无障碍标签。用于有实际含义的图标；纯装饰性图标可省略。 |
 | `size` | `string` | `"1em"` | 应用于宽度和高度的 CSS 尺寸值。 |
 | `color` | `string` | `"currentColor"` | CSS 颜色值。 |
-| `class` | `string` | — | 额外的 CSS 类名。 |
+| `class` | `string` | — | 附加的 CSS 类名。 |
 
 :::tip[无障碍]
-当图标传达含义时（例如链接图标），请添加 `label` 属性。纯装饰性图标可省略 `label`——Starlight 会自动将其从辅助技术中隐藏。
+当图标传达含义时（例如链接图标），请添加 `label` 属性。对于纯装饰性图标则省略 `label`——Starlight 会自动将其从辅助技术中隐藏。
 :::
 
 ## 导航图标

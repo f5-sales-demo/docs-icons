@@ -11,7 +11,7 @@ i18n:
 
 import Icon from '@f5xc-salesdemos/icons-aws/Icon.astro';
 
-[AWS 架构图标](https://aws.amazon.com/architecture/icons/) 提供了 885 个彩色服务图标，用于记录 AWS 基础设施。使用 `@f5xc-salesdemos/icons-aws` 中的 `Icon` 组件，通过名称渲染任意图标。默认尺寸为 48x48，支持按图标单独覆盖尺寸。
+[AWS 架构图标](https://aws.amazon.com/architecture/icons/) 提供了 885 个彩色服务图标，用于记录 AWS 基础设施。使用 `@f5xc-salesdemos/icons-aws` 中的 `Icon` 组件，可以按名称渲染任意图标。默认大小为 48x48，支持按图标自定义大小。
 
 ## 用法
 
@@ -25,7 +25,7 @@ import Icon from '@f5xc-salesdemos/icons-aws/Icon.astro';
 <Icon name="vpc" size="1.5rem" label="VPC" />
 ```
 
-这些图标使用供应商原始颜色（非 `currentColor`）。颜色嵌入在 SVG 标记中，在浅色和深色模式下均会保留。
+这些图标使用原始供应商颜色（而非 `currentColor`）。颜色嵌入在 SVG 标记中，在浅色和深色模式下均保持不变。
 
 ## 计算
 
@@ -87,7 +87,7 @@ import Icon from '@f5xc-salesdemos/icons-aws/Icon.astro';
   <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="network-firewall" size="1.5rem" /></div><div class="icon-card-label">network-firewall</div></div>
 </div>
 
-## 应用集成
+## 应用程序集成
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="simple-queue-service" size="1.5rem" /></div><div class="icon-card-label">simple-queue-service</div></div>
@@ -124,6 +124,6 @@ import Icon from '@f5xc-salesdemos/icons-aws/Icon.astro';
   <div class="icon-card"><div class="icon-card-image no-invert" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="translate" size="1.5rem" /></div><div class="icon-card-label">translate</div></div>
 </div>
 
-## 浏览全部图标
+## 浏览所有图标
 
-如需查看全部 885 个 AWS 架构图标的完整列表，请访问 [AWS 架构图表图标](https://aws.amazon.com/architecture/icons/)。
+如需查看完整的 885 个 AWS 架构图标列表，请访问 [AWS 架构图表图标](https://aws.amazon.com/architecture/icons/)。

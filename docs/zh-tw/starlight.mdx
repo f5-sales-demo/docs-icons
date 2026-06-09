@@ -1,8 +1,8 @@
 ---
 title: Starlight 內建圖示
-description: 透過 Icon 元件可使用的 200 多個 Starlight 內建圖示完整參考。
+description: 透過 Icon 元件使用超過 200 個以上 Starlight 內建圖示的完整參考。
 sidebar:
-  label: Starlight 內建
+  label: Starlight 內建圖示
   order: 3
 i18n:
   sourceHash: f9f164441822
@@ -11,7 +11,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight 包含超過 200 個內建圖示，可透過 `<Icon>` 元件使用——無需額外安裝。`starlight-plugin-icons` 外掛已在主題中設定完成，因此這些圖示可在任何內容儲存庫中使用。
+Starlight 提供超過 200 個內建圖示，可透過 `<Icon>` 元件使用——無需額外安裝。主題中已預先設定 `starlight-plugin-icons` 外掛，因此這些圖示可在任何內容儲存庫中使用。
 
 ## 使用 Icon 元件
 
@@ -30,16 +30,16 @@ import { Icon } from '@astrojs/starlight/components';
 | 屬性 | 類型 | 預設值 | 說明 |
 |------|------|---------|-------------|
 | `name` | `string` | — | **必填。** 下方表格中的圖示名稱。 |
-| `label` | `string` | — | 螢幕閱讀器的無障礙標籤。用於有意義的圖示；裝飾性圖示則省略。 |
+| `label` | `string` | — | 供螢幕閱讀器使用的無障礙標籤。用於有含義的圖示；裝飾性圖示可省略。 |
 | `size` | `string` | `"1em"` | 套用於寬度和高度的 CSS 尺寸值。 |
 | `color` | `string` | `"currentColor"` | CSS 顏色值。 |
 | `class` | `string` | — | 額外的 CSS 類別。 |
 
-:::tip[無障礙]
-當圖示傳達意義時（例如連結圖示），請加上 `label` 屬性。純裝飾性的圖示則省略 `label`——Starlight 會自動將其對輔助技術隱藏。
+:::tip[無障礙性]
+當圖示傳達含義時（例如連結圖示），請加入 `label` 屬性。純裝飾性圖示可省略 `label`——Starlight 會自動將其從輔助技術中隱藏。
 :::
 
-## 導航圖示
+## 導覽圖示
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="up-caret" size="1.5rem" /></div><div class="icon-card-label">up-caret</div></div>
@@ -52,7 +52,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="left-arrow" size="1.5rem" /></div><div class="icon-card-label">left-arrow</div></div>
 </div>
 
-## UI 與介面圖示
+## 介面與 UI 圖示
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bars" size="1.5rem" /></div><div class="icon-card-label">bars</div></div>

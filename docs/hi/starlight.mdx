@@ -13,7 +13,7 @@ i18n:
 
 import { Icon } from '@astrojs/starlight/components';
 
-Starlight में 200 से अधिक बिल्ट-इन आइकन शामिल हैं जो `<Icon>` कंपोनेंट के माध्यम से उपलब्ध हैं — किसी इंस्टॉलेशन की आवश्यकता नहीं है। `starlight-plugin-icons` प्लगइन पहले से ही थीम में कॉन्फ़िगर किया गया है, इसलिए ये आइकन किसी भी कंटेंट रिपॉज़िटरी में काम करते हैं।
+Starlight में 200 से अधिक बिल्ट-इन आइकन शामिल हैं जो `<Icon>` कंपोनेंट के माध्यम से उपलब्ध हैं — किसी इंस्टॉलेशन की आवश्यकता नहीं। `starlight-plugin-icons` प्लगइन पहले से ही थीम में कॉन्फ़िगर किया गया है, इसलिए ये आइकन किसी भी कंटेंट रिपो में काम करते हैं।
 
 ## Icon कंपोनेंट का उपयोग
 
@@ -27,18 +27,18 @@ import { Icon } from '@astrojs/starlight/components';
 <Icon name="seti:python" label="Python file" />
 ```
 
-### Props
+### प्रॉप्स
 
-| Prop | Type | Default | विवरण |
+| प्रॉप | प्रकार | डिफ़ॉल्ट | विवरण |
 |------|------|---------|-------------|
 | `name` | `string` | — | **आवश्यक।** नीचे दी गई तालिकाओं से आइकन का नाम। |
-| `label` | `string` | — | स्क्रीन रीडर के लिए सुलभ लेबल। अर्थपूर्ण आइकन के लिए उपयोग करें; सजावटी आइकन के लिए छोड़ दें। |
-| `size` | `string` | `"1em"` | चौड़ाई और ऊंचाई पर लागू CSS आकार मान। |
+| `label` | `string` | — | स्क्रीन रीडर के लिए एक्सेसिबल लेबल। अर्थपूर्ण आइकन के लिए उपयोग करें; सजावटी आइकन के लिए छोड़ दें। |
+| `size` | `string` | `"1em"` | चौड़ाई और ऊंचाई पर लागू होने वाला CSS आकार मान। |
 | `color` | `string` | `"currentColor"` | CSS रंग मान। |
-| `class` | `string` | — | अतिरिक्त CSS क्लासेज़। |
+| `class` | `string` | — | अतिरिक्त CSS क्लासेस। |
 
-:::tip[सुलभता]
-जब कोई आइकन अर्थ व्यक्त करता है (जैसे लिंक आइकन) तो `label` prop जोड़ें। पूर्णतः सजावटी आइकन के लिए `label` छोड़ दें — Starlight उन्हें स्वचालित रूप से सहायक तकनीक से छिपा देगा।
+:::tip[एक्सेसिबिलिटी]
+जब कोई आइकन अर्थ व्यक्त करता है (जैसे लिंक आइकन) तो `label` प्रॉप जोड़ें। पूरी तरह से सजावटी आइकन के लिए `label` छोड़ दें — Starlight उन्हें सहायक तकनीक से स्वचालित रूप से छिपा देगा।
 :::
 
 ## नेविगेशन आइकन
@@ -54,7 +54,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="left-arrow" size="1.5rem" /></div><div class="icon-card-label">left-arrow</div></div>
 </div>
 
-## UI &amp; इंटरफ़ेस आइकन
+## UI एवं इंटरफ़ेस आइकन
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="bars" size="1.5rem" /></div><div class="icon-card-label">bars</div></div>
@@ -89,7 +89,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="heart" size="1.5rem" /></div><div class="icon-card-label">heart</div></div>
 </div>
 
-## सोशल &amp; कम्युनिटी आइकन
+## सोशल एवं कम्युनिटी आइकन
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="github" size="1.5rem" /></div><div class="icon-card-label">github</div></div>
@@ -130,7 +130,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="tiktok" size="1.5rem" /></div><div class="icon-card-label">tiktok</div></div>
 </div>
 
-## टेक्नोलॉजी &amp; फ्रेमवर्क आइकन
+## तकनीक एवं फ्रेमवर्क आइकन
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="astro" size="1.5rem" /></div><div class="icon-card-label">astro</div></div>
@@ -161,7 +161,7 @@ import { Icon } from '@astrojs/starlight/components';
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="substack" size="1.5rem" /></div><div class="icon-card-label">substack</div></div>
 </div>
 
-### एडिटर &amp; ब्राउज़र
+### एडिटर एवं ब्राउज़र
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="vscode" size="1.5rem" /></div><div class="icon-card-label">vscode</div></div>
@@ -178,7 +178,7 @@ import { Icon } from '@astrojs/starlight/components';
 
 ## Seti फ़ाइल आइकन
 
-Seti आइकन `seti:` प्रीफ़िक्स का उपयोग करते हैं और फ़ाइल-प्रकार प्रतिनिधित्व के लिए डिज़ाइन किए गए हैं। ये `<Icon>` कंपोनेंट और `<FileTree>` कंपोनेंट में काम करते हैं।
+Seti आइकन `seti:` उपसर्ग का उपयोग करते हैं और फ़ाइल-प्रकार प्रतिनिधित्व के लिए डिज़ाइन किए गए हैं। ये `<Icon>` कंपोनेंट और `<FileTree>` कंपोनेंट में काम करते हैं।
 
 ```mdx
 <Icon name="seti:typescript" />
@@ -228,7 +228,7 @@ Seti आइकन `seti:` प्रीफ़िक्स का उपयोग 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:wasm" size="1.5rem" /></div><div class="icon-card-label">seti:wasm</div></div>
 </div>
 
-### वेब &amp; मार्कअप
+### वेब एवं मार्कअप
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:html" size="1.5rem" /></div><div class="icon-card-label">seti:html</div></div>
@@ -245,7 +245,7 @@ Seti आइकन `seti:` प्रीफ़िक्स का उपयोग 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:tex" size="1.5rem" /></div><div class="icon-card-label">seti:tex</div></div>
 </div>
 
-### फ्रेमवर्क &amp; टेम्पलेट
+### फ्रेमवर्क एवं टेम्पलेट
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:react" size="1.5rem" /></div><div class="icon-card-label">seti:react</div></div>
@@ -266,7 +266,7 @@ Seti आइकन `seti:` प्रीफ़िक्स का उपयोग 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:coldfusion" size="1.5rem" /></div><div class="icon-card-label">seti:coldfusion</div></div>
 </div>
 
-### DevOps &amp; बिल्ड टूल्स
+### DevOps एवं बिल्ड टूल्स
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:docker" size="1.5rem" /></div><div class="icon-card-label">seti:docker</div></div>
@@ -297,7 +297,7 @@ Seti आइकन `seti:` प्रीफ़िक्स का उपयोग 
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:pipeline" size="1.5rem" /></div><div class="icon-card-label">seti:pipeline</div></div>
 </div>
 
-### फ़ाइल प्रकार &amp; विविध
+### फ़ाइल प्रकार एवं विविध
 
 <div class="not-content icon-grid" style="grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));">
   <div class="icon-card"><div class="icon-card-image" style="display:flex;align-items:center;justify-content:center;padding:0.75rem;"><Icon name="seti:folder" size="1.5rem" /></div><div class="icon-card-label">seti:folder</div></div>

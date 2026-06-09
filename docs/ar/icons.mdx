@@ -1,7 +1,7 @@
 ---
 title: مرجع الأيقونات
 description: >-
-  نظرة عامة على جميع حزم الأيقونات المتاحة في سمة التوثيق — الاستخدام، سلوك
+  نظرة عامة على جميع حزم الأيقونات المتاحة في قالب التوثيق — الاستخدام، وسلوك
   الوضع الداكن، ودليل الاختيار.
 sidebar:
   label: نظرة عامة
@@ -17,36 +17,36 @@ import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
 import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
 
-يوفر سمة التوثيق إمكانية الوصول إلى آلاف الأيقونات من حزم متعددة. تستخدم جميع الحزم نفس النمط: استيراد مكوّن `Icon.astro` الخاص بالحزمة والإشارة إلى الأيقونات بالاسم.
+يوفر قالب التوثيق إمكانية الوصول إلى آلاف الأيقونات من حزم متعددة. تستخدم جميع الحزم نفس النمط: استيراد مكوّن `Icon.astro` الخاص بالحزمة والإشارة إلى الأيقونات بالاسم.
 
 ## حزم الأيقونات المتاحة
 
 | الحزمة | العدد | الاستخدام | الصفحة |
 |------|-------|-------|------|
 | Starlight المدمجة | ~200 | `<Icon name="star" />` | [Starlight المدمجة](/starlight/) |
-| F5 Brand | 665 | `<Icon name="ai-admin" />` | [F5 Brand](/brand/) |
+| علامة F5 التجارية | 665 | `<Icon name="ai-admin" />` | [علامة F5 التجارية](/brand/) |
 | Lucide | ~1,600 | `<Icon name="rocket" />` | [Lucide](/lucide/) |
 | Material Design | 7,638 | `<Icon name="database" />` | [Material Design](/mdi/) |
 | Carbon | 2,582 | `<Icon name="cloud" />` | [Carbon](/carbon/) |
 | Phosphor | 9,161 | `<Icon name="globe" />` | [Phosphor](/phosphor/) |
 | Tabler | 6,034 | `<Icon name="shield" />` | [Tabler](/tabler/) |
-| F5 XC Services | 30 | `<Icon name="bot-defense" />` | [F5 XC Services](/f5xc/) |
+| خدمات F5 XC | 30 | `<Icon name="bot-defense" />` | [خدمات F5 XC](/f5xc/) |
 | Simple Icons | 3,200+ | `<Icon name="cloudflare" />` | [Simple Icons](/simple-icons/) |
 | HashiCorp Flight | 672 | `<Icon name="cloud" />` | [HashiCorp Flight](/hashicorp-flight/) |
-| AWS Architecture | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
-| Azure Architecture | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
-| GCP Architecture | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
+| بنية AWS | 885 | `<Icon name="lambda" />` | [AWS](/aws/) |
+| بنية Azure | 606 | `<Icon name="virtual-machine" />` | [Azure](/azure/) |
+| بنية GCP | 216 | `<Icon name="cloud-storage" />` | [GCP](/gcp/) |
 
 ## طريقة العرض
 
-تستخدم جميع حزم الأيقونات مكوّنات `Icon.astro` خاصة بكل حزمة تقوم بعرض SVGs مضمّنة. لكل حزمة استيراد خاص بها:
+تستخدم جميع حزم الأيقونات مكوّنات `Icon.astro` الخاصة بكل حزمة التي تعرض رسومات SVG مضمّنة. لكل حزمة استيراد خاص بها:
 
 ```astro
 ---
-// Starlight built-in
+// Starlight المدمجة
 import { Icon } from '@astrojs/starlight/components';
 
-// Other packs — each has its own import
+// الحزم الأخرى — لكل منها استيراد خاص
 import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
 import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
 import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
@@ -80,24 +80,24 @@ import F5xIcon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 
 ## سلوك الوضع الداكن/الفاتح
 
-تعرض جميع مكوّنات `Icon` صور SVG مضمّنة باستخدام `currentColor`. وتتكيف تلقائيًا مع السمة الحالية — لا حاجة إلى معالجة خاصة لـ CSS أو الفئات.
+تعرض جميع مكوّنات `Icon` رسومات SVG مضمّنة باستخدام `currentColor`. تتكيف تلقائيًا مع القالب الحالي — دون الحاجة إلى أي معالجة خاصة لـ CSS أو الفئات.
 
-تستخدم أيقونات خدمات F5 XC خصائص CSS المخصصة التي تتكيف تلقائيًا مع الوضع الفاتح والداكن — لا حاجة إلى معالجة خاصة للفئات. بالنسبة للأيقونات متعددة الألوان الأخرى (مثل متغيرات ألوان HashiCorp Flight)، تحافظ فئة `no-invert` في `.icon-card-image` على الألوان الأصلية في الوضع الداكن.
+تستخدم أيقونات خدمات F5 XC خصائص CSS المخصصة التي تتكيف تلقائيًا مع الوضع الفاتح والداكن — دون الحاجة إلى أي معالجة خاصة للفئات. بالنسبة للأيقونات متعددة الألوان الأخرى (مثل متغيرات ألوان HashiCorp Flight)، تحافظ فئة `no-invert` على `.icon-card-image` على الألوان الأصلية في الوضع الداكن.
 
 ## أي حزمة يجب أن أستخدم؟
 
 | حالة الاستخدام | الحزمة الموصى بها | السبب |
 |----------|------------------|-----|
-| واجهة المستخدم العامة (الأسهم، الإغلاق، البحث) | Starlight المدمجة | بدون إعداد، متاحة دائمًا |
-| مخططات منتجات F5 | F5 Brand | رسومات متخصصة بالشبكات/الأمان |
-| أيقونات خطية عصرية | Lucide | نظيفة ومتسقة، أكثر من 1,600 أيقونة |
-| أيقونات معبأة/مخططة بنطاق واسع | Material Design (mdi) | أكبر مجموعة بـ 7,638 أيقونة |
-| لغة تصميم IBM | Carbon | 2,582 أيقونة بمستوى مؤسسي |
-| خيارات أوزان مرنة | Phosphor | 9,161 أيقونة بستة متغيرات وزن |
-| أيقونات خطية واضحة | Tabler | 6,034 أيقونة بسمك خط متسق 2px |
-| مخططات خدمات F5 XC | F5 XC Services | 30 أيقونة لخدمات Distributed Cloud |
-| شعارات العلامات التجارية/الشركات | Simple Icons | أكثر من 3,200 أيقونة للعلامات التجارية والخدمات |
-| شعارات مزودي البنية التحتية/السحابة | HashiCorp Flight | أيقونات مزودي AWS وGCP وAzure وK8s |
-| مخططات بنية AWS | AWS Architecture | 885 أيقونة خدمات ملونة للبنية التحتية لـ AWS |
-| مخططات بنية Azure | Azure Architecture | 606 أيقونة خدمات ملونة للبنية التحتية لـ Azure |
-| مخططات بنية GCP | GCP Architecture | 216 أيقونة خدمات ملونة للبنية التحتية لـ Google Cloud |
+| واجهة المستخدم العامة (أسهم، إغلاق، بحث) | Starlight المدمجة | بدون إعداد، متاحة دائمًا |
+| مخططات منتجات F5 | علامة F5 التجارية | رسومات متخصصة بمجال الشبكات والأمان |
+| أيقونات بخطوط حديثة | Lucide | أيقونات نظيفة ومتسقة تتجاوز 1,600 |
+| أيقونات ممتلئة/مُحدَّدة بكميات كبيرة | Material Design (mdi) | أكبر مجموعة بـ 7,638 أيقونة |
+| لغة تصميم IBM | Carbon | 2,582 أيقونة بمستوى المؤسسات |
+| خيارات وزن مرنة | Phosphor | 9,161 أيقونة بستة متغيرات وزن |
+| أيقونات خطية واضحة | Tabler | 6,034 أيقونة بعرض خط متسق 2 بكسل |
+| مخططات خدمات F5 XC | خدمات F5 XC | 30 أيقونة لخدمات السحابة الموزعة |
+| شعارات العلامات التجارية/الشركات | Simple Icons | أكثر من 3,200 أيقونة للعلامات التجارية والمورّدين والخدمات |
+| شعارات مورّدي السحابة/البنية التحتية | HashiCorp Flight | أيقونات مورّدي AWS وGCP وAzure وK8s |
+| مخططات بنية AWS | بنية AWS | 885 أيقونة خدمة ملونة للبنية التحتية لـ AWS |
+| مخططات بنية Azure | بنية Azure | 606 أيقونة خدمة ملونة للبنية التحتية لـ Azure |
+| مخططات بنية GCP | بنية GCP | 216 أيقونة خدمة ملونة للبنية التحتية لـ Google Cloud |
