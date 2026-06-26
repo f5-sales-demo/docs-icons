@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-mdi
+# @f5-sales-demo/icons-mdi
 
 Material Design Icons with an Astro component wrapper. Wraps `@iconify-json/mdi`.
 
@@ -6,7 +6,7 @@ Material Design Icons with an Astro component wrapper. Wraps `@iconify-json/mdi`
 
 ```astro
 ---
-import MdiIcon from '@f5xc-salesdemos/icons-mdi/Icon.astro';
+import MdiIcon from '@f5-sales-demo/icons-mdi/Icon.astro';
 ---
 
 <MdiIcon name="database" />

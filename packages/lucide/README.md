@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-lucide
+# @f5-sales-demo/icons-lucide
 
 Lucide icons with an Astro component wrapper. Wraps `@iconify-json/lucide`.
 
@@ -6,7 +6,7 @@ Lucide icons with an Astro component wrapper. Wraps `@iconify-json/lucide`.
 
 ```astro
 ---
-import LucideIcon from '@f5xc-salesdemos/icons-lucide/Icon.astro';
+import LucideIcon from '@f5-sales-demo/icons-lucide/Icon.astro';
 ---
 
 <LucideIcon name="rocket" />

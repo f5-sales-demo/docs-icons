@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-aws",
+  "name": "@f5-sales-demo/icons-aws",
   "version": "0.1.0",
   "description": "AWS architecture icons in Iconify JSON format with Astro component",
   "type": "module",

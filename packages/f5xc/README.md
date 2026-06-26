@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-f5xc
+# @f5-sales-demo/icons-f5xc
 
 F5 Distributed Cloud (XC) service icons in Iconify JSON format with an Astro component.
 
@@ -41,7 +41,7 @@ F5 Distributed Cloud (XC) service icons in Iconify JSON format with an Astro com
 
 ```astro
 ---
-import Icon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
+import Icon from '@f5-sales-demo/icons-f5xc/Icon.astro';
 ---
 
 <Icon name="web-app-and-api-protection" size="2em" />
@@ -51,7 +51,7 @@ import Icon from '@f5xc-salesdemos/icons-f5xc/Icon.astro';
 ## Usage (JSON)
 
 ```js
-import icons from '@f5xc-salesdemos/icons-f5xc';
+import icons from '@f5-sales-demo/icons-f5xc';
 // icons.prefix === 'f5xc'
 // icons.icons['bot-defense'].body === '<svg body...>'
 ```

@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-f5-brand
+# @f5-sales-demo/icons-f5-brand
 
 F5 brand icons in Iconify JSON format with an Astro component wrapper.
 
@@ -12,7 +12,7 @@ F5 brand icons in Iconify JSON format with an Astro component wrapper.
 
 ```astro
 ---
-import F5Icon from '@f5xc-salesdemos/icons-f5-brand/Icon.astro';
+import F5Icon from '@f5-sales-demo/icons-f5-brand/Icon.astro';
 ---
 
 <F5Icon name="ai-admin" />

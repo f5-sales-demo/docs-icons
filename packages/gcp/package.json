@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-gcp",
+  "name": "@f5-sales-demo/icons-gcp",
   "version": "0.1.0",
   "description": "Google Cloud architecture icons in Iconify JSON format with Astro component",
   "type": "module",

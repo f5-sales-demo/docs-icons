@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-f5xc",
+  "name": "@f5-sales-demo/icons-f5xc",
   "version": "0.3.2",
   "description": "F5 Distributed Cloud (XC) service icons in Iconify JSON format with Astro component",
   "type": "module",

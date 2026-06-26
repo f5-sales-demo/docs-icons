@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-carbon
+# @f5-sales-demo/icons-carbon
 
 Carbon Design icons with an Astro component wrapper. Wraps `@iconify-json/carbon`.
 
@@ -6,7 +6,7 @@ Carbon Design icons with an Astro component wrapper. Wraps `@iconify-json/carbon
 
 ```astro
 ---
-import CarbonIcon from '@f5xc-salesdemos/icons-carbon/Icon.astro';
+import CarbonIcon from '@f5-sales-demo/icons-carbon/Icon.astro';
 ---
 
 <CarbonIcon name="cloud" />
