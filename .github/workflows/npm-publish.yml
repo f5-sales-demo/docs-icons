@@ -140,6 +140,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
-          gh api repos/f5xc-salesdemos/docs-builder/dispatches \
+          gh api repos/f5-sales-demo/docs-builder/dispatches \
             --method POST \
             --field event_type=rebuild-image

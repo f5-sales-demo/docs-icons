@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-hashicorp-flight
+# @f5-sales-demo/icons-hashicorp-flight
 
 HashiCorp Flight icons in Iconify JSON format with an Astro component wrapper.
 
@@ -12,7 +12,7 @@ HashiCorp Flight icons in Iconify JSON format with an Astro component wrapper.
 
 ```astro
 ---
-import FlightIcon from '@f5xc-salesdemos/icons-hashicorp-flight/Icon.astro';
+import FlightIcon from '@f5-sales-demo/icons-hashicorp-flight/Icon.astro';
 ---
 
 <FlightIcon name="terraform" />

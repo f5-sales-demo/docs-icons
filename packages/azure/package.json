@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-azure",
+  "name": "@f5-sales-demo/icons-azure",
   "version": "0.1.0",
   "description": "Azure architecture icons in Iconify JSON format with Astro component",
   "type": "module",

@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-phosphor
+# @f5-sales-demo/icons-phosphor
 
 Phosphor icons with an Astro component wrapper. Wraps `@iconify-json/ph`.
 
@@ -6,7 +6,7 @@ Phosphor icons with an Astro component wrapper. Wraps `@iconify-json/ph`.
 
 ```astro
 ---
-import PhosphorIcon from '@f5xc-salesdemos/icons-phosphor/Icon.astro';
+import PhosphorIcon from '@f5-sales-demo/icons-phosphor/Icon.astro';
 ---
 
 <PhosphorIcon name="globe" />

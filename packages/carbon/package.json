@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-carbon",
+  "name": "@f5-sales-demo/icons-carbon",
   "version": "0.2.0",
   "description": "Carbon Design icons with Astro component wrapper",
   "type": "module",

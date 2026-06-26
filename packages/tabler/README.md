@@ -1,4 +1,4 @@
-# @f5xc-salesdemos/icons-tabler
+# @f5-sales-demo/icons-tabler
 
 Tabler icons with an Astro component wrapper. Wraps `@iconify-json/tabler`.
 
@@ -6,7 +6,7 @@ Tabler icons with an Astro component wrapper. Wraps `@iconify-json/tabler`.
 
 ```astro
 ---
-import TablerIcon from '@f5xc-salesdemos/icons-tabler/Icon.astro';
+import TablerIcon from '@f5-sales-demo/icons-tabler/Icon.astro';
 ---
 
 <TablerIcon name="shield" />

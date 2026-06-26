@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-hashicorp-flight",
+  "name": "@f5-sales-demo/icons-hashicorp-flight",
   "version": "0.3.0",
   "description": "HashiCorp Flight icons in Iconify JSON format with Astro component",
   "type": "module",

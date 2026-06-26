@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-tabler",
+  "name": "@f5-sales-demo/icons-tabler",
   "version": "0.2.0",
   "description": "Tabler icons with Astro component wrapper",
   "type": "module",

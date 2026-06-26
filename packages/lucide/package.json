@@ -1,5 +1,5 @@
 {
-  "name": "@f5xc-salesdemos/icons-lucide",
+  "name": "@f5-sales-demo/icons-lucide",
   "version": "0.2.0",
   "description": "Lucide icons with Astro component wrapper",
   "type": "module",
