@@ -8,6 +8,12 @@ on:
       - 'package-lock.json'
   workflow_dispatch:
 
+# Read-only default. Neither job needs a GITHUB_TOKEN write scope: `publish`
+# authenticates to npm with NPM_TOKEN, and `dispatch` calls the docs-builder
+# repository_dispatch API with RELEASE_TOKEN.
+permissions:
+  contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -135,6 +141,10 @@ jobs:
     name: Trigger docs-builder image rebuild
     needs: publish
     runs-on: ubuntu-latest
+    # The cross-repo dispatch authenticates with RELEASE_TOKEN, so GITHUB_TOKEN
+    # needs no write scope here.
+    permissions:
+      contents: read
     steps:
       - name: Dispatch rebuild-image to docs-builder
         env:
