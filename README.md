@@ -1,3 +1,5 @@
+# Docs Icons
+
 🌐 English |
 [日本語](https://f5-sales-demo.github.io/docs-icons/ja/) |
 [한국어](https://f5-sales-demo.github.io/docs-icons/ko/) |
@@ -11,8 +13,6 @@
 [العربية](https://f5-sales-demo.github.io/docs-icons/ar/) |
 [हिन्दी](https://f5-sales-demo.github.io/docs-icons/hi/) |
 [ไทย](https://f5-sales-demo.github.io/docs-icons/th/)
-
-# Docs Icons
 
 [![GitHub Pages Deploy](https://github.com/f5-sales-demo/docs-icons/actions/workflows/github-pages-deploy.yml/badge.svg)](https://github.com/f5-sales-demo/docs-icons/actions/workflows/github-pages-deploy.yml)
 [![Repository Settings](https://github.com/f5-sales-demo/docs-icons/actions/workflows/enforce-repo-settings.yml/badge.svg)](https://github.com/f5-sales-demo/docs-icons/actions/workflows/enforce-repo-settings.yml)
