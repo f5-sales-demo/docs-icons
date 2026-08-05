@@ -23,7 +23,7 @@ NPM icon packages and plugins for the F5 XC documentation build system
 
 ## Documentation
 
-Full documentation is available at **[https://f5-sales-demo.github.io/docs-icons/](https://f5-sales-demo.github.io/docs-icons/)**.
+Full documentation is available at __[https://f5-sales-demo.github.io/docs-icons/](https://f5-sales-demo.github.io/docs-icons/)__.
 
 ## Contributing
 
