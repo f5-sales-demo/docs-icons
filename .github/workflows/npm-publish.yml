@@ -16,14 +16,16 @@ permissions:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, docs-icons, ubuntu-24.04]
     timeout-minutes: 15
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
@@ -140,7 +142,7 @@ jobs:
   dispatch:
     name: Trigger docs-builder image rebuild
     needs: publish
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, docs-icons, ubuntu-24.04]
     # The cross-repo dispatch authenticates with RELEASE_TOKEN, so GITHUB_TOKEN
     # needs no write scope here.
     permissions:
