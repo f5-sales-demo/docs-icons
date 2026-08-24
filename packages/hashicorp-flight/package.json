@@ -14,7 +14,7 @@
     "icons.json"
   ],
   "dependencies": {
-    "@hashicorp/flight-icons": "^5.0.0"
+    "@hashicorp/flight-icons": "^5.1.0"
   },
   "publishConfig": {
     "access": "public"
