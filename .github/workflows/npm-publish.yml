@@ -21,7 +21,7 @@ permissions:
 jobs:
   publish:
     name: Publish npm packages
-    runs-on: [self-hosted, Linux, X64, docs-icons, ubuntu-24.04]
+    runs-on: docs-socketless
     environment: npm-publish
     timeout-minutes: 15
     permissions:
@@ -145,7 +145,7 @@ jobs:
   dispatch:
     name: Trigger docs-builder image rebuild
     needs: publish
-    runs-on: [self-hosted, Linux, X64, docs-icons, ubuntu-24.04]
+    runs-on: docs-socketless
     environment: docs-builder-dispatch
     # The cross-repo dispatch authenticates with RELEASE_TOKEN, so GITHUB_TOKEN
     # needs no write scope here.
