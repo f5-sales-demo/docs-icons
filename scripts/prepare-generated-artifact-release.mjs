@@ -9,7 +9,7 @@
  * icons.json and exactly one matching patch version bump.
  */
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const mode = process.argv[2] ?? 'prepare';
