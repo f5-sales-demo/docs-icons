@@ -1,0 +1,37 @@
+---
+name: Generated artifact release
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: generated-artifact-release-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  generated-artifact-release:
+    name: Generated artifact release
+    runs-on: docs-socketless
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install from lockfile
+        run: npm ci
+
+      - name: Regenerate icon artifacts
+        run: npm run build
+
+      - name: Validate generated artifact release
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node scripts/prepare-generated-artifact-release.mjs verify
