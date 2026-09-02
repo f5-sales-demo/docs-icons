@@ -1,6 +1,6 @@
 {
   "name": "@f5-sales-demo/icons-mdi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Material Design Icons with Astro component wrapper",
   "type": "module",
   "exports": {
@@ -14,7 +14,7 @@
     "icons.json"
   ],
   "dependencies": {
-    "@iconify-json/mdi": "^1.2.0"
+    "@iconify-json/mdi": "^1.2.3"
   },
   "publishConfig": {
     "access": "public"
