@@ -60,20 +60,24 @@ function patchBump(before, after) {
   return after === `${match[1]}.${match[2]}.${Number(match[3]) + 1}${match[4]}`;
 }
 
-function changedPaths(base) {
-  return lines('git', ['diff', '--name-only', base]);
-}
-
-function verify(base, affected) {
-  const changed = new Set(changedPaths(base));
+function verifyVersionBumps(base, affected) {
   for (const name of affected) {
     const manifest = `packages/${name}/package.json`;
-    const icons = `packages/${name}/icons.json`;
-    if (!changed.has(icons)) throw new Error(`${icons} was not regenerated for its dependency update`);
     const before = json(base, manifest).version;
     const after = current(manifest).version;
     if (!patchBump(before, after)) {
       throw new Error(`${manifest} must be bumped exactly one patch (${before} -> ${after})`);
+    }
+  }
+}
+
+function verifyRebuiltArtifacts(affected) {
+  if (affected.length === 0) return;
+  const artifacts = affected.map((name) => `packages/${name}/icons.json`);
+  const dirty = new Set(lines('git', ['diff', '--name-only', 'HEAD', '--', ...artifacts]));
+  for (const artifact of artifacts) {
+    if (dirty.has(artifact)) {
+      throw new Error(`${artifact} differs from the committed artifact after regeneration`);
     }
   }
 }
@@ -84,7 +88,11 @@ console.log(`Base revision: ${base}`);
 console.log(`Affected packages: ${affected.join(', ') || 'none'}`);
 
 if (mode === 'verify') {
-  verify(base, affected);
+  verifyVersionBumps(base, affected);
+  // CI rebuilds from the updated lockfile before verify. Comparing that fresh
+  // output with the PR head accepts a valid byte-identical regeneration while
+  // still rejecting an omitted or stale committed artifact.
+  verifyRebuiltArtifacts(affected);
   console.log('Generated artifact release gate passed.');
   process.exit(0);
 }
@@ -118,5 +126,5 @@ for (const name of affected) {
 }
 run('npm', ['install', '--package-lock-only', '--ignore-scripts'], { stdio: 'inherit' });
 
-verify(base, affected);
+verifyVersionBumps(base, affected);
 console.log('Generated artifacts and package patch versions prepared.');
