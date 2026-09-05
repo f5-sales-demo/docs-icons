@@ -1,6 +1,6 @@
 {
   "name": "@f5-sales-demo/icons-lucide",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Lucide icons with Astro component wrapper",
   "type": "module",
   "exports": {
@@ -14,7 +14,7 @@
     "icons.json"
   ],
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.126"
+    "@iconify-json/lucide": "^1.2.127"
   },
   "publishConfig": {
     "access": "public"
